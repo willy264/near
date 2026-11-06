@@ -1,0 +1,24 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.5/schema.json",
+  "files": {
+    "includes": [
+      "packages/**/*.ts",
+      "scripts/**/*.ts",
+      "package.json",
+      "tsconfig.json",
+      "!!.tools/**",
+      "!!.keys/**",
+      "!!.sim-state/**",
+      "!!contracts/target/**"
+    ]
+  },
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2 },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "none",
+      "correctness": { "noUnreachable": "error", "noUnusedVariables": "warn" }
+    }
+  },
+  "assist": { "enabled": false }
+}

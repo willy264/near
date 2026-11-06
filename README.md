@@ -4,7 +4,7 @@ Untangle records two-sided obligations and cancels verified debt cycles on NEAR 
 
 ## Current state
 
-The contract and token are implemented and deployed to testnet. Unit tests and the sandbox integration flow passed; see [unit evidence](docs/evidence/tests-2026-11-06.md) and [sandbox evidence](docs/evidence/sandbox-2026-11-06.md). The simulator, solver and viewer are not complete. The [testnet key proof](docs/evidence/keys.md) passed. Gas measurements are in progress; no completed demo is claimed.
+The contract and token are implemented and deployed to testnet. Unit tests and the sandbox integration flow passed; see [unit evidence](docs/evidence/tests-2026-11-06.md) and [sandbox evidence](docs/evidence/sandbox-2026-11-06.md). The simulator, solver and viewer are not complete. The [testnet key proof](docs/evidence/keys.md) passed. [Gas measurements](docs/evidence/gas.md) set conservative testnet limits; no completed demo is claimed.
 
 ## Development
 
@@ -36,4 +36,5 @@ Rust; near-sdk 5.30.1; near-contract-standards 5.30.1; cargo-near 0.22.0; near-w
 ## Hackathon and license
 
 Built for NEAR HACKATHON 2026. Project implementation began November 6, 2026. MIT license; see [LICENSE](LICENSE).
+
 

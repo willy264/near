@@ -18,3 +18,5 @@ Tooling: Rust 1.99.1, near-sdk/standards 5.30.1, cargo-near 0.22.0, Node 26.13.0
 Spec: full v1.1 in the conversation is authority. The on-disk condensed BUILD-SPEC was deleted per instruction; no full replacement was visible at that time. Do not write another condensed spec.
 
 Standing authorization: code, install, test, testnet operations and local commits. User additionally authorized pushing this project to willy264/near. Posting, submission, mainnet activity and deleting outside the repository still require explicit approval.
+
+Latest gate: gas measurement COMPLETE. Combined 5 cycles x length 12 used 112.436 Tgas, final configuration frozen at 12/5/128/20 and saved in deployments/testnet.json. All benchmark debts cleared. Next exact action: implement packages/shared LedgerModel and schemas, then contract parity tests and solver/local scenarios. Last green benchmark command: pnpm exec tsx scripts/measure-gas.ts --final.

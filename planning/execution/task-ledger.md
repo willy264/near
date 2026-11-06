@@ -21,3 +21,5 @@ Publication task: explicit user push authorization received; origin added (empty
 Repository publication: staged snapshot and all 3 existing commits passed gitleaks on 2026-11-06. User explicitly authorized push to origin/main. Testnet key proof remains next.
 
 2026-11-06: Initial project push complete at 6880c92; four-commit full-history gitleaks scan passed. D5 testnet key proof complete (keys.md). Storage measurement: 2459 bytes, 4000-byte fee. TypeScript typecheck passed after adding verified @types/node 26.6.6 and explicit node types. D6 gas measurements in progress; issue_many(40) hit log-size limit; resume with issue chunks of 20. Next shared/model/solver gate remains pending.
+
+Testnet gate GREEN: both deployments, key proof and gas measurement complete. Config 12/5/128/20 frozen on testnet (deployments/testnet.json). Last green: pnpm exec tsx scripts/measure-gas.ts --final, combined maximum 112.436 Tgas. Evidence gas.md, gas.jsonl, transactions.jsonl, keys.md. Next: LedgerModel, parity, solver, local simulation/kill test. No blocker for model work.

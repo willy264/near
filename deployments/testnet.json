@@ -15,5 +15,12 @@
     "codeHash": "EMgiKCAYXZf7ZuLX3Drb3biYzYMHXN9Z3zdjcvmYR2Jt",
     "deployTx": "7Jtg44zNPq4o1ytd92EfCV2Wb2ma1ZcmCHbDT3YRpQxA",
     "timestamp": "2026-11-06T06:57:30.093Z"
-  }
+  },
+  "config": {
+    "max_cycle_len": 12,
+    "max_cycles_per_batch": 5,
+    "max_memo_bytes": 128,
+    "max_batch_issue": 20
+  },
+  "configTx": "6UBwifh4f2NPWvEuFjbrkHAJQh3rwe9ntxVauW8eMFyQ"
 }

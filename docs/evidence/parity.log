@@ -1,0 +1,35 @@
+   Compiling untangle-integration-tests v0.1.0 (/mnt/c/Users/HP/Documents/people/hackathons/near/contracts/integration-tests)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 27.87s
+     Running tests/parity.rs (/tmp/untangle-integration-target/debug/deps/parity-eefad98100f34079)
+
+running 1 test
+parity sequence 1/25: 40 operations matched
+parity sequence 2/25: 40 operations matched
+test model_contract_parity_25_by_40 has been running for over 60 seconds
+parity sequence 3/25: 40 operations matched
+parity sequence 4/25: 40 operations matched
+parity sequence 5/25: 40 operations matched
+parity sequence 6/25: 40 operations matched
+parity sequence 7/25: 40 operations matched
+parity sequence 8/25: 40 operations matched
+parity sequence 9/25: 40 operations matched
+parity sequence 10/25: 40 operations matched
+parity sequence 11/25: 40 operations matched
+parity sequence 12/25: 40 operations matched
+parity sequence 13/25: 40 operations matched
+parity sequence 14/25: 40 operations matched
+parity sequence 15/25: 40 operations matched
+parity sequence 16/25: 40 operations matched
+parity sequence 17/25: 40 operations matched
+parity sequence 18/25: 40 operations matched
+parity sequence 19/25: 40 operations matched
+parity sequence 20/25: 40 operations matched
+parity sequence 21/25: 40 operations matched
+parity sequence 22/25: 40 operations matched
+parity sequence 23/25: 40 operations matched
+parity sequence 24/25: 40 operations matched
+parity sequence 25/25: 40 operations matched
+test model_contract_parity_25_by_40 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 543.90s
+

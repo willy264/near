@@ -1,0 +1,21 @@
+
+ RUN  v5.1.0 C:/Users/HP/Documents/people/hackathons/near
+
+ ✓ packages/shared/src/model.test.ts > model accounting > rolls back accept_many when the last id fails 10ms
+ ✓ packages/shared/src/model.test.ts > model accounting > preserves net positions and cumulative edge capacity 4ms
+ ✓ packages/shared/src/model.test.ts > model accounting > refunds excess and restores failed withdrawal credit 2ms
+ ✓ packages/shared/src/model.test.ts > model accounting > enforces aggregate debt and creditor pair caps 2ms
+ ✓ packages/solver/src/solver.test.ts > triangle, chain, figure-eight, parallel edges and overlapping cycles 127ms
+ ✓ packages/solver/src/solver.test.ts > shortest cycle ties prefer largest bottleneck 19ms
+ ✓ packages/solver/src/solver.test.ts > random graphs preserve nets and leave no supported cycle 877ms
+ ✓ packages/sim/src/local.test.ts > seeded scenarios are reproducible, conserve amounts and finish locally under five seconds 1639ms
+stdout | packages/solver/src/solver.test.ts > 50 nodes / 500 edges plans in under two seconds
+solver_50_nodes_500_edges_ms=869.585
+
+ ✓ packages/solver/src/solver.test.ts > 50 nodes / 500 edges plans in under two seconds 3033ms
+
+ Test Files  3 passed (3)
+      Tests  9 passed (9)
+   Start at  08:37:24
+   Duration  4.96s (tests 79%, import 12%, transform 8%, worker 1%)
+

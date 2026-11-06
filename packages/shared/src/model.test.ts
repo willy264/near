@@ -1,0 +1,9 @@
+import {describe,it,expect} from 'vitest';
+import {LedgerModel,STORAGE_FEE,stringify} from './model.ts';
+function setup(){const m=new LedgerModel(['t']);for(const a of ['a','b','c','solver']){m.storageDeposit(a,STORAGE_FEE*100n);m.setDebtCap(a,'t',1000n);}return m;}
+describe('model accounting',()=>{
+ it('rolls back accept_many when the last id fails',()=>{const m=setup(),id=m.issue('a','b','t',9n);const before=stringify([m.obligations(),m.stats('t')]);expect(()=>m.acceptMany('b',[id,'999'])).toThrow('ERR_NOT_FOUND');expect(stringify([m.obligations(),m.stats('t')])).toBe(before);m.assertInvariants();});
+ it('preserves net positions and cumulative edge capacity',()=>{const m=setup();const x=m.issue('b','a','t',10n),y=m.issue('a','b','t',10n);m.accept('a',x);m.accept('b',y);const before=m.netPosition('a','t');expect(()=>m.submitClearing('solver',{token:'t',cycles:[{ids:[x,y],amount:6n},{ids:[x,y],amount:5n}]})).toThrow('ERR_OVER_REMAINING');expect(m.getObligation(x)?.remaining).toBe(10n);m.submitClearing('solver',{token:'t',cycles:[{ids:[x,y],amount:6n},{ids:[x,y],amount:4n}]});expect(m.netPosition('a','t').net).toBe(before.net);expect(m.stats('t').cleared_total).toBe(20n);m.assertInvariants();});
+ it('refunds excess and restores failed withdrawal credit',()=>{const m=setup(),id=m.issue('a','b','t',10n);m.accept('b',id);expect(m.settle('c','t',12n,id)).toBe(12n);expect(m.settle('b','t',12n,id)).toBe(2n);expect(m.withdraw('a','t',null,false)).toBe(false);expect(m.withdrawable('a','t')).toBe(10n);m.assertInvariants();m.withdraw('a','t');m.assertInvariants();});
+ it('enforces aggregate debt and creditor pair caps',()=>{const m=setup();m.setDebtCap('b','t',10n);m.setPairLimit('a','b','t',5n);const x=m.issue('a','b','t',6n);expect(()=>m.accept('b',x)).toThrow('ERR_PAIR_LIMIT');m.setPairLimit('a','b','t',null);m.accept('b',x);expect(()=>m.setDebtCap('b','t',5n)).toThrow('ERR_DEBT_CAP');m.assertInvariants();});
+});

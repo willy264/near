@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "parameters": {
+    "schemaVersion": 1,
+    "scenario": "agents",
+    "seed": 42,
+    "rounds": 10,
+    "mode": "local"
+  },
+  "stats": {
+    "accepted_total": "735000000",
+    "cleared_total": "295000000",
+    "settled_total": "440000000",
+    "outstanding_total": "0",
+    "open_count": "0",
+    "closed_by_clearing": "32",
+    "closed_by_payment": "81",
+    "clearing_batches": "4",
+    "cycles_cleared": "18",
+    "payments": "81",
+    "cleared_ratio_bps": "4013"
+  },
+  "acceptedCount": "113",
+  "rejectedCount": "0",
+  "payments": "81",
+  "withdrawals": "11"
+}

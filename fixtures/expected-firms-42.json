@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "parameters": {
+    "schemaVersion": 1,
+    "scenario": "firms",
+    "seed": 42,
+    "rounds": 10,
+    "mode": "local"
+  },
+  "stats": {
+    "accepted_total": "653000000",
+    "cleared_total": "265000000",
+    "settled_total": "388000000",
+    "outstanding_total": "0",
+    "open_count": "0",
+    "closed_by_clearing": "27",
+    "closed_by_payment": "52",
+    "clearing_batches": "3",
+    "cycles_cleared": "11",
+    "payments": "52",
+    "cleared_ratio_bps": "4058"
+  },
+  "acceptedCount": "79",
+  "rejectedCount": "0",
+  "payments": "52",
+  "withdrawals": "6"
+}

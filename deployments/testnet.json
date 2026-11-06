@@ -1,0 +1,19 @@
+{
+  "network": "testnet",
+  "createdAt": "2026-11-06T06:56:58.318Z",
+  "parent": "untangle-261106-e1386a.testnet",
+  "ledger": "ledger.untangle-261106-e1386a.testnet",
+  "token": "tusd.untangle-261106-e1386a.testnet",
+  "solver": "solver.untangle-261106-e1386a.testnet",
+  "reproducible": false,
+  "tusd.untangle-261106-e1386a.testnet": {
+    "codeHash": "7XPcytMK8XuVf1DBfSHNH2ivZ1qgi5kTPX6ENXFdbxVR",
+    "deployTx": "FWBdeSANreKh5K8hexMMKPjsXuBHkPnhz1FGfhenr49F",
+    "timestamp": "2026-11-06T06:57:25.446Z"
+  },
+  "ledger.untangle-261106-e1386a.testnet": {
+    "codeHash": "EMgiKCAYXZf7ZuLX3Drb3biYzYMHXN9Z3zdjcvmYR2Jt",
+    "deployTx": "7Jtg44zNPq4o1ytd92EfCV2Wb2ma1ZcmCHbDT3YRpQxA",
+    "timestamp": "2026-11-06T06:57:30.093Z"
+  }
+}

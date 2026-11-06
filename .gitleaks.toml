@@ -1,0 +1,7 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Public testnet token account and documentation placeholders; no private credentials"
+regexTarget = "secret"
+regexes = ['''^YOUR_API_KEY$''', '''^tusd\.untangle-261106-e1386a\.testnet$''', '''^Sputnik/Trezu$''']

@@ -486,7 +486,7 @@ fn measured_worst_case_storage() {
     context("owner.testnet", 0);
     let mut c = Contract::new(
         id("owner.testnet"),
-        vec![id("token.testnet")],
+        vec![id(&"t".repeat(64))],
         Config::default(),
     );
     let creditor = "c".repeat(64);
@@ -495,7 +495,7 @@ fn measured_worst_case_storage() {
         context(a, 10u128.pow(25));
         c.storage_deposit(None);
         context(a, 1);
-        c.set_debt_cap(id("token.testnet"), U128(100));
+        c.set_debt_cap(id(&"t".repeat(64)), U128(100));
     }
     c.accounts.flush();
     c.storage.flush();
@@ -505,7 +505,7 @@ fn measured_worst_case_storage() {
     context(&creditor, 0);
     let i = c.issue(
         id(&debtor),
-        id("token.testnet"),
+        id(&"t".repeat(64)),
         U128(1),
         Some("m".repeat(128)),
     );
@@ -516,7 +516,7 @@ fn measured_worst_case_storage() {
     c.obligations.flush();
     c.pairs.flush();
     c.stats.flush();
-    c.open.get_mut(&id("token.testnet")).unwrap().flush();
+    c.open.get_mut(&id(&"t".repeat(64))).unwrap().flush();
     c.open.flush();
     for a in [&creditor, &debtor] {
         c.by_account.get_mut(&id(a)).unwrap().flush();

@@ -7,3 +7,5 @@ Blockers: WSL Rust setup pending; no full BUILD-SPEC replacement visible when re
 Standing authorization: autonomous local code/tests/install/testnet/commits. No pushing/publication/post/submission/mainnet without explicit yes.
 
 Latest: sandbox integration flow GREEN (1 passed, 0 failed), both Wasm builds GREEN. Testnet account/deployment tooling is next. pnpm12 installation works through its explicit npm-installed binary because an older PATH shim is broken. Node26.13.0 portable extraction is pending. Expanded storage worst-case test is running; contract code unchanged.
+
+Current interruption: user requested pushing the project to willy264/near. Origin is configured; remote was empty. Preparing truthful current-state README and full-history secret scan before initial push. After push continue testnet key proof/gas; proof setup hit insufficient upfront gas balance on solver and needs a small top-up or lower attached gas. No secrets are tracked; .keys is ignored.

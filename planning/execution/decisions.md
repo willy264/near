@@ -19,3 +19,6 @@ Toolchain finding: cargo install cargo-near --version 0.22.0 --locked failed in 
 Storage hardening: additional per-token account buckets reserve another registration minimum; persistent pair limits and first solver/token leaderboard entry reserve a fixed fee. Empty account index sets and zero-exposure pairs without limits are removed. This closes unbounded storage growth through nominally zero-deposit calls. Solvers remain permissionless but must prepay their first leaderboard entry. The fixed-fee measurements must cover these entries before deployment.
 
 Integration first run reached scoped-key issue/accept but failed NotEnoughAllowance: near-workspaces max_gas reserves 1000Tgas on the current sandbox, exceeding the 0.25NEAR key allowance. Helper now explicitly attaches 100Tgas. Keep the requested final measured safety ceiling of 180Tgas; do not infer the current protocol limit from the old 300Tgas assumption.
+near-api-js 7.4.0 correction: skill action example addFunctionAccessKey is stale; installed official declarations/export use actions.addFunctionCallAccessKey. Account.addFunctionCallAccessKey remains as documented.
+
+User explicitly authorized adding origin https://github.com/willy264/near.git and pushing main on 2026-11-06. Existing local milestone commits are preserved. Full-history and working-tree secret scans are required before the push.

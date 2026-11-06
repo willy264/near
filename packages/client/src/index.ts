@@ -23,6 +23,7 @@ export async function call(who:Account,receiver:string,method:string,args:object
  const value=typeof result.status==='object'&&'SuccessValue'in result.status?Buffer.from(result.status.SuccessValue,'base64').toString():'';
  return {value:value?JSON.parse(value):null,hash:result.transaction.hash,result};
 }
-export async function view<T extends object|string|number|boolean>(contractId:string,method:string,args:object){testnetId(contractId);return provider.callFunction<T>({contractId,method,args});}
+export async function view<T extends object|string|number|boolean>(contractId:string,method:string,args:Record<string,unknown>){testnetId(contractId);return provider.callFunction<T>({contractId,method,args});}
 export async function exists(id:string){try{await provider.providers[0].viewAccount({accountId:testnetId(id)});return true;}catch(e){if(/does not exist|UNKNOWN_ACCOUNT|UnknownAccount/i.test(String(e)))return false;throw e;}}
+
 

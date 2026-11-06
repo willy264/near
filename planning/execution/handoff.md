@@ -1,13 +1,20 @@
 # Handoff — 2026-11-06
 
-Current state: implemented ledger, pull settlement, bounded keys' callable methods, storage reservations, clearing, views/events, tUSD and unit tests. cargo-near0.22.0 verified binary installed; NASM3.02 installed. RULES/README/license/env example present. No deployments.
-Last green: cargo test --offline --manifest-path contracts/Cargo.toml --workspace with RUSTUP_TOOLCHAIN=stable (Rust1.99.1): 47 ledger +2 token tests, zero failures. Evidence tests-2026-11-06.md and unit-tests.log.
-Next action: cargo-near Wasm builds, sandbox integration suite, then testnet proof/gas.
-Blockers: WSL Rust setup pending; no full BUILD-SPEC replacement visible when read, condensed copy deleted under explicit instruction. Use full v1.1 in conversation, do not summarize/rewrite it.
-Standing authorization: autonomous local code/tests/install/testnet/commits. No pushing/publication/post/submission/mainnet without explicit yes.
+Current state: ledger and tUSD implemented, 47 ledger + 2 token unit tests passed; one comprehensive sandbox integration test passed. Both contracts deployed on testnet; deployments/testnet.json records hashes. Restricted testnet keys issued/accepted and five forbidden actions failed. Operator payment/withdraw succeeded (docs/evidence/keys.md).
 
-Latest: sandbox integration flow GREEN (1 passed, 0 failed), both Wasm builds GREEN. Testnet account/deployment tooling is next. pnpm12 installation works through its explicit npm-installed binary because an older PATH shim is broken. Node26.13.0 portable extraction is pending. Expanded storage worst-case test is running; contract code unchanged.
+Repository: https://github.com/willy264/near.git; main pushed and remote verified at 6880c92 under explicit user authorization. Full-history gitleaks scan of four commits passed. Further benchmark work is local and uncommitted.
 
-Current interruption: user requested pushing the project to willy264/near. Origin is configured; remote was empty. Preparing truthful current-state README and full-history secret scan before initial push. After push continue testnet key proof/gas; proof setup hit insufficient upfront gas balance on solver and needs a small top-up or lower attached gas. No secrets are tracked; .keys is ignored.
+Last green commands:
+- cargo test --manifest-path contracts/Cargo.toml -p untangle measured_worst_case_storage -- --nocapture: 1 passed, 0 failed, exit 0; measured 2459 bytes against 4000-byte fixed fee.
+- pnpm exec tsc --noEmit: exit 0.
+- pnpm exec tsx scripts/prove-keys.ts: issue/accept succeeded; five forbidden actions rejected; operator settled/withdrew.
 
-Publication checkpoint: full history secret scan passed (3 commits, no leaks). Next command: git push -u origin main, then verify remote HEAD. Resume testnet proof by lowering storage-deposit gas or funding solver; no build gate advanced by publication.
+Next action: finish scripts/measure-gas.ts --resume, record all success/failure measurements, validate combined maximum cycle/batch configuration, update deployment config, commit the testnet gate. Then shared model, parity, solver and local simulator/kill test.
+
+Current finding: issue_many(40) with 128-byte memos failed the runtime log limit (tx 8tioh7T6vgNEB5DyPCM6cVYndTVtBGzNfBirGWoHRqJH); receipt reverted. Benchmark now issues at most 20 per call. Large clearing batches are still being measured. Proposed conservative final limits: cycle 12, batch 5, issue batch 20; do not call these frozen until final measurement succeeds.
+
+Tooling: Rust 1.99.1, near-sdk/standards 5.30.1, cargo-near 0.22.0, Node 26.13.0, pnpm 12.16.1. On Windows use the portable Node in .tools and the npm-installed pnpm.exe; old PATH pnpm shim is broken. Sandbox tests run in Ubuntu WSL with target dir /tmp/untangle-integration-target.
+
+Spec: full v1.1 in the conversation is authority. The on-disk condensed BUILD-SPEC was deleted per instruction; no full replacement was visible at that time. Do not write another condensed spec.
+
+Standing authorization: code, install, test, testnet operations and local commits. User additionally authorized pushing this project to willy264/near. Posting, submission, mainnet activity and deleting outside the repository still require explicit approval.

@@ -22,3 +22,5 @@ Integration first run reached scoped-key issue/accept but failed NotEnoughAllowa
 near-api-js 7.4.0 correction: skill action example addFunctionAccessKey is stale; installed official declarations/export use actions.addFunctionCallAccessKey. Account.addFunctionCallAccessKey remains as documented.
 
 User explicitly authorized adding origin https://github.com/willy264/near.git and pushing main on 2026-11-06. Existing local milestone commits are preserved. Full-history and working-tree secret scans are required before the push.
+
+2026-11-06: Repository pushed with explicit user authorization. Origin/main verified at 6880c92. Full-history gitleaks scan found no leaks after exact-value exceptions for documentation placeholders/public values. Testnet faucet top-up follows the official near/docs snippets/faucet.jsx flow (5 test NEAR); temporary account retained. Storage measurement now flushes every collection before the baseline: 2459 bytes, fee covers 4000 bytes.

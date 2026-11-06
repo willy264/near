@@ -501,6 +501,11 @@ fn measured_worst_case_storage() {
     c.storage.flush();
     c.tokens.flush();
     c.obligations.flush();
+    c.pairs.flush();
+    c.stats.flush();
+    c.open.flush();
+    c.by_account.flush();
+    c.bucket_count.flush();
     let before = env::storage_usage();
     context(&creditor, 0);
     let i = c.issue(
@@ -722,3 +727,4 @@ fn random_operation_sequence_checks_all_accounting() {
         assert!(c.obligations.values().all(|o| o.remaining.0 > 0));
     }
 }
+

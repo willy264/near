@@ -1,0 +1,13 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.70s
+     Running unittests src\lib.rs (contracts\target\debug\deps\untangle-7d4a200f0cfcb5e4.exe)
+
+running 1 test
+EVENT_JSON:{"standard":"untangle","version":"1.0.0","event":"debt_cap_set","data":[{"account":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","token":"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt","max":"100"}]}
+EVENT_JSON:{"standard":"untangle","version":"1.0.0","event":"debt_cap_set","data":[{"account":"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd","token":"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt","max":"100"}]}
+EVENT_JSON:{"standard":"untangle","version":"1.0.0","event":"obligation_issued","data":[{"id":"0","creditor":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","debtor":"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd","token":"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt","amount":"1","remaining":"1","status":"Issued","memo":"mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm","created_ms":"0","storage_payer":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","storage_fee":"40000000000000000000000"}]}
+EVENT_JSON:{"standard":"untangle","version":"1.0.0","event":"obligation_accepted","data":[{"id":"0","creditor":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","debtor":"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd","token":"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt","amount":"1","remaining":"1","status":"Accepted","memo":"mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm","created_ms":"0","storage_payer":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc","storage_fee":"40000000000000000000000"}]}
+worst_case_obligation_bytes=2459; fee=40000000000000000000000; byte_cost=10000000000000000000
+test tests::measured_worst_case_storage ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 46 filtered out; finished in 0.33s
+

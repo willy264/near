@@ -5,3 +5,5 @@ Last green: cargo test --offline --manifest-path contracts/Cargo.toml --workspac
 Next action: cargo-near Wasm builds, sandbox integration suite, then testnet proof/gas.
 Blockers: WSL Rust setup pending; no full BUILD-SPEC replacement visible when read, condensed copy deleted under explicit instruction. Use full v1.1 in conversation, do not summarize/rewrite it.
 Standing authorization: autonomous local code/tests/install/testnet/commits. No pushing/publication/post/submission/mainnet without explicit yes.
+
+Latest: sandbox integration flow GREEN (1 passed, 0 failed), both Wasm builds GREEN. Testnet account/deployment tooling is next. pnpm12 installation works through its explicit npm-installed binary because an older PATH shim is broken. Node26.13.0 portable extraction is pending. Expanded storage worst-case test is running; contract code unchanged.

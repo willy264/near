@@ -1,0 +1,31 @@
+• Collecting cargo project metadata...
+• done
+
+• Checking rustc version...
+INFO: contract's near-sdk targets protocol version 85; rustc 1.99.1 accepted (bulk-memory opcodes supported by nearcore VM)
+• done
+
+• Checking the host environment...
+• done
+
+• Building contract
+ │    Compiling near-sdk v5.30.1
+ │    Compiling near-contract-standards v5.30.1
+ │    Compiling untangle-test-token v0.1.0 (C:\Users\HP\Documents\people\hackathons\near\contracts\test-token)
+ │     Finished `release` profile [optimized] target(s) in 23.25s
+
+• Running an optimize for size post-step with wasm-opt --enable-nontrapping-float-to-int --enable-bulk-memory...
+    Finished wasm-opt -O in 1s 905ms
+• done
+
+✓ Contract successfully built! (in CARGO_NEAR_BUILD_ENVIRONMENT=host)
+     -                Binary: C:\Users\HP\Documents\people\hackathons\near\contracts\target\near\untangle_test_token\untangle_test_token.wasm
+     -                  Size: 144.1 KB (144137 bytes)
+     - SHA-256 checksum hex : 60ef1f6c9ccc0b6194f73f28d682398e7a0e6187e0bef57821a312825517067c
+     - SHA-256 checksum bs58: 7XPcytMK8XuVf1DBfSHNH2ivZ1qgi5kTPX6ENXFdbxVR
+    Finished cargo near build in 29s
+Here is the console command if you ever need to re-run it again:
+cargo near build non-reproducible-wasm --locked --no-abi --manifest-path contracts/test-token/Cargo.toml
+
+cargo-near has a new update available 0.22.0 → 0.23.0
+To update run: C:\Users\HP\.cargo\bin\cargo-near.exe near self-update

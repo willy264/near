@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.keys/
+.near-credentials/
+**/.near-credentials/
+target/
+node_modules/
+dist/
+.sim-state/
+*.log
+!docs/evidence/**/*.log
+untangle-planning.zip
+.tools/

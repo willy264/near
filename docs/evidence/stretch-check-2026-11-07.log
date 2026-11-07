@@ -1,0 +1,71 @@
+Scope: 5 of 6 workspace projects
+packages/client test$$ biome check .
+Checked 38 files in 2s. No fixes applied.
+$ tsx scripts/export-evidence.ts && vite build packages/web
+[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 4.8s of this 13.4s build (36%).
+The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - plugin vite:css transform (24%, 3.2s, 1 call)
+Additional callback time came from callbacks under 1s.
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+
+es/solver
+packages/solver test: 
+packages/sim test: 
+packages/sim test:  RUN  v5.1.0 /mnt/c/Users/HP/Documents/people/hackathons/near/packages/sim
+packages/sim test: 
+packages/shared test:  ✓ src/model.test.ts (4 tests) 36ms
+packages/shared test: 
+packages/shared test:  Test Files  1 passed (1)
+packages/shared test:       Tests  4 passed (4)
+packages/shared test:    Start at  16:29:04
+packages/shared test:    Duration  4.31s (import 44%, transform 42%, worker 12%, tests 3%)
+packages/shared test: 
+packages/shared test: Done
+packages/web test$ tsc --noEmit -p ../../tsconfig.json
+packages/solver test:  ✓ src/optimal.test.ts (3 tests) 1073ms
+packages/solver test:    ✓ finds the longer circulation that greedy sacrifices and validates it exactly 542ms
+packages/solver test:    ✓ reports an unsupported long cycle without inventing shorter cycles 513ms
+packages/client test:  ✓ src/journal.test.ts (2 tests) 959ms
+packages/client test:    ✓ recovers a lost response by hash and never signs a replacement transaction 785ms
+packages/client test: 
+packages/client test:  Test Files  1 passed (1)
+packages/client test:       Tests  2 passed (2)
+packages/client test:    Start at  16:29:04
+packages/client test:    Duration  15.27s (import 83%, transform 8%, tests 8%, worker 1%)
+packages/client test: 
+packages/client test: Done
+packages/web test: Done
+packages/solver test: stdout | src/solver.test.ts > 50 nodes / 500 edges plans in under two seconds
+packages/solver test: solver_50_nodes_500_edges_ms=1335.900
+packages/solver test: 
+packages/solver test:  ✓ src/solver.test.ts (4 tests) 7082ms
+packages/solver test:    ✓ random graphs preserve nets and leave no supported cycle 1759ms
+packages/solver test:    ✓ 50 nodes / 500 edges plans in under two seconds 5040ms
+packages/solver test: 
+packages/solver test:  Test Files  2 passed (2)
+packages/solver test:       Tests  7 passed (7)
+packages/solver test:    Start at  16:29:06
+packages/solver test:    Duration  14.82s (tests 49%, import 33%, transform 15%, worker 3%)
+packages/solver test: 
+packages/solver test: Done
+packages/sim test:  ✓ src/local.test.ts (1 test) 3127ms
+packages/sim test:    ✓ seeded scenarios are reproducible, conserve amounts and finish locally under five seconds 3122ms
+packages/sim test: 
+packages/sim test:  Test Files  1 passed (1)
+packages/sim test:       Tests  1 passed (1)
+packages/sim test:    Start at  16:29:06
+packages/sim test:    Duration  17.84s (import 69%, tests 20%, transform 10%, worker 1%)
+packages/sim test: 
+packages/sim test: Done
+12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.
+Exported 4 recorded scenarios from validated evidence.
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 137 modules transformed.
+rendering chunks...
+computing gzip size...
+packages/web/dist/index.html                   0.52 kB │ gzip:  0.36 kB
+packages/web/dist/assets/index-CLFkeJ5p.css    4.88 kB │ gzip:  1.77 kB
+packages/web/dist/assets/index-JlScSuYy.js   128.31 kB │ gzip: 40.20 kB
+
+✓ built in 13.64s

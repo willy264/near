@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-07T15:28:11.607Z",
+  "label": "quote only, not executed",
+  "explanation": "Illustrative USDC route using the numerical size of a simulated tUSD residue. tUSD has no value and cannot be swapped. Documentation example addresses; no funds or signatures.",
+  "source": "run-agents-42-testnet-2026-11-07T14-03-12-249Z.json",
+  "creditor": "agent-02.untangle-261106-e1386a.testnet",
+  "residualTestUnits": "97000000",
+  "origin": {
+    "assetId": "nep141:base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near",
+    "decimals": 6,
+    "blockchain": "base",
+    "symbol": "USDC",
+    "price": 0.99973,
+    "priceUpdatedAt": "2026-11-07T15:27:31.033Z",
+    "contractAddress": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "coingeckoId": "usd-coin"
+  },
+  "destination": {
+    "assetId": "nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+    "decimals": 6,
+    "blockchain": "eth",
+    "symbol": "USDC",
+    "price": 0.99973,
+    "priceUpdatedAt": "2026-11-07T15:27:31.033Z",
+    "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "coingeckoId": "usd-coin"
+  },
+  "endpoint": "https://1click.chaindefuser.com/v0/quote",
+  "docs": "https://1click.chaindefuser.com/docs/v0/openapi.yaml",
+  "request": {
+    "dry": true,
+    "swapType": "EXACT_INPUT",
+    "slippageTolerance": 100,
+    "originAsset": "nep141:base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near",
+    "depositType": "ORIGIN_CHAIN",
+    "destinationAsset": "nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+    "amount": "97000000",
+    "refundTo": "0x2527D02599Ba641c19FEa793cD0F167589a0f10D",
+    "refundType": "ORIGIN_CHAIN",
+    "recipient": "0x2527D02599Ba641c19FEa793cD0F167589a0f10D",
+    "recipientType": "DESTINATION_CHAIN",
+    "deadline": "2026-11-07T15:38:10.954Z"
+  },
+  "response": {
+    "quote": {
+      "amountIn": "97000000",
+      "amountInFormatted": "97.0",
+      "amountInUsd": "96.973810000000",
+      "minAmountIn": "97000000",
+      "amountOut": "96681376",
+      "amountOutFormatted": "96.681376",
+      "amountOutUsd": "96.655272028480",
+      "minAmountOut": "95714562",
+      "timeEstimate": 42,
+      "refundFee": "2400",
+      "withdrawFee": "300000"
+    },
+    "quoteRequest": {
+      "dry": true,
+      "depositMode": "SIMPLE",
+      "swapType": "EXACT_INPUT",
+      "slippageTolerance": 100,
+      "originAsset": "nep141:base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near",
+      "depositType": "ORIGIN_CHAIN",
+      "destinationAsset": "nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+      "amount": "97000000",
+      "refundTo": "0x2527D02599Ba641c19FEa793cD0F167589a0f10D",
+      "refundType": "ORIGIN_CHAIN",
+      "recipient": "0x2527D02599Ba641c19FEa793cD0F167589a0f10D",
+      "recipientType": "DESTINATION_CHAIN",
+      "deadline": "2026-11-07T15:38:10.954Z",
+      "confidentiality": "public",
+      "quoteWaitingTimeMs": 0,
+      "insured": false,
+      "appFees": [
+        {
+          "recipient": "5880ad2b362620fadf759cbceb1cd5737ce8c6ed7fb8e9942881e6731f9247dd",
+          "fee": 1
+        }
+      ]
+    },
+    "signature": "ed25519:L6edoRdhgqXqiE5zRmdgT7woeAScGiYGSAXf1GegieeAHA4adUbFBXwxbgUwS34SVrHfswZJjbTKvCUbwzWamWt",
+    "timestamp": "2026-11-07T15:28:11.198Z",
+    "correlationId": "587cb6c3-96e0-48b1-baf1-690cf95c0238"
+  }
+}

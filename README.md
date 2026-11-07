@@ -52,7 +52,7 @@ These commands need no `.env`, keys or funds. Initial dependency installation re
 | Scenario | Mode | Seed | Accepted test tUSD | Cleared | Payments / obligations | Withdrawals | Evidence |
 |---|---|---:|---:|---:|---:|---:|---|
 | agents | testnet | 42 | 735 | 40.13% | 81 / 113 | 11 | [saved run](docs/evidence/run-agents-42-testnet-2026-11-07T14-03-12-249Z.md) |
-| firms | testnet | 42 | 653 | 40.58% | 52 / 79 | 6 | [saved run](docs/evidence/run-firms-42-testnet-2026-11-07T15-20-17-919Z.md) |
+| firms | testnet | 42 | 653 | 40.58% | 52 / 79 | 6 | [saved run](docs/evidence/run-firms-42-testnet-2026-11-07T15-20-37-119Z.md) |
 | agents | local | 7 | 768 | 67.31% | 55 / 113 | 9 | [saved run](docs/evidence/run-agents-7-local-2026-11-06T07-29-25-273Z.md) |
 | agents | local | 1234 | 757 | 62.08% | 67 / 111 | 9 | [saved run](docs/evidence/run-agents-1234-local-2026-11-06T07-29-25-704Z.md) |
 | firms | local | 7 | 720 | 39.58% | 65 / 85 | 6 | [saved run](docs/evidence/run-firms-7-local-2026-11-06T07-29-28-801Z.md) |
@@ -85,7 +85,7 @@ The creditor calls `issue` or `issue_many`; the debtor calls `accept`, `accept_m
 
 ## NEAR features used
 
-NEAR subaccounts identify scripted agents. Function-call access keys limit their transaction authority. tUSD implements NEP-141 and NEP-145; the ledger uses prepaid storage with a NEP-145-style balance interface. NEP-297 events record obligation transitions. Built contracts expose the NEP-330 metadata method; the deployed non-reproducible build currently returns null source-link and build-info fields, so source verification is not claimed. NEAR Intents is not implemented in this build.
+NEAR subaccounts identify scripted agents. Function-call access keys limit their transaction authority. tUSD implements NEP-141 and NEP-145; the ledger uses prepaid storage with a NEP-145-style balance interface. NEP-297 events record obligation transitions. Built contracts expose the NEP-330 metadata method; the deployed non-reproducible build currently returns null source-link and build-info fields, so source verification is not claimed. NEAR Intents 1Click supplies a recorded `dry: true` cross-chain quote shown in the viewer. It is an illustrative USDC route, not a conversion of tUSD or an executed payment. [Request and response evidence](docs/evidence/intents-quote.md).
 
 ## Run on testnet yourself
 
@@ -105,7 +105,7 @@ Untangle does not claim to invent netting. This implementation combines a public
 
 ## Limitations
 
-Debts and events are public. Debtor acceptance creates credit exposure; a cap limits its size but does not guarantee repayment. The greedy solver is not claimed optimal. Cycle and batch lengths are bounded. Gas measurements use repeated accounts with distinct obligations, not the worst possible distinct-account graph.
+Debts and events are public. Debtor acceptance creates credit exposure; a cap limits its size but does not guarantee repayment. The greedy solver is not optimal: the recorded agents seed-42 comparison clears 295 tUSD versus 321 for the LP. [All 12 greedy/optimal comparisons](docs/evidence/optimal.md) include unchanged supply-chain results of zero. LP comparison uses bounded floating-point inputs with exact integer checks; unsupported long cycles are reported rather than split. Cycle and batch lengths are bounded. Gas measurements use repeated accounts with distinct obligations, not the worst possible distinct-account graph.
 
 The operator retains upgrade keys. The contract accepts explicitly approved tokens; unsolicited direct token donations can make custody exceed tracked withdrawal credit. Strict custody equality is tested for the supported transfer-call/withdraw flow without donations. There is no privacy, interest, due date, credit scoring or mainnet support. The ledger's storage interface does not implement unregister.
 
@@ -115,7 +115,7 @@ The quick check measured 60 seconds with cached dependencies on Linux Ext4; cold
 
 ## Built with
 
-Rust 1.99.1; near-sdk and near-contract-standards 5.30.1; cargo-near 0.22.0; near-workspaces 0.24.0; near-cli-rs 0.31.0; Node 26.13.0; pnpm 12.16.1; TypeScript 7.0.2; near-api-js 7.4.0; Zod 4.6.7; Vitest 5.1.0; fast-check 4.10.2; tsx 4.23.15; Commander 15.0.0; Pino 10.4.0; Biome 2.6.5; Vite 8.3.6; D3 7.9.2; Playwright 1.65.0. Exact dependencies and transitive pins are in the manifests and lockfiles; inclusion does not imply every installed library is used at runtime.
+Rust 1.99.1; near-sdk and near-contract-standards 5.30.1; cargo-near 0.22.0; near-workspaces 0.24.0; near-cli-rs 0.31.0; Node 26.13.0; pnpm 12.16.1; TypeScript 7.0.2; near-api-js 7.4.0; Zod 4.6.7; Vitest 5.1.0; fast-check 4.10.2; tsx 4.23.15; Commander 15.0.0; Pino 10.4.0; Biome 2.6.5; Vite 8.3.6; D3 7.9.2; Playwright 1.65.0; HiGHS 1.15.4 (offline LP comparison). Exact dependencies and transitive pins are in the manifests and lockfiles; inclusion does not imply every installed library is used at runtime.
 
 AI assistance: Codex wrote the implementation under human direction; Claude supplied research, planning and an independent judge review. The scripted agents make no LLM calls.
 

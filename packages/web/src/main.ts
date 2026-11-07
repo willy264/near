@@ -314,3 +314,31 @@ try {
   el("source").textContent =
     "Saved evidence could not be loaded. Try loading live state.";
 }
+
+const quotePanel = document.createElement("section");
+quotePanel.className = "how";
+quotePanel.id = "intents-quote";
+const quoteHeading = document.createElement("h2");
+quoteHeading.textContent = "Cross-chain preview · quote only, not executed";
+const quoteText = document.createElement("p");
+quoteText.textContent = "Loading recorded dry quote…";
+quotePanel.append(quoteHeading, quoteText);
+document.querySelector("main")!.append(quotePanel);
+try {
+  const response = await fetch(
+    `${import.meta.env.BASE_URL}evidence/intents-quote.json`,
+  );
+  if (!response.ok) throw Error("QUOTE_UNAVAILABLE");
+  const data = await response.json();
+  if (data.request?.dry !== true || data.response?.quote?.depositAddress)
+    throw Error("NOT_DRY_QUOTE");
+  quoteText.textContent = `Recorded ${data.recordedAt}: an illustrative ${format(data.request.amount)} USDC on Base → ${format(data.response.quote.amountOut)} USDC on Ethereum quote from NEAR Intents 1Click. The input matches the numerical size of one creditor's simulated residue. tUSD has no value and cannot be swapped. Documentation example addresses only. No funds, wallet, signature or transaction. This historical quote is not a current price.`;
+  const link = document.createElement("a");
+  link.href =
+    "https://github.com/willy264/near/blob/main/docs/evidence/intents-quote.md";
+  link.textContent = "Read the saved dry-quote evidence →";
+  quotePanel.append(link);
+} catch {
+  quoteText.textContent =
+    "Recorded dry quote unavailable. No quote requested and no transaction sent.";
+}

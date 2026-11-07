@@ -1,0 +1,94 @@
+Before: clean; no .env/.keys
+[1/5] quick: install dependencies (no Rust required)
+v26.13.0
+12.16.1
+Scope: all 6 workspace projects
+✓ Lockfile passes supply-chain policies (verified 1d ago)
+Lockfile is up to date, resolution step is skipped
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /home/uiriamuzu/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 116, reused 116, downloaded 0, added 101
+Progress: resolved 200, reused 200, downloaded 0, added 184
+Packages: +201
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolv$ vitest run src
+$ vitest run src
+$ vitest run src
+$ vitest run src
+$ tsc --noEmit -p ../../tsconfig.json
+$ tsc --noEmit
+$ tsx packages/sim/src/cli.ts run --scenario agents --seed 42 --mode local
+test 1.65.0
++ @types/d3 7.4.3
++ @types/node 26.6.6
++ fast-check 4.10.2
++ tsx 4.23.15
++ typescript 7.0.2
++ vite 8.3.6
++ vitest 5.1.0
+
+Done in 8.4s using pnpm v12.16.1
+[2/5] quick: TypeScript tests
+Scope: 5 of 6 workspace projects
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-clean-quick-b25d354/packages/client[39m
+
+ [32m✓[39m src/journal.test.ts [2m([22m[2m2 tests[22m[2m)[22m[33m 582[2mms[22m[39m
+   [33m[2m✓[22m[39m recovers a lost response by hash and never signs a replacement transaction[33m 520[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m   Start at [22m 16:22:32
+[2m   Duration [22m 1.64s[2m (tests 49%, transform 27%, import 22%, worker 1%)[22m
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-clean-quick-b25d354/packages/shared[39m
+
+ [32m✓[39m src/model.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 24[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 16:22:36
+[2m   Duration [22m 684ms[2m (transform 64%, import 16%, worker 10%, tests 10%)[22m
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-clean-quick-b25d354/packages/sim[39m
+
+ [32m✓[39m src/local.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 1914[2mms[22m[39m
+   [33m[2m✓[22m[39m seeded scenarios are reproducible, conserve amounts and finish locally under five seconds[33m 1900[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 16:22:39
+[2m   Duration [22m 3.48s[2m (tests 62%, import 22%, transform 16%)[22m
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-clean-quick-b25d354/packages/solver[39m
+
+[90mstdout[2m | src/solver.test.ts[2m > [22m[2m50 nodes / 500 edges plans in under two seconds
+[22m[39msolver_50_nodes_500_edges_ms=681.604
+
+ [32m✓[39m src/solver.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 5591[2mms[22m[39m
+   [33m[2m✓[22m[39m random graphs preserve nets and leave no supported cycle[33m 1368[2mms[22m[39m
+   [33m[2m✓[22m[39m 50 nodes / 500 edges plans in under two seconds[33m 3913[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 16:22:44
+[2m   Duration [22m 6.44s[2m (tests 93%, transform 5%, import 2%)[22m
+
+[3/5] quick: typecheck
+[4/5] quick: verify 12 seeded fixtures
+12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.
+[5/5] quick: simulated agents, seed 42
+SIMULATED: cleared 295 of 735 tUSD (test token) (40.13%) with 0 transfers; 81 payments settled the rest; 11 creditor withdrawals.
+Evidence: .runs/evidence/run-agents-42-local-2026-11-07T15-23-05-065Z.md
+Elapsed: 49 seconds
+After: clean
+!! .runs/
+!! node_modules/
+!! packages/client/node_modules/
+!! packages/shared/node_modules/
+!! packages/sim/node_modules/
+!! packages/solver/node_modules/

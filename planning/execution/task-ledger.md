@@ -1,4 +1,4 @@
-# Task ledger — 2026-11-06
+# Task ledger â€” 2026-11-06
 
 - Contract/tUSD first unit milestone: GREEN, 47 ledger +2 token tests. Further hardening and integration pending.
 - Nov7 integration/deploy/key proof/gas: IN PROGRESS.
@@ -7,7 +7,7 @@
 - Nov10 hosted viewer: pending.
 - Nov11 judge/CI/secrets/fresh clone: pending.
 - Nov12 fictional firms/README: pending.
-- Nov13 stretch after D1–D12 only: pending.
+- Nov13 stretch after D1â€“D12 only: pending.
 - Nov14 human publication/submission: pending.
 
 Last green: cargo test --offline --manifest-path contracts/Cargo.toml --workspace (RUSTUP_TOOLCHAIN=stable, rustc1.99.1), 49 tests passed.
@@ -27,3 +27,5 @@ Testnet gate GREEN: both deployments, key proof and gas measurement complete. Co
 Model/solver/local gate GREEN: 25 x 40 sandbox parity operations matched; 9 TypeScript tests passed including random graph properties and deterministic local scenarios. Kill test: agents 40.13%, 67.31%, 62.08% for seeds 42,7,1234; supply-chain 0% for all. All 12 scenario/seed local runs saved. Next: testnet simulation; viewer and judge tooling continue while human reviews kill results. Last green: pnpm exec vitest run --reporter verbose, 9 passed.
 
 Viewer build/browser gate (local) GREEN: Vite production build passed; browser checks at 360px and 1280px passed for graph/replay/control labels/RPC fallback, screenshots saved. Workspace tests: client 1, shared 4, sim 1, solver 4 passed; web typecheck passed. Biome passed. Hosting remains pending. Testnet setup now complete for 12 agents; trading underway. judge.sh/CI drafted, fresh-clone verification next.
+
+2026-11-07: D7 GREEN, complete agents testnet run/evidence pushed dad33ad. Full clean Linux judge completed; CI 811d7d5 green. Current gate: quick judge and portability fixes under verification. Hosting authorized but no local Vercel/Cloudflare credentials found. Audit classified as native test-only, absent from both WASM dependency trees. Next: fresh reviews, firms testnet, hosted viewer.

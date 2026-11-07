@@ -8,10 +8,19 @@ const files = readdirSync("docs/evidence")
   .filter((f) => /^run-.*\.json$/.test(f))
   .sort();
 const runs: Record<string, { file: string; run: RunEvidence }> = {};
+const allRuns: Record<string, { file: string; run: RunEvidence }> = {};
 for (const file of files) {
   const run = runEvidenceSchema.parse(
     JSON.parse(readFileSync(`docs/evidence/${file}`, "utf8")),
   );
+  const key = `${run.parameters.scenario}-${run.parameters.seed}`;
+  const previous = allRuns[key];
+  if (
+    !previous ||
+    run.parameters.mode === "testnet" ||
+    previous.run.parameters.mode === "local"
+  )
+    allRuns[key] = { file, run };
   if (run.parameters.seed !== 42) continue;
   const old = runs[run.parameters.scenario] as { run: typeof run } | undefined;
   if (
@@ -36,7 +45,8 @@ console.log(
 const table = [
   "| Scenario | Mode | Seed | Accepted test tUSD | Cleared | Payments / obligations | Withdrawals | Evidence |",
   "|---|---|---:|---:|---:|---:|---:|---|",
-  ...Object.entries(runs).map(([scenario, { file, run }]) => {
+  ...Object.values(allRuns).map(({ file, run }) => {
+    const scenario = run.parameters.scenario;
     const s = run.stages.at(-1)!.fixture.stats;
     return `| ${scenario} | ${run.parameters.mode} | ${run.parameters.seed} | ${displayAmount(s.accepted_total)} | ${Number(s.cleared_ratio_bps) / 100}% | ${run.payments} / ${run.acceptedCount} | ${run.withdrawals} | [saved run](docs/evidence/${file.replace(/\.json$/, ".md")}) |`;
   }),

@@ -1,4 +1,4 @@
-# Handoff — 2026-11-06
+# Handoff â€” 2026-11-06
 
 Current state: ledger and tUSD implemented, 47 ledger + 2 token unit tests passed; one comprehensive sandbox integration test passed. Both contracts deployed on testnet; deployments/testnet.json records hashes. Restricted testnet keys issued/accepted and five forbidden actions failed. Operator payment/withdraw succeeded (docs/evidence/keys.md).
 
@@ -24,3 +24,5 @@ Latest gate: gas measurement COMPLETE. Combined 5 cycles x length 12 used 112.43
 Latest gate: model, solver and local simulation GREEN. Sandbox parity 25x40 matched (543.90s); TS 9 passed, 50-node/500-edge solver 869.585ms. Kill report delivered; all agents seeds exceed proceed threshold, all supply-chain seeds are zero. Full evidence kill-test.md/parity.md/typescript-tests.log. Viewer built successfully; browser installation/checks in progress. Next: complete viewer checks/judge tooling and implement resumable testnet simulation using seeded trades and scoped keys.
 
 Latest: testnet run agents/42/10 is active, all 12 accounts set up. Resume same pnpm sim command if interrupted; .sim-state journal prevents duplicate signed actions. Local viewer/browser checks passed (browser.md, viewer-360.png, viewer-1280.png); workspace 10 tests and web typecheck passed, Biome clean. Next independent action: fresh clone under .tools and run judge.sh in WSL. Node26 Linux/pnpm setup is in progress; cargo-near Linux binary verified. No hosted URL yet.
+
+2026-11-07 current: agents testnet complete (735 accepted,295 cleared,440 settled,81 payments,11 withdrawals,zero outstanding), evidence pushed dad33ad. Last green full fresh judge log: fresh-clone-2026-11-06.log. Quick judge running with Node-only PATH. Next exact action: commit portability fixes after quick check, run independent fresh reviews, authenticate approved free hosting, run firms seed42. Hosting credential access is a blocker; no secrets found in standard Vercel/Cloudflare locations.

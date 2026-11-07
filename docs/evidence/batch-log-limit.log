@@ -1,0 +1,9 @@
+   Compiling untangle v0.1.0 (C:\Users\HP\Documents\people\hackathons\near\contracts\untangle)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6m 19s
+     Running unittests src\lib.rs (contracts\target\debug\deps\untangle-7d4a200f0cfcb5e4.exe)
+
+running 1 test
+test tests::maximum_issue_batch_fits_runtime_log_limit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 47 filtered out; finished in 0.37s
+

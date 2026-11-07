@@ -12,3 +12,5 @@ dist/
 !docs/evidence/**/*.log
 untangle-planning.zip
 .tools/
+.vercel/
+.wrangler/

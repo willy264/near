@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-07T14:08:58.153Z",
+  "source": "LIVE testnet · finalized block 8RRfB6ABMyHZwnNrHCfaVHfgWEdWZiyaxfb7d3fyyApq",
+  "numbers": "Accepted\n735.000502\nCleared without transfers\n295.000402\n40.13% of accepted\nSettled by payment\n440.0001\nOutstanding\n0",
+  "dryRun": "DRY-RUN ONLY: 0 tUSD could clear in 0 cycles. No transaction sent.",
+  "rpcMethods": [
+    "query",
+    "query",
+    "query",
+    "query",
+    "query",
+    "query"
+  ]
+}

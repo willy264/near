@@ -55,6 +55,7 @@ export const runEvidenceSchema = z.object({
   simulated: z.literal(true),
   tokenLabel: z.literal("tUSD (test token)"),
   parameters: scenarioConfigSchema,
+  contractBaseline: tokenStatsSchema.optional(),
   stages: z.array(
     z.object({
       name: z.enum(["trading", "clearing", "settlement"]),
@@ -74,6 +75,7 @@ export const runEvidenceSchema = z.object({
       signer: z.string(),
       keyRole: z.enum(["agent", "operator", "solver"]),
       gas: decimal,
+      publicKey: z.string().optional(),
     }),
   ),
 });

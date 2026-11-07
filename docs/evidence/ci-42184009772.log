@@ -1,0 +1,1650 @@
+judge	UNKNOWN STEP	﻿2026-11-06T07:55:03.7039344Z Current runner version: '2.338.2'
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7063877Z ##[group]Runner Image Provisioner
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7064668Z Hosted Compute Agent
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7065334Z Version: 20261028.624
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7065889Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7066550Z Build Date: 2026-10-28T21:51:42Z
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7067175Z Worker ID: {28bfb33c-03a5-4c7c-912d-6e8822005481}
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7067809Z Region: westus3
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7068343Z Cloud: Azure
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7068825Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7070117Z ##[group]Operating System
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7070731Z Ubuntu
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7071490Z 26.04.1
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7072437Z LTS
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7072913Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7073396Z ##[group]Runner Image
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7073979Z Image: ubuntu-26.04
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7074481Z Version: 20261101.186.1
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7075652Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7076997Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7077889Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7078926Z ##[group]GITHUB_TOKEN Permissions
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7080959Z Contents: read
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7081748Z Metadata: read
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7082311Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7084759Z Secret source: Actions
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7085700Z Cache mode: write
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7086507Z Prepare workflow directory
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7463371Z Prepare all required actions
+judge	UNKNOWN STEP	2026-11-06T07:55:03.7512438Z Getting action download info
+judge	UNKNOWN STEP	2026-11-06T07:55:04.0637731Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+judge	UNKNOWN STEP	2026-11-06T07:55:04.1732888Z Download action repository 'dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec' (SHA:b725eda525362e7cf34af9a7243cac1e3f01a7ec)
+judge	UNKNOWN STEP	2026-11-06T07:55:04.4017778Z Download action repository 'actions/setup-node@v7.1.0' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+judge	UNKNOWN STEP	2026-11-06T07:55:04.4496260Z Download action repository 'pnpm/action-setup@v6.1.1' (SHA:73e46992e05b19abd31f2f3c20e0e7370d762115)
+judge	UNKNOWN STEP	2026-11-06T07:55:04.9324200Z Download action repository 'gitleaks/gitleaks-action@v3.0.0' (SHA:e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e)
+judge	UNKNOWN STEP	2026-11-06T07:55:05.6520921Z Complete job name: judge
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7614435Z ##[group]Run actions/checkout@v7.0.1
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7615788Z with:
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7616556Z   fetch-depth: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7617377Z   repository: willy264/near
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7625765Z   token: ***
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7626535Z   ssh-strict: true
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7627325Z   ssh-user: git
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7628131Z   persist-credentials: true
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7629020Z   clean: true
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7629837Z   sparse-checkout-cone-mode: true
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7630789Z   fetch-tags: false
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7632297Z   show-progress: true
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7633136Z   lfs: false
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7633947Z   submodules: false
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7635055Z   set-safe-directory: true
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7636539Z   allow-unsafe-pr-checkout: false
+judge	UNKNOWN STEP	2026-11-06T07:55:05.7638637Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0169180Z Syncing repository: willy264/near
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0172092Z ##[group]Getting Git version info
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0173417Z Working directory is '/home/runner/work/near/near'
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0175193Z [command]/usr/bin/git version
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0176090Z git version 2.56.0
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0189189Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0200557Z Temporarily overriding HOME='/home/runner/work/_temp/8e6adf8d-5cc3-4da9-9c89-dce6be4aa6eb' before making global git config changes
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0204401Z Adding repository directory to the temporary git global config as a safe directory
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0207471Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/near/near
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0271997Z Deleting the contents of '/home/runner/work/near/near'
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0275428Z ##[group]Determining repository object format
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0277327Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0278821Z ##[group]Initializing the repository
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0283357Z [command]/usr/bin/git init /home/runner/work/near/near
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0377499Z hint: Using 'master' as the name for the initial branch. This default branch name
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0380213Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0382417Z hint: to use in all of your new repositories, which will suppress this warning,
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0383729Z hint: call:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0384503Z hint:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0385397Z hint: 	git config --global init.defaultBranch <name>
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0386491Z hint:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0387506Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0389591Z hint: 'development'. The just-created branch can be renamed via this command:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0390917Z hint:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0392169Z hint: 	git branch -m <name>
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0393224Z hint:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0394955Z hint: Disable this message with "git config set advice.defaultBranchName false"
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0396632Z Initialized empty Git repository in /home/runner/work/near/near/.git/
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0403247Z [command]/usr/bin/git remote add origin https://github.com/willy264/near
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0451490Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0453852Z ##[group]Disabling automatic garbage collection
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0457246Z [command]/usr/bin/git config --local gc.auto 0
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0494462Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0496016Z ##[group]Setting up auth
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0496955Z Removing SSH command configuration
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0500678Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0534012Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0927170Z Removing HTTP extra header
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0932374Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+judge	UNKNOWN STEP	2026-11-06T07:55:06.0965992Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1214912Z Removing includeIf entries pointing to credentials config files
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1219828Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1252314Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1477476Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1515431Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/near/near/.git.path /home/runner/work/_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1544344Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/near/near/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1575046Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1601753Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1627938Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1629262Z ##[group]Fetching the repository
+judge	UNKNOWN STEP	2026-11-06T07:55:06.1633896Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9396692Z From https://github.com/willy264/near
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9397119Z  * [new branch]      main       -> origin/main
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9404781Z [command]/usr/bin/git branch --list --remote origin/main
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9432566Z   origin/main
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9438567Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9464836Z 811d7d58560a137bdede355d79240d190b0d83a6
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9468116Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9468778Z ##[group]Determining the checkout info
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9469510Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9473099Z [command]/usr/bin/git sparse-checkout disable
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9522765Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9550997Z ##[group]Checking out the ref
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9556278Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9805869Z Switched to a new branch 'main'
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9809391Z branch 'main' set up to track 'origin/main'.
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9815983Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9857837Z [command]/usr/bin/git log -1 --format=%H
+judge	UNKNOWN STEP	2026-11-06T07:55:06.9879976Z 811d7d58560a137bdede355d79240d190b0d83a6
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0225629Z ##[group]Run dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0226054Z with:
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0226260Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0226486Z   targets: wasm32-unknown-unknown
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0226730Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0302661Z ##[start-action display=Parse toolchain version;id=__dtolnay_rust-toolchain.parse]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0360743Z ##[group]Run if [[ -z $toolchain ]]; then
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0361479Z ^[[36;1mif [[ -z $toolchain ]]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0362235Z ^[[36;1m  # GitHub does not enforce `required: true` inputs itself. https://github.com/actions/runner/issues/1070^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0362924Z ^[[36;1m  echo "'toolchain' is a required input" >&2^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0363280Z ^[[36;1m  exit 1^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0363691Z ^[[36;1melif [[ $toolchain =~ ^stable' '[0-9]+' '(year|month|week|day)s?' 'ago$ ]]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0364153Z ^[[36;1m  if [[ Linux == macOS ]]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0364726Z ^[[36;1m    echo "toolchain=1.$((($(date -v-$(sed 's/stable \([0-9]*\) \(.\).*/\1\2/' <<< $toolchain) +%s)/60/60/24-16569)/7/6))" >> $GITHUB_OUTPUT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0365227Z ^[[36;1m  else^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0365624Z ^[[36;1m    echo "toolchain=1.$((($(date --date "${toolchain#stable }" +%s)/60/60/24-16569)/7/6))" >> $GITHUB_OUTPUT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0366065Z ^[[36;1m  fi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0366364Z ^[[36;1melif [[ $toolchain =~ ^stable' 'minus' '[0-9]+' 'releases?$ ]]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0366881Z ^[[36;1m  echo "toolchain=1.$((($(date +%s)/60/60/24-16569)/7/6-${toolchain//[^0-9]/}))" >> $GITHUB_OUTPUT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0367343Z ^[[36;1melif [[ $toolchain =~ ^1\.[0-9]+$ ]]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0367849Z ^[[36;1m  echo "toolchain=1.$((i=${toolchain#1.}, c=($(date +%s)/60/60/24-16569)/7/6, i+9*i*(10*i<=c)+90*i*(100*i<=c)))" >> $GITHUB_OUTPUT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0368322Z ^[[36;1melse^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0368531Z ^[[36;1m  delimiter=EOF^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0368854Z ^[[36;1m  while [[ $toolchain == *$delimiter* ]]; do delimiter+=_; done^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0369360Z ^[[36;1m  printf 'toolchain<<%s\n%s\n%s\n' "$delimiter" "$toolchain" "$delimiter" >> $GITHUB_OUTPUT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0369761Z ^[[36;1mfi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0401988Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0402357Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0402572Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0402792Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0514107Z ##[end-action id=__dtolnay_rust-toolchain.parse;outcome=success;conclusion=success;duration_ms=21]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0519054Z ##[start-action display=Set $CARGO_HOME;id=__dtolnay_rust-toolchain.__run]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0552966Z ##[group]Run echo CARGO_HOME=${CARGO_HOME:-"$HOME/.cargo"} >> $GITHUB_ENV
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0553461Z ^[[36;1mecho CARGO_HOME=${CARGO_HOME:-"$HOME/.cargo"} >> $GITHUB_ENV^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0582112Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0582537Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0640870Z ##[end-action id=__dtolnay_rust-toolchain.__run;outcome=success;conclusion=success;duration_ms=12]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0643716Z ##[start-action display=Install rustup if needed;id=__dtolnay_rust-toolchain.__run_2]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0670016Z ##[group]Run if ! command -v rustup &>/dev/null; then
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0670389Z ^[[36;1mif ! command -v rustup &>/dev/null; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0671125Z ^[[36;1m  curl --proto '=https' --tlsv1.2 --retry 10 --retry-connrefused --location --silent --show-error --fail https://sh.rustup.rs | sh -s -- --default-toolchain none -y^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0672053Z ^[[36;1m  echo "$CARGO_HOME/bin" >> $GITHUB_PATH^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0672335Z ^[[36;1mfi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0699760Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0700109Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0700330Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0700581Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0754742Z ##[end-action id=__dtolnay_rust-toolchain.__run_2;outcome=success;conclusion=success;duration_ms=11]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0757180Z ##[start-action display=Install rustup if needed on windows;id=__dtolnay_rust-toolchain.__run_3]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0765084Z ##[end-action id=__dtolnay_rust-toolchain.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0782419Z ##[start-action display=rustup toolchain install 1.99.1;id=__dtolnay_rust-toolchain.__run_4]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0801713Z ##[group]Run set -f  # split targets and components on commas and whitespace, without glob expansion
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0802382Z ^[[36;1mset -f  # split targets and components on commas and whitespace, without glob expansion^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0802821Z ^[[36;1mflags=()^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0803090Z ^[[36;1mfor t in ${targets//,/ }; do flags+=(--target "$t"); done^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0803481Z ^[[36;1mfor c in ${components//,/ }; do flags+=(--component "$c"); done^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0803970Z ^[[36;1mif [[ $toolchain == nightly && -n $components ]]; then flags+=(--allow-downgrade); fi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0804382Z ^[[36;1mlog=$(mktemp)^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0804619Z ^[[36;1mtrap 'rm -f "$log"' EXIT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0804874Z ^[[36;1mfor attempt in 1 2 3 4 5; do^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0805500Z ^[[36;1m  if rustup toolchain install "$toolchain" "${flags[@]}" --profile minimal --no-self-update --force-non-host 2>&1 | tee "$log"; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0806039Z ^[[36;1m    break^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0806239Z ^[[36;1m  else^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0806441Z ^[[36;1m    status=$?^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0806660Z ^[[36;1m  fi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0806954Z ^[[36;1m  if [[ $attempt == 5 ]] || ! grep -Fq 'checksum failed for ' "$log" \^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0807493Z ^[[36;1m      || ! grep -Fq 'this is likely due to an ongoing update of the official release server' "$log"; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0807969Z ^[[36;1m    exit "$status"^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0808188Z ^[[36;1m  fi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0808536Z ^[[36;1m  echo "Retrying rustup toolchain install in 30 seconds (retry $attempt of 4)" >&2^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0808937Z ^[[36;1m  sleep 30^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0809137Z ^[[36;1mdone^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0837374Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0837712Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0837930Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0838206Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0838440Z   targets: wasm32-unknown-unknown
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0838680Z   components: 
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0838889Z   RUSTUP_PERMIT_COPY_RENAME: 1
+judge	UNKNOWN STEP	2026-11-06T07:55:07.0839119Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:07.1297589Z info: syncing channel updates for 1.99.1-x86_64-unknown-linux-gnu
+judge	UNKNOWN STEP	2026-11-06T07:55:07.2529885Z info: latest update on 2026-10-15 for version 1.99.1 (58cf8f9c3 2026-10-13)
+judge	UNKNOWN STEP	2026-11-06T07:55:07.2605388Z info: downloading 4 components
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5459013Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5516822Z   1.99.1-x86_64-unknown-linux-gnu installed - rustc 1.99.1 (58cf8f9c3 2026-10-13)
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5517576Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5591023Z ##[end-action id=__dtolnay_rust-toolchain.__run_4;outcome=success;conclusion=success;duration_ms=10480]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5597973Z ##[start-action display=rustup default 1.99.1;id=__dtolnay_rust-toolchain.__run_5]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5614442Z ##[group]Run rustup default "$toolchain" --force-non-host
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5614840Z ^[[36;1mrustup default "$toolchain" --force-non-host^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5642991Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5643327Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5643539Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5643803Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5644004Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5727851Z info: using existing install for 1.99.1-x86_64-unknown-linux-gnu
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5733654Z info: default toolchain set to 1.99.1-x86_64-unknown-linux-gnu
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5734130Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5789232Z   1.99.1-x86_64-unknown-linux-gnu unchanged - rustc 1.99.1 (58cf8f9c3 2026-10-13)
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5790602Z info: note that the toolchain '1.99.1-x86_64-unknown-linux-gnu' is currently in use (overridden by '/home/runner/work/near/near/rust-toolchain.toml')
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5791703Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5885132Z ##[end-action id=__dtolnay_rust-toolchain.__run_5;outcome=success;conclusion=success;duration_ms=28]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5888782Z ##[start-action display=Create cachekey;id=__dtolnay_rust-toolchain.rustc-version]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5909468Z ##[group]Run DATE=$(rustc +"$toolchain" --version --verbose | sed -ne 's/^commit-date: \(20[0-9][0-9]\)-\([01][0-9]\)-\([0-3][0-9]\)$/\1\2\3/p')
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5910283Z ^[[36;1mDATE=$(rustc +"$toolchain" --version --verbose | sed -ne 's/^commit-date: \(20[0-9][0-9]\)-\([01][0-9]\)-\([0-3][0-9]\)$/\1\2\3/p')^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5910915Z ^[[36;1mHASH=$(rustc +"$toolchain" --version --verbose | sed -ne 's/^commit-hash: //p')^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5911623Z ^[[36;1mecho "cachekey=$(echo $DATE$HASH | head -c12)" >> $GITHUB_OUTPUT^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5939134Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5939475Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5939678Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5939925Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.5940123Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6211067Z ##[end-action id=__dtolnay_rust-toolchain.rustc-version;outcome=success;conclusion=success;duration_ms=32]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6213729Z ##[start-action display=Disable incremental compilation;id=__dtolnay_rust-toolchain.__run_6]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6229612Z ##[group]Run if [ -z "${CARGO_INCREMENTAL+set}" ]; then
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6230008Z ^[[36;1mif [ -z "${CARGO_INCREMENTAL+set}" ]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6230327Z ^[[36;1m  echo CARGO_INCREMENTAL=0 >> $GITHUB_ENV^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6230652Z ^[[36;1mfi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6258450Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6258802Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6259031Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6259274Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6307255Z ##[end-action id=__dtolnay_rust-toolchain.__run_6;outcome=success;conclusion=success;duration_ms=9]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6309324Z ##[start-action display=Enable colors in Cargo output;id=__dtolnay_rust-toolchain.__run_7]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6323824Z ##[group]Run if [ -z "${CARGO_TERM_COLOR+set}" ]; then
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6324189Z ^[[36;1mif [ -z "${CARGO_TERM_COLOR+set}" ]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6324516Z ^[[36;1m  echo CARGO_TERM_COLOR=always >> $GITHUB_ENV^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6324799Z ^[[36;1mfi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6347447Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6347917Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6348124Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6348372Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6348580Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6392654Z ##[end-action id=__dtolnay_rust-toolchain.__run_7;outcome=success;conclusion=success;duration_ms=8]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6395670Z ##[start-action display=Enable Cargo sparse registry;id=__dtolnay_rust-toolchain.__run_8]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6410995Z ##[group]Run # implemented in 1.66, stabilized in 1.68, made default in 1.70
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6411721Z ^[[36;1m# implemented in 1.66, stabilized in 1.68, made default in 1.70^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6412376Z ^[[36;1mif [ -z "${CARGO_REGISTRIES_CRATES_IO_PROTOCOL+set}" -o -f "/home/runner/work/_temp"/.implicit_cargo_registries_crates_io_protocol ]; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6413067Z ^[[36;1m  if rustc +"$toolchain" --version --verbose | grep -q '^release: 1\.6[89]\.'; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6413699Z ^[[36;1m    touch "/home/runner/work/_temp"/.implicit_cargo_registries_crates_io_protocol || true^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6414209Z ^[[36;1m    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=sparse >> $GITHUB_ENV^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6414684Z ^[[36;1m  elif rustc +"$toolchain" --version --verbose | grep -q '^release: 1\.6[67]\.'; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6415352Z ^[[36;1m    touch "/home/runner/work/_temp"/.implicit_cargo_registries_crates_io_protocol || true^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6415840Z ^[[36;1m    echo CARGO_REGISTRIES_CRATES_IO_PROTOCOL=git >> $GITHUB_ENV^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6416171Z ^[[36;1m  fi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6416358Z ^[[36;1mfi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6438691Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6439015Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6439216Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6439476Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6439695Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6439916Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6440124Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6674129Z ##[end-action id=__dtolnay_rust-toolchain.__run_8;outcome=success;conclusion=success;duration_ms=27]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6678012Z ##[start-action display=Work around spurious network errors in curl 8.0;id=__dtolnay_rust-toolchain.__run_9]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6694344Z ##[group]Run # https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6695169Z ^[[36;1m# https://rust-lang.zulipchat.com/#narrow/stream/246057-t-cargo/topic/timeout.20investigation^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6695764Z ^[[36;1mif rustc +"$toolchain" --version --verbose | grep -q '^release: 1\.7[01]\.'; then^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6696220Z ^[[36;1m  echo CARGO_HTTP_MULTIPLEXING=false >> $GITHUB_ENV^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6696522Z ^[[36;1mfi^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6724260Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6724600Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6724814Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6725080Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6725321Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6725549Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6725745Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6872479Z ##[end-action id=__dtolnay_rust-toolchain.__run_9;outcome=success;conclusion=success;duration_ms=19]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6877103Z ##[start-action display=rustc +1.99.1 --version --verbose;id=__dtolnay_rust-toolchain.__run_10]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6892589Z ##[group]Run rustc +"$toolchain" --version --verbose
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6892959Z ^[[36;1mrustc +"$toolchain" --version --verbose^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6920699Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6921038Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6921448Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6921700Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6921942Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6922166Z   toolchain: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.6922363Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7056593Z rustc 1.99.1 (58cf8f9c3 2026-10-13)
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7057521Z binary: rustc
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7057966Z commit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7058286Z commit-date: 2026-10-13
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7058529Z host: x86_64-unknown-linux-gnu
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7058770Z release: 1.99.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7058976Z LLVM version: 23.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7071499Z ##[end-action id=__dtolnay_rust-toolchain.__run_10;outcome=success;conclusion=success;duration_ms=19]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7171587Z ##[group]Run actions/setup-node@v7.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7171887Z with:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7172089Z   node-version-file: .nvmrc
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7172328Z   check-latest: false
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7174894Z   token: ***
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7175106Z   package-manager-cache: true
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7175349Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7175554Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7175800Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7176029Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:17.7176267Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:17.8357419Z Node version file is not JSON file
+judge	UNKNOWN STEP	2026-11-06T07:55:17.8363034Z Node version file is not TOML file
+judge	UNKNOWN STEP	2026-11-06T07:55:17.8363590Z Resolved .nvmrc as 26.13.0
+judge	UNKNOWN STEP	2026-11-06T07:55:17.8380233Z Attempting to download 26.13.0...
+judge	UNKNOWN STEP	2026-11-06T07:55:18.8849624Z Acquiring 26.13.0 - x64 from https://github.com/actions/node-versions/releases/download/26.13.0-41378513395/node-26.13.0-linux-x64.tar.gz
+judge	UNKNOWN STEP	2026-11-06T07:55:19.5494679Z Extracting ...
+judge	UNKNOWN STEP	2026-11-06T07:55:19.5590737Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d09cfc66-e0cf-4e69-89b7-d8191c9b7c7c -f /home/runner/work/_temp/1864012b-cd34-41a5-8df9-135a97ed0fd7
+judge	UNKNOWN STEP	2026-11-06T07:55:20.3592420Z Adding to the cache ...
+judge	UNKNOWN STEP	2026-11-06T07:55:21.6835370Z ##[group]Environment details
+judge	UNKNOWN STEP	2026-11-06T07:55:21.8984137Z node: v26.13.0
+judge	UNKNOWN STEP	2026-11-06T07:55:21.8984533Z npm: 11.20.0
+judge	UNKNOWN STEP	2026-11-06T07:55:21.8984823Z yarn: 1.22.22
+judge	UNKNOWN STEP	2026-11-06T07:55:21.8985501Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9154046Z ##[group]Run pnpm/action-setup@v6.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9154316Z with:
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9154505Z   version: 12.16.1
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9154699Z   dest: ~/setup-pnpm
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9154897Z   run_install: null
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9155091Z   cache: false
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9155301Z   cache_dependency_path: pnpm-lock.yaml
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9155568Z   package_json_file: package.json
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9155812Z   standalone: false
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9156001Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9156188Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9156422Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9156629Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:21.9156844Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:22.0647269Z ##[group]Running self-installer...
+judge	UNKNOWN STEP	2026-11-06T07:55:23.2333839Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:23.2340436Z added 2 packages, and audited 3 packages in 1s
+judge	UNKNOWN STEP	2026-11-06T07:55:23.2341435Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:23.2341672Z found 0 vulnerabilities
+judge	UNKNOWN STEP	2026-11-06T07:55:23.2706669Z Checking for updates...
+judge	UNKNOWN STEP	2026-11-06T07:55:23.5540761Z Switching pnpm from v12.17.0 to v12.16.1...
+judge	UNKNOWN STEP	2026-11-06T07:55:24.4642978Z Downloading @pnpm/exe.linux-x64@12.16.1: 0.00 B/25.62 MB
+judge	UNKNOWN STEP	2026-11-06T07:55:24.5317387Z Packages are copied from the content-addressable store to the virtual store.
+judge	UNKNOWN STEP	2026-11-06T07:55:24.5318301Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+judge	UNKNOWN STEP	2026-11-06T07:55:24.5319124Z   Virtual store is at:             node_modules/.bin/global/v11/a20-18e56596ab2e5f71-0/node_modules/.pnpm
+judge	UNKNOWN STEP	2026-11-06T07:55:24.9863533Z .../global/v11/a20-18e56596ab2e5f71-0    | Progress: resolved 2, reused 0, downloaded 2, added 2, done
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0059244Z Successfully updated pnpm to v12.16.1
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0135548Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0136066Z Installation Completed!
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0233071Z ##[group]Run sudo apt-get update && sudo apt-get install -y nasm clang pkg-config libssl-dev
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0233661Z ^[[36;1msudo apt-get update && sudo apt-get install -y nasm clang pkg-config libssl-dev^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0263494Z shell: /usr/bin/bash -e {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0263754Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0263960Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0264209Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0264437Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0264716Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0265008Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.0939160Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1199274Z Get:6 https://packages.microsoft.com/ubuntu/26.04/prod resolute InRelease [3964 B]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1338496Z Hit:2 http://azure.archive.ubuntu.com/ubuntu resolute InRelease
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1365335Z Get:3 http://azure.archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1395054Z Get:4 http://azure.archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1423019Z Get:5 http://azure.archive.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1510749Z Get:7 https://packages.microsoft.com/ubuntu/26.04/prod resolute/main amd64 Packages [149 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1693251Z Get:8 https://packages.microsoft.com/ubuntu/26.04/prod resolute/main arm64 Packages [135 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1833903Z Get:9 http://azure.archive.ubuntu.com/ubuntu resolute-updates/main amd64v3 Packages [845 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1857272Z Get:10 http://azure.archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [192 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1913706Z Get:11 http://azure.archive.ubuntu.com/ubuntu resolute-updates/universe amd64v3 Packages [377 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1927464Z Get:12 http://azure.archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [118 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1994808Z Get:13 http://azure.archive.ubuntu.com/ubuntu resolute-updates/restricted amd64v3 Packages [573 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.1998771Z Get:14 http://azure.archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [119 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.2145276Z Get:15 http://azure.archive.ubuntu.com/ubuntu resolute-security/main amd64v3 Packages [657 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.2178917Z Get:16 http://azure.archive.ubuntu.com/ubuntu resolute-security/main Translation-en [148 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.2201071Z Get:17 http://azure.archive.ubuntu.com/ubuntu resolute-security/universe amd64v3 Packages [208 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.2215136Z Get:18 http://azure.archive.ubuntu.com/ubuntu resolute-security/universe Translation-en [68.7 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.2655012Z Get:19 http://azure.archive.ubuntu.com/ubuntu resolute-security/restricted amd64v3 Packages [529 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:25.2674236Z Get:20 http://azure.archive.ubuntu.com/ubuntu resolute-security/restricted Translation-en [108 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:27.2284253Z Fetched 4642 kB in 0s (11.8 MB/s)
+judge	UNKNOWN STEP	2026-11-06T07:55:27.9023338Z Reading package lists...
+judge	UNKNOWN STEP	2026-11-06T07:55:27.9333595Z Reading package lists...
+judge	UNKNOWN STEP	2026-11-06T07:55:28.0706749Z Building dependency tree...
+judge	UNKNOWN STEP	2026-11-06T07:55:28.0712754Z Reading state information...
+judge	UNKNOWN STEP	2026-11-06T07:55:28.1031838Z pkg-config is already the newest version (2.5.1-4).
+judge	UNKNOWN STEP	2026-11-06T07:55:28.1032590Z libssl-dev is already the newest version (3.5.5-1ubuntu3.7).
+judge	UNKNOWN STEP	2026-11-06T07:55:28.1508480Z Solving dependencies...
+judge	UNKNOWN STEP	2026-11-06T07:55:28.2542458Z The following NEW packages will be installed:
+judge	UNKNOWN STEP	2026-11-06T07:55:28.2549740Z   clang nasm
+judge	UNKNOWN STEP	2026-11-06T07:55:28.2727479Z 0 upgraded, 2 newly installed, 0 to remove and 31 not upgraded.
+judge	UNKNOWN STEP	2026-11-06T07:55:28.3365745Z Need to get 534 kB of archives.
+judge	UNKNOWN STEP	2026-11-06T07:55:28.3366561Z After this operation, 3852 kB of additional disk space will be used.
+judge	UNKNOWN STEP	2026-11-06T07:55:28.3367418Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+judge	UNKNOWN STEP	2026-11-06T07:55:28.3368739Z Get:2 http://azure.archive.ubuntu.com/ubuntu resolute/universe amd64v3 clang amd64 1:21.1.6-71 [3904 B]
+judge	UNKNOWN STEP	2026-11-06T07:55:28.3827045Z Get:3 http://azure.archive.ubuntu.com/ubuntu resolute/universe amd64v3 nasm amd64 3.01-1 [530 kB]
+judge	UNKNOWN STEP	2026-11-06T07:55:28.6748827Z Fetched 534 kB in 0s (4244 kB/s)
+judge	UNKNOWN STEP	2026-11-06T07:55:28.6947941Z Selecting previously unselected package clang.
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7118048Z (Reading database ... 
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7118378Z (Reading database ... 5%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7118658Z (Reading database ... 10%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7118916Z (Reading database ... 15%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7119162Z (Reading database ... 20%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7119483Z (Reading database ... 25%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7120491Z (Reading database ... 30%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7120839Z (Reading database ... 35%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7121086Z (Reading database ... 40%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7121484Z (Reading database ... 45%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.7121877Z (Reading database ... 50%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.8136912Z (Reading database ... 55%
+judge	UNKNOWN STEP	2026-11-06T07:55:28.9962087Z (Reading database ... 60%
+judge	UNKNOWN STEP	2026-11-06T07:55:29.1998420Z (Reading database ... 65%
+judge	UNKNOWN STEP	2026-11-06T07:55:29.2958365Z (Reading database ... 70%
+judge	UNKNOWN STEP	2026-11-06T07:55:29.4983005Z (Reading database ... 75%
+judge	UNKNOWN STEP	2026-11-06T07:55:29.6586113Z (Reading database ... 80%
+judge	UNKNOWN STEP	2026-11-06T07:55:29.8028484Z (Reading database ... 85%
+judge	UNKNOWN STEP	2026-11-06T07:55:29.9647168Z (Reading database ... 90%
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1566007Z (Reading database ... 95%
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1566614Z (Reading database ... 100%
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1567491Z (Reading database ... 213197 files and directories currently installed.)
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1612848Z Preparing to unpack .../clang_1%3a21.1.6-71_amd64v3.deb ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1636906Z Unpacking clang (1:21.1.6-71) ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1826901Z Selecting previously unselected package nasm.
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1944148Z Preparing to unpack .../nasm_3.01-1_amd64v3.deb ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.1952477Z Unpacking nasm (3.01-1) ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.2387801Z Setting up clang (1:21.1.6-71) ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.2558066Z Setting up nasm (3.01-1) ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.2578478Z Processing triggers for man-db (2.13.1-1build1) ...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.2596906Z Not building database; man-db/auto-update is not 'true'.
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7914692Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7915609Z Running kernel seems to be up-to-date.
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7916041Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7916231Z Restarting services...
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7992148Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7992878Z Service restarts being deferred:
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7996406Z  systemctl restart hosted-compute-agent.service
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7996750Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7997257Z No containers need to be restarted.
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7997600Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7997777Z No user sessions are running outdated binaries.
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7997985Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:30.7998246Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6672573Z ##[group]Run bash scripts/install-cargo-near.sh
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6673036Z ^[[36;1mbash scripts/install-cargo-near.sh^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6705178Z shell: /usr/bin/bash -e {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6705432Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6705631Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6705894Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6706113Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6706390Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6729617Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6947050Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6947868Z                                  Dload  Upload  Total   Spent   Left   Speed
+judge	UNKNOWN STEP	2026-11-06T07:55:31.6948745Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:32.0265236Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.0266138Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.0267001Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.0267469Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2007668Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2008730Z 100 17.16M 100 17.16M   0      0 33.90M      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2009729Z 100 17.16M 100 17.16M   0      0 33.90M      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2010610Z 100 17.16M 100 17.16M   0      0 33.89M      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2089319Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2090246Z                                  Dload  Upload  Total   Spent   Left   Speed
+judge	UNKNOWN STEP	2026-11-06T07:55:32.2090534Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:32.5119836Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.5120368Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.5120996Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.5121587Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:32.6116389Z   0      0   0      0   0      0      0      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.6117390Z 100    110 100    110   0      0    273      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.6118347Z 100    110 100    110   0      0    273      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.6119312Z 100    110 100    110   0      0    273      0                              0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.6348042Z cargo-near-x86_64-unknown-linux-gnu.tar.gz: OK
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8315704Z Add /home/runner/work/near/near/.tools/cargo-near-x86_64-unknown-linux-gnu to PATH.
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8346040Z ##[group]Run bash scripts/judge.sh
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8346360Z ^[[36;1mbash scripts/judge.sh^[[0m
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8375496Z shell: /usr/bin/bash -e {0}
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8375749Z env:
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8375950Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8376210Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8376425Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8376695Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8376984Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8462610Z [1/6] toolchain check
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8732742Z rustc 1.99.1 (58cf8f9c3 2026-10-13)
+judge	UNKNOWN STEP	2026-11-06T07:55:32.8991702Z cargo 1.99.1 (5f94df478 2026-08-27)
+judge	UNKNOWN STEP	2026-11-06T07:55:32.9024740Z v26.13.0
+judge	UNKNOWN STEP	2026-11-06T07:55:32.9207653Z 12.16.1
+judge	UNKNOWN STEP	2026-11-06T07:55:32.9426887Z Scope: all 6 workspace projects
+judge	UNKNOWN STEP	2026-11-06T07:55:32.9616701Z ? Verifying lockfile against supply-chain policies (279 entries)...
+judge	UNKNOWN STEP	2026-11-06T07:55:33.1280013Z Packages are hard linked from the content-addressable store to the virtual store.
+judge	UNKNOWN STEP	2026-11-06T07:55:33.1281390Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+judge	UNKNOWN STEP	2026-11-06T07:55:33.1282114Z   Virtual store is at:             node_modules/.pnpm
+judge	UNKNOWN STEP	2026-11-06T07:55:33.1547072Z Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 0.00 B/8.82 MB
+judge	UNKNOWN STEP	2026-11-06T07:55:33.2327567Z Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+judge	UNKNOWN STEP	2026-11-06T07:55:33.3117977Z Downloading @biomejs/cli-linux-x64@2.6.5: 0.00 B/34.14 MB
+judge	UNKNOWN STEP	2026-11-06T07:55:34.1828655Z ✓ Lockfile passes supply-chain policies (279 entries in 1.2s)
+judge	UNKNOWN STEP	2026-11-06T07:55:34.1829897Z Lockfile is up to date, resolution step is skipped
+judge	UNKNOWN STEP	2026-11-06T07:55:34.4963371Z Packages: +201
+judge	UNKNOWN STEP	2026-11-06T07:55:34.4964104Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5039406Z Progress: resolved 201, reused 0, downloaded 201, added 201, done
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5059796Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5526360Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5917139Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5917824Z dependencies:
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5918193Z + commander 15.0.0
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5918483Z + d3 7.9.2
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5918781Z + near-api-js 7.4.0
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5919071Z + pino 10.4.0
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5919334Z + zod 4.6.7
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5919479Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5919604Z devDependencies:
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5919904Z + @biomejs/biome 2.6.5
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5920244Z + @playwright/test 1.65.0
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5920578Z + @types/d3 7.4.3
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5920859Z + @types/node 26.6.6
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5921352Z + fast-check 4.10.2
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5921694Z + tsx 4.23.15
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5922404Z + typescript 7.0.2
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5922688Z + vite 8.3.6
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5922969Z + vitest 5.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5923223Z 
+judge	UNKNOWN STEP	2026-11-06T07:55:34.5936355Z Done in 1.7s using pnpm v12.16.1
+judge	UNKNOWN STEP	2026-11-06T07:55:34.6120111Z [2/6] contract unit tests
+judge	UNKNOWN STEP	2026-11-06T07:55:34.6617746Z ^[[1m^[[92m    Updating^[[0m crates.io index
+judge	UNKNOWN STEP	2026-11-06T07:55:35.2978667Z ^[[1m^[[92m Downloading^[[0m crates ...
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5309460Z ^[[1m^[[92m  Downloaded^[[0m lazy_static v1.5.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5329821Z ^[[1m^[[92m  Downloaded^[[0m json_comments v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5339168Z ^[[1m^[[92m  Downloaded^[[0m Inflector v0.11.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5365029Z ^[[1m^[[92m  Downloaded^[[0m keccak v0.1.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5374395Z ^[[1m^[[92m  Downloaded^[[0m keccak v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5388425Z ^[[1m^[[92m  Downloaded^[[0m lock_api v0.4.14
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5400219Z ^[[1m^[[92m  Downloaded^[[0m libc v0.2.191
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5702178Z ^[[1m^[[92m  Downloaded^[[0m near-fmt v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5708649Z ^[[1m^[[92m  Downloaded^[[0m fnv v1.0.7
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5713974Z ^[[1m^[[92m  Downloaded^[[0m near-primitives-core v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5728436Z ^[[1m^[[92m  Downloaded^[[0m near-sdk-macros v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5757908Z ^[[1m^[[92m  Downloaded^[[0m memchr v2.8.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5789197Z ^[[1m^[[92m  Downloaded^[[0m subtle v2.6.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5798566Z ^[[1m^[[92m  Downloaded^[[0m serde_with v3.24.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5872814Z ^[[1m^[[92m  Downloaded^[[0m near-crypto v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5887970Z ^[[1m^[[92m  Downloaded^[[0m either v1.19.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5902630Z ^[[1m^[[92m  Downloaded^[[0m getrandom v0.2.17
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5921093Z ^[[1m^[[92m  Downloaded^[[0m pkcs8 v0.10.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5937326Z ^[[1m^[[92m  Downloaded^[[0m signature v2.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5952049Z ^[[1m^[[92m  Downloaded^[[0m elliptic-curve v0.13.8
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5980736Z ^[[1m^[[92m  Downloaded^[[0m ordered-float v4.6.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.5990459Z ^[[1m^[[92m  Downloaded^[[0m ed25519 v2.2.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6013595Z ^[[1m^[[92m  Downloaded^[[0m ed25519-dalek v2.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6042517Z ^[[1m^[[92m  Downloaded^[[0m enum-map v2.7.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6052610Z ^[[1m^[[92m  Downloaded^[[0m fastrand v2.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6061370Z ^[[1m^[[92m  Downloaded^[[0m ff v0.13.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6073420Z ^[[1m^[[92m  Downloaded^[[0m find-msvc-tools v0.1.15
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6086679Z ^[[1m^[[92m  Downloaded^[[0m generic-array v0.14.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6096015Z ^[[1m^[[92m  Downloaded^[[0m near-schema-checker-core v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6104689Z ^[[1m^[[92m  Downloaded^[[0m rustc-hex v2.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6124052Z ^[[1m^[[92m  Downloaded^[[0m rustc_version v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6134018Z ^[[1m^[[92m  Downloaded^[[0m ecdsa v0.16.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6148777Z ^[[1m^[[92m  Downloaded^[[0m errno v0.3.14
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6162352Z ^[[1m^[[92m  Downloaded^[[0m foldhash v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6172568Z ^[[1m^[[92m  Downloaded^[[0m fs_extra v1.3.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6186978Z ^[[1m^[[92m  Downloaded^[[0m num-integer v0.1.47
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6199693Z ^[[1m^[[92m  Downloaded^[[0m primitive-types v0.10.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6208178Z ^[[1m^[[92m  Downloaded^[[0m proc-macro-crate v3.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6218812Z ^[[1m^[[92m  Downloaded^[[0m rand_core v0.6.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6230464Z ^[[1m^[[92m  Downloaded^[[0m rfc6979 v0.4.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6236359Z ^[[1m^[[92m  Downloaded^[[0m ripemd v0.1.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6246518Z ^[[1m^[[92m  Downloaded^[[0m serde_with_macros v3.24.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6257933Z ^[[1m^[[92m  Downloaded^[[0m strum v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6262277Z ^[[1m^[[92m  Downloaded^[[0m near-stdx v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6266856Z ^[[1m^[[92m  Downloaded^[[0m p256 v0.13.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6285260Z ^[[1m^[[92m  Downloaded^[[0m serde_repr v0.1.21
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6295426Z ^[[1m^[[92m  Downloaded^[[0m static_assertions v1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6302970Z ^[[1m^[[92m  Downloaded^[[0m strum v0.26.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6307283Z ^[[1m^[[92m  Downloaded^[[0m schemars v0.9.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6373639Z ^[[1m^[[92m  Downloaded^[[0m strum_macros v0.24.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6384184Z ^[[1m^[[92m  Downloaded^[[0m getrandom v0.4.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6404702Z ^[[1m^[[92m  Downloaded^[[0m near-sys v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6408451Z ^[[1m^[[92m  Downloaded^[[0m num-bigint v0.3.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6432684Z ^[[1m^[[92m  Downloaded^[[0m smart-default v0.7.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6439633Z ^[[1m^[[92m  Downloaded^[[0m crossbeam-utils v0.8.23
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6454513Z ^[[1m^[[92m  Downloaded^[[0m powerfmt v0.2.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6462896Z ^[[1m^[[92m  Downloaded^[[0m untrusted v0.7.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6469003Z ^[[1m^[[92m  Downloaded^[[0m wyz v0.5.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6476315Z ^[[1m^[[92m  Downloaded^[[0m funty v2.0.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6482507Z ^[[1m^[[92m  Downloaded^[[0m jiff-core v0.1.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6509234Z ^[[1m^[[92m  Downloaded^[[0m lru v0.18.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6517165Z ^[[1m^[[92m  Downloaded^[[0m rand_chacha v0.3.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6524462Z ^[[1m^[[92m  Downloaded^[[0m ref-cast v1.0.27
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6539616Z ^[[1m^[[92m  Downloaded^[[0m thiserror-impl v2.0.21
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6548493Z ^[[1m^[[92m  Downloaded^[[0m strsim v0.11.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6556465Z ^[[1m^[[92m  Downloaded^[[0m anyhow v1.0.104
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6579380Z ^[[1m^[[92m  Downloaded^[[0m blake2 v0.10.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6592703Z ^[[1m^[[92m  Downloaded^[[0m borsh-derive v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6609951Z ^[[1m^[[92m  Downloaded^[[0m pin-project-lite v0.2.17
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6638499Z ^[[1m^[[92m  Downloaded^[[0m ref-cast-impl v1.0.27
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6644388Z ^[[1m^[[92m  Downloaded^[[0m enum-map-derive v0.17.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6651052Z ^[[1m^[[92m  Downloaded^[[0m near-digest v0.1.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6658922Z ^[[1m^[[92m  Downloaded^[[0m tempfile v3.27.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6674559Z ^[[1m^[[92m  Downloaded^[[0m zstd v0.13.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6691149Z ^[[1m^[[92m  Downloaded^[[0m threadpool v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6697166Z ^[[1m^[[92m  Downloaded^[[0m group v0.13.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6706429Z ^[[1m^[[92m  Downloaded^[[0m near-config-utils v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6712135Z ^[[1m^[[92m  Downloaded^[[0m near-primitives v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6776529Z ^[[1m^[[92m  Downloaded^[[0m near-schema-checker-macro v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6782501Z ^[[1m^[[92m  Downloaded^[[0m ident_case v1.0.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6787680Z ^[[1m^[[92m  Downloaded^[[0m indexmap v1.9.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6811750Z ^[[1m^[[92m  Downloaded^[[0m aws-lc-rs v1.19.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6877071Z ^[[1m^[[92m  Downloaded^[[0m itoa v1.0.18
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6885958Z ^[[1m^[[92m  Downloaded^[[0m jobserver v0.1.35
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6899904Z ^[[1m^[[92m  Downloaded^[[0m near-parameters v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6941557Z ^[[1m^[[92m  Downloaded^[[0m num_cpus v1.17.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6959406Z ^[[1m^[[92m  Downloaded^[[0m scopeguard v1.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6971491Z ^[[1m^[[92m  Downloaded^[[0m tinyvec v1.13.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6992103Z ^[[1m^[[92m  Downloaded^[[0m cfg_aliases v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.6998016Z ^[[1m^[[92m  Downloaded^[[0m hybrid-array v0.4.15
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7012475Z ^[[1m^[[92m  Downloaded^[[0m near-crypto-hash v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7016531Z ^[[1m^[[92m  Downloaded^[[0m near-schema-checker-lib v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7022131Z ^[[1m^[[92m  Downloaded^[[0m near-time v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7029236Z ^[[1m^[[92m  Downloaded^[[0m unsafe-libyaml v0.2.11
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7049544Z ^[[1m^[[92m  Downloaded^[[0m heck v0.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7056987Z ^[[1m^[[92m  Downloaded^[[0m time-core v0.1.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7064761Z ^[[1m^[[92m  Downloaded^[[0m unicode-xid v0.2.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7072678Z ^[[1m^[[92m  Downloaded^[[0m log v0.4.35
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7088243Z ^[[1m^[[92m  Downloaded^[[0m near-account-id v3.0.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7100562Z ^[[1m^[[92m  Downloaded^[[0m near-sdk-core v4.4.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7112639Z ^[[1m^[[92m  Downloaded^[[0m near-sdk-env v0.1.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7118174Z ^[[1m^[[92m  Downloaded^[[0m parking_lot v0.12.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7133050Z ^[[1m^[[92m  Downloaded^[[0m radium v0.7.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7139368Z ^[[1m^[[92m  Downloaded^[[0m semver v1.0.28
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7153590Z ^[[1m^[[92m  Downloaded^[[0m heck v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7160914Z ^[[1m^[[92m  Downloaded^[[0m cfg-if v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7169201Z ^[[1m^[[92m  Downloaded^[[0m quote v1.0.47
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7186893Z ^[[1m^[[92m  Downloaded^[[0m shlex v2.0.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7194953Z ^[[1m^[[92m  Downloaded^[[0m block-buffer v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7202902Z ^[[1m^[[92m  Downloaded^[[0m hashbrown v0.14.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7234309Z ^[[1m^[[92m  Downloaded^[[0m near-gas v0.3.7
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7245540Z ^[[1m^[[92m  Downloaded^[[0m pkg-config v0.3.34
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7254051Z ^[[1m^[[92m  Downloaded^[[0m rustversion v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7268144Z ^[[1m^[[92m  Downloaded^[[0m crypto-common v0.1.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7273331Z ^[[1m^[[92m  Downloaded^[[0m darling_macro v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7276681Z ^[[1m^[[92m  Downloaded^[[0m num-conv v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7281502Z ^[[1m^[[92m  Downloaded^[[0m tap v1.0.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7286819Z ^[[1m^[[92m  Downloaded^[[0m derive_builder_core v0.20.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7298699Z ^[[1m^[[92m  Downloaded^[[0m num-rational v0.3.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7306893Z ^[[1m^[[92m  Downloaded^[[0m ppv-lite86 v0.2.21
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7314787Z ^[[1m^[[92m  Downloaded^[[0m strum_macros v0.26.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7327670Z ^[[1m^[[92m  Downloaded^[[0m near-token v0.3.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7338125Z ^[[1m^[[92m  Downloaded^[[0m serde v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7358782Z ^[[1m^[[92m  Downloaded^[[0m cfg_eval v0.1.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7367337Z ^[[1m^[[92m  Downloaded^[[0m crunchy v0.2.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7371881Z ^[[1m^[[92m  Downloaded^[[0m darling_macro v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7375572Z ^[[1m^[[92m  Downloaded^[[0m defmt-parser v1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7381525Z ^[[1m^[[92m  Downloaded^[[0m derive_arbitrary v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7387796Z ^[[1m^[[92m  Downloaded^[[0m digest-io v0.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7393817Z ^[[1m^[[92m  Downloaded^[[0m hex-literal v1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7398861Z ^[[1m^[[92m  Downloaded^[[0m parking_lot_core v0.9.12
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7411691Z ^[[1m^[[92m  Downloaded^[[0m primeorder v0.13.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7420758Z ^[[1m^[[92m  Downloaded^[[0m proc-macro2 v1.0.107
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7439139Z ^[[1m^[[92m  Downloaded^[[0m sha2 v0.10.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7452950Z ^[[1m^[[92m  Downloaded^[[0m sha2 v0.11.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7471675Z ^[[1m^[[92m  Downloaded^[[0m spin v0.9.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7487347Z ^[[1m^[[92m  Downloaded^[[0m spki v0.7.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7499611Z ^[[1m^[[92m  Downloaded^[[0m const-oid v0.10.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7516484Z ^[[1m^[[92m  Downloaded^[[0m convert_case v0.10.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7526637Z ^[[1m^[[92m  Downloaded^[[0m cpufeatures v0.2.17
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7534885Z ^[[1m^[[92m  Downloaded^[[0m dashmap v6.2.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7548513Z ^[[1m^[[92m  Downloaded^[[0m deranged v0.5.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7559038Z ^[[1m^[[92m  Downloaded^[[0m derive_builder_macro v0.20.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7564495Z ^[[1m^[[92m  Downloaded^[[0m digest v0.10.7
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7575011Z ^[[1m^[[92m  Downloaded^[[0m near-global-contracts v0.3.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7585287Z ^[[1m^[[92m  Downloaded^[[0m num-traits v0.2.19
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7600944Z ^[[1m^[[92m  Downloaded^[[0m once_cell v1.21.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7616562Z ^[[1m^[[92m  Downloaded^[[0m sec1 v0.7.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7626704Z ^[[1m^[[92m  Downloaded^[[0m secp256k1 v0.27.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7645840Z ^[[1m^[[92m  Downloaded^[[0m serde_core v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7662655Z ^[[1m^[[92m  Downloaded^[[0m serde_derive v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7681025Z ^[[1m^[[92m  Downloaded^[[0m smallvec v1.16.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7690407Z ^[[1m^[[92m  Downloaded^[[0m defmt v1.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7715512Z ^[[1m^[[92m  Downloaded^[[0m derive_builder v0.20.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7744545Z ^[[1m^[[92m  Downloaded^[[0m digest v0.11.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7758372Z ^[[1m^[[92m  Downloaded^[[0m rand v0.8.8
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7783779Z ^[[1m^[[92m  Downloaded^[[0m ryu v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7802142Z ^[[1m^[[92m  Downloaded^[[0m schemars v1.2.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7885747Z ^[[1m^[[92m  Downloaded^[[0m serde_yaml v0.9.34+deprecated
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7906368Z ^[[1m^[[92m  Downloaded^[[0m base16ct v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7914162Z ^[[1m^[[92m  Downloaded^[[0m bitflags v2.13.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7937814Z ^[[1m^[[92m  Downloaded^[[0m const-oid v0.9.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7950109Z ^[[1m^[[92m  Downloaded^[[0m darling_core v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7977211Z ^[[1m^[[92m  Downloaded^[[0m dunce v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.7982960Z ^[[1m^[[92m  Downloaded^[[0m crypto-bigint v0.5.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8020147Z ^[[1m^[[92m  Downloaded^[[0m version_check v0.9.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8027925Z ^[[1m^[[92m  Downloaded^[[0m block-buffer v0.10.4
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8034278Z ^[[1m^[[92m  Downloaded^[[0m derive_more-impl v2.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8066280Z ^[[1m^[[92m  Downloaded^[[0m dyn-clone v1.0.20
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8076200Z ^[[1m^[[92m  Downloaded^[[0m equivalent v1.0.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8082074Z ^[[1m^[[92m  Downloaded^[[0m hex v0.4.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8091371Z ^[[1m^[[92m  Downloaded^[[0m serde_json v1.0.154
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8135265Z ^[[1m^[[92m  Downloaded^[[0m cc v1.11.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8163976Z ^[[1m^[[92m  Downloaded^[[0m chrono v0.4.45
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8208326Z ^[[1m^[[92m  Downloaded^[[0m cpufeatures v0.3.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8218363Z ^[[1m^[[92m  Downloaded^[[0m crypto-common v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8226196Z ^[[1m^[[92m  Downloaded^[[0m curve25519-dalek-derive v0.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8232625Z ^[[1m^[[92m  Downloaded^[[0m fixed-hash v0.7.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8239311Z ^[[1m^[[92m  Downloaded^[[0m bytesize v1.3.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8246674Z ^[[1m^[[92m  Downloaded^[[0m near-sdk v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8319764Z ^[[1m^[[92m  Downloaded^[[0m zeroize_derive v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8326912Z ^[[1m^[[92m  Downloaded^[[0m thiserror v2.0.21
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8358409Z ^[[1m^[[92m  Downloaded^[[0m bitflags v1.3.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8375871Z ^[[1m^[[92m  Downloaded^[[0m tracing-attributes v0.1.31
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8391897Z ^[[1m^[[92m  Downloaded^[[0m autocfg v1.5.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8402162Z ^[[1m^[[92m  Downloaded^[[0m bs58 v0.5.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8414832Z ^[[1m^[[92m  Downloaded^[[0m byteorder v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8424845Z ^[[1m^[[92m  Downloaded^[[0m toml_datetime v1.1.2+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8433673Z ^[[1m^[[92m  Downloaded^[[0m zeroize v1.9.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8443684Z ^[[1m^[[92m  Downloaded^[[0m base64ct v1.8.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8458807Z ^[[1m^[[92m  Downloaded^[[0m iana-time-zone v0.1.65
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8475277Z ^[[1m^[[92m  Downloaded^[[0m time-macros v0.2.32
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8490924Z ^[[1m^[[92m  Downloaded^[[0m unicode-ident v1.0.27
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8507262Z ^[[1m^[[92m  Downloaded^[[0m cmake v0.1.58
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8515716Z ^[[1m^[[92m  Downloaded^[[0m easy-ext v0.2.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8528978Z ^[[1m^[[92m  Downloaded^[[0m hmac v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8540371Z ^[[1m^[[92m  Downloaded^[[0m uint v0.9.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8550349Z ^[[1m^[[92m  Downloaded^[[0m base64 v0.23.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8580432Z ^[[1m^[[92m  Downloaded^[[0m darling v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8606270Z ^[[1m^[[92m  Downloaded^[[0m bs58 v0.4.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8619752Z ^[[1m^[[92m  Downloaded^[[0m defmt-macros v1.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8639008Z ^[[1m^[[92m  Downloaded^[[0m toml_parser v1.1.5+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8655306Z ^[[1m^[[92m  Downloaded^[[0m tracing-core v0.1.36
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8673832Z ^[[1m^[[92m  Downloaded^[[0m zmij v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8684815Z ^[[1m^[[92m  Downloaded^[[0m zstd-safe v7.4.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8695443Z ^[[1m^[[92m  Downloaded^[[0m arbitrary v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8718291Z ^[[1m^[[92m  Downloaded^[[0m bytes v1.12.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8739900Z ^[[1m^[[92m  Downloaded^[[0m darling v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8774116Z ^[[1m^[[92m  Downloaded^[[0m sha3 v0.11.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8799750Z ^[[1m^[[92m  Downloaded^[[0m zeropool-bn v0.5.11
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8817687Z ^[[1m^[[92m  Downloaded^[[0m borsh v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8855113Z ^[[1m^[[92m  Downloaded^[[0m toml_edit v0.25.18+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.8878731Z ^[[1m^[[92m  Downloaded^[[0m rustix v1.1.6
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9018381Z ^[[1m^[[92m  Downloaded^[[0m base64 v0.21.7
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9040473Z ^[[1m^[[92m  Downloaded^[[0m base64 v0.22.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9063055Z ^[[1m^[[92m  Downloaded^[[0m der v0.7.10
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9092706Z ^[[1m^[[92m  Downloaded^[[0m derive_more v2.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9155944Z ^[[1m^[[92m  Downloaded^[[0m hashbrown v0.12.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9181111Z ^[[1m^[[92m  Downloaded^[[0m itertools v0.14.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9222526Z ^[[1m^[[92m  Downloaded^[[0m unicode-segmentation v1.13.3
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9243756Z ^[[1m^[[92m  Downloaded^[[0m indexmap v2.14.2
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9270571Z ^[[1m^[[92m  Downloaded^[[0m typenum v1.20.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9294698Z ^[[1m^[[92m  Downloaded^[[0m sha3 v0.10.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9329084Z ^[[1m^[[92m  Downloaded^[[0m darling_core v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9360760Z ^[[1m^[[92m  Downloaded^[[0m winnow v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9418079Z ^[[1m^[[92m  Downloaded^[[0m hashbrown v0.17.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9452475Z ^[[1m^[[92m  Downloaded^[[0m syn v3.0.9
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9519253Z ^[[1m^[[92m  Downloaded^[[0m near-vm-runner v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9679716Z ^[[1m^[[92m  Downloaded^[[0m bitvec v1.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9764501Z ^[[1m^[[92m  Downloaded^[[0m syn v1.0.109
+judge	UNKNOWN STEP	2026-11-06T07:55:35.9822520Z ^[[1m^[[92m  Downloaded^[[0m linux-raw-sys v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0251857Z ^[[1m^[[92m  Downloaded^[[0m syn v2.0.119
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0322038Z ^[[1m^[[92m  Downloaded^[[0m time v0.3.55
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0404427Z ^[[1m^[[92m  Downloaded^[[0m zerocopy v0.8.63
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0547242Z ^[[1m^[[92m  Downloaded^[[0m curve25519-dalek v4.1.3
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0599187Z ^[[1m^[[92m  Downloaded^[[0m secp256k1-sys v0.8.2
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0863671Z ^[[1m^[[92m  Downloaded^[[0m blst v0.3.17
+judge	UNKNOWN STEP	2026-11-06T07:55:36.0944206Z ^[[1m^[[92m  Downloaded^[[0m jiff v0.2.39
+judge	UNKNOWN STEP	2026-11-06T07:55:36.1048748Z ^[[1m^[[92m  Downloaded^[[0m tracing v0.1.44
+judge	UNKNOWN STEP	2026-11-06T07:55:36.1149792Z ^[[1m^[[92m  Downloaded^[[0m zstd-sys v2.1.2+zstd.1.5.7
+judge	UNKNOWN STEP	2026-11-06T07:55:36.1273324Z ^[[1m^[[92m  Downloaded^[[0m aws-lc-sys v0.47.0
+judge	UNKNOWN STEP	2026-11-06T07:55:36.2943914Z ^[[1m^[[92m  Downloaded^[[0m near-contract-standards v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:55:36.3770387Z ^[[1m^[[92m   Compiling^[[0m proc-macro2 v1.0.107
+judge	UNKNOWN STEP	2026-11-06T07:55:36.3772379Z ^[[1m^[[92m   Compiling^[[0m quote v1.0.47
+judge	UNKNOWN STEP	2026-11-06T07:55:36.4714309Z ^[[1m^[[92m   Compiling^[[0m unicode-ident v1.0.27
+judge	UNKNOWN STEP	2026-11-06T07:55:36.5236936Z ^[[1m^[[92m   Compiling^[[0m libc v0.2.191
+judge	UNKNOWN STEP	2026-11-06T07:55:37.0093664Z ^[[1m^[[92m   Compiling^[[0m syn v2.0.119
+judge	UNKNOWN STEP	2026-11-06T07:55:37.3802875Z ^[[1m^[[92m   Compiling^[[0m syn v3.0.9
+judge	UNKNOWN STEP	2026-11-06T07:55:39.9510886Z ^[[1m^[[92m   Compiling^[[0m typenum v1.20.1
+judge	UNKNOWN STEP	2026-11-06T07:55:40.3005243Z ^[[1m^[[92m   Compiling^[[0m cfg-if v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:55:40.3197145Z ^[[1m^[[92m   Compiling^[[0m zeroize_derive v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:40.5208176Z ^[[1m^[[92m   Compiling^[[0m version_check v0.9.5
+judge	UNKNOWN STEP	2026-11-06T07:55:40.5472536Z ^[[1m^[[92m   Compiling^[[0m zeroize v1.9.1
+judge	UNKNOWN STEP	2026-11-06T07:55:40.6164578Z ^[[1m^[[92m   Compiling^[[0m subtle v2.6.1
+judge	UNKNOWN STEP	2026-11-06T07:55:40.6569129Z ^[[1m^[[92m   Compiling^[[0m generic-array v0.14.9
+judge	UNKNOWN STEP	2026-11-06T07:55:40.6813658Z ^[[1m^[[92m   Compiling^[[0m serde_core v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:55:40.7810620Z ^[[1m^[[92m   Compiling^[[0m const-oid v0.9.6
+judge	UNKNOWN STEP	2026-11-06T07:55:41.0639982Z ^[[1m^[[92m   Compiling^[[0m jobserver v0.1.35
+judge	UNKNOWN STEP	2026-11-06T07:55:41.2362664Z ^[[1m^[[92m   Compiling^[[0m shlex v2.0.1
+judge	UNKNOWN STEP	2026-11-06T07:55:41.3074933Z ^[[1m^[[92m   Compiling^[[0m find-msvc-tools v0.1.15
+judge	UNKNOWN STEP	2026-11-06T07:55:41.4124614Z ^[[1m^[[92m   Compiling^[[0m cc v1.11.0
+judge	UNKNOWN STEP	2026-11-06T07:55:42.2575457Z ^[[1m^[[92m   Compiling^[[0m block-buffer v0.10.4
+judge	UNKNOWN STEP	2026-11-06T07:55:42.3085343Z ^[[1m^[[92m   Compiling^[[0m crypto-common v0.1.6
+judge	UNKNOWN STEP	2026-11-06T07:55:42.3510883Z ^[[1m^[[92m   Compiling^[[0m serde_derive v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:55:42.5662421Z ^[[1m^[[92m   Compiling^[[0m digest v0.10.7
+judge	UNKNOWN STEP	2026-11-06T07:55:42.6654816Z ^[[1m^[[92m   Compiling^[[0m serde v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:55:42.7751968Z ^[[1m^[[92m   Compiling^[[0m equivalent v1.0.3
+judge	UNKNOWN STEP	2026-11-06T07:55:42.7942791Z ^[[1m^[[92m   Compiling^[[0m getrandom v0.2.17
+judge	UNKNOWN STEP	2026-11-06T07:55:42.8867638Z ^[[1m^[[92m   Compiling^[[0m strsim v0.11.1
+judge	UNKNOWN STEP	2026-11-06T07:55:43.0343024Z ^[[1m^[[92m   Compiling^[[0m autocfg v1.5.1
+judge	UNKNOWN STEP	2026-11-06T07:55:43.2310589Z ^[[1m^[[92m   Compiling^[[0m ident_case v1.0.1
+judge	UNKNOWN STEP	2026-11-06T07:55:43.2663761Z ^[[1m^[[92m   Compiling^[[0m once_cell v1.21.4
+judge	UNKNOWN STEP	2026-11-06T07:55:43.3628225Z ^[[1m^[[92m   Compiling^[[0m rand_core v0.6.4
+judge	UNKNOWN STEP	2026-11-06T07:55:43.4625810Z ^[[1m^[[92m   Compiling^[[0m winnow v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:55:44.2178908Z ^[[1m^[[92m   Compiling^[[0m hashbrown v0.17.1
+judge	UNKNOWN STEP	2026-11-06T07:55:44.5150784Z ^[[1m^[[92m   Compiling^[[0m toml_parser v1.1.5+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:44.5870842Z ^[[1m^[[92m   Compiling^[[0m indexmap v2.14.2
+judge	UNKNOWN STEP	2026-11-06T07:55:44.8715854Z ^[[1m^[[92m   Compiling^[[0m pkg-config v0.3.34
+judge	UNKNOWN STEP	2026-11-06T07:55:44.9997266Z ^[[1m^[[92m   Compiling^[[0m toml_datetime v1.1.2+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:45.1047566Z ^[[1m^[[92m   Compiling^[[0m toml_edit v0.25.18+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:45.1440002Z ^[[1m^[[92m   Compiling^[[0m cfg_aliases v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:45.1650863Z ^[[1m^[[92m   Compiling^[[0m borsh v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:55:45.2409435Z ^[[1m^[[92m   Compiling^[[0m num-traits v0.2.19
+judge	UNKNOWN STEP	2026-11-06T07:55:45.2937867Z ^[[1m^[[92m   Compiling^[[0m zmij v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:55:45.3755347Z ^[[1m^[[92m   Compiling^[[0m foldhash v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:45.7634836Z ^[[1m^[[92m   Compiling^[[0m proc-macro-crate v3.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:45.8837870Z ^[[1m^[[92m   Compiling^[[0m itoa v1.0.18
+judge	UNKNOWN STEP	2026-11-06T07:55:46.0181777Z ^[[1m^[[92m   Compiling^[[0m borsh-derive v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:55:46.5602805Z ^[[1m^[[92m   Compiling^[[0m cpufeatures v0.2.17
+judge	UNKNOWN STEP	2026-11-06T07:55:46.5820899Z ^[[1m^[[92m   Compiling^[[0m memchr v2.8.3
+judge	UNKNOWN STEP	2026-11-06T07:55:47.0116101Z ^[[1m^[[92m   Compiling^[[0m hex v0.4.3
+judge	UNKNOWN STEP	2026-11-06T07:55:47.1379026Z ^[[1m^[[92m   Compiling^[[0m darling_core v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:47.2672843Z ^[[1m^[[92m   Compiling^[[0m rustversion v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:55:47.3851669Z ^[[1m^[[92m   Compiling^[[0m unicode-segmentation v1.13.3
+judge	UNKNOWN STEP	2026-11-06T07:55:47.6322356Z ^[[1m^[[92m   Compiling^[[0m serde_json v1.0.154
+judge	UNKNOWN STEP	2026-11-06T07:55:47.6863386Z ^[[1m^[[92m   Compiling^[[0m thiserror v2.0.21
+judge	UNKNOWN STEP	2026-11-06T07:55:47.8337166Z ^[[1m^[[92m   Compiling^[[0m convert_case v0.10.0
+judge	UNKNOWN STEP	2026-11-06T07:55:47.9776998Z ^[[1m^[[92m   Compiling^[[0m sha2 v0.10.9
+judge	UNKNOWN STEP	2026-11-06T07:55:48.2006126Z ^[[1m^[[92m   Compiling^[[0m num-bigint v0.3.3
+judge	UNKNOWN STEP	2026-11-06T07:55:48.2811646Z ^[[1m^[[92m   Compiling^[[0m cmake v0.1.58
+judge	UNKNOWN STEP	2026-11-06T07:55:48.4755106Z ^[[1m^[[92m   Compiling^[[0m hybrid-array v0.4.15
+judge	UNKNOWN STEP	2026-11-06T07:55:48.8152277Z ^[[1m^[[92m   Compiling^[[0m thiserror-impl v2.0.21
+judge	UNKNOWN STEP	2026-11-06T07:55:49.0857309Z ^[[1m^[[92m   Compiling^[[0m darling_macro v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:49.2046700Z ^[[1m^[[92m   Compiling^[[0m dunce v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:55:49.2311983Z ^[[1m^[[92m   Compiling^[[0m unicode-xid v0.2.6
+judge	UNKNOWN STEP	2026-11-06T07:55:49.2658367Z ^[[1m^[[92m   Compiling^[[0m fs_extra v1.3.0
+judge	UNKNOWN STEP	2026-11-06T07:55:49.4108046Z ^[[1m^[[92m   Compiling^[[0m semver v1.0.28
+judge	UNKNOWN STEP	2026-11-06T07:55:49.5208732Z ^[[1m^[[92m   Compiling^[[0m crunchy v0.2.4
+judge	UNKNOWN STEP	2026-11-06T07:55:49.5713779Z ^[[1m^[[92m   Compiling^[[0m rustc_version v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:55:49.6305239Z ^[[1m^[[92m   Compiling^[[0m aws-lc-sys v0.47.0
+judge	UNKNOWN STEP	2026-11-06T07:55:49.7027007Z ^[[1m^[[92m   Compiling^[[0m derive_more-impl v2.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:50.3177195Z ^[[1m^[[92m   Compiling^[[0m darling v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:55:51.5212843Z ^[[1m^[[92m   Compiling^[[0m num-integer v0.1.47
+judge	UNKNOWN STEP	2026-11-06T07:55:51.6662648Z ^[[1m^[[92m   Compiling^[[0m signature v2.2.0
+judge	UNKNOWN STEP	2026-11-06T07:55:51.7158710Z ^[[1m^[[92m   Compiling^[[0m num-rational v0.3.2
+judge	UNKNOWN STEP	2026-11-06T07:55:51.7354898Z ^[[1m^[[92m   Compiling^[[0m syn v1.0.109
+judge	UNKNOWN STEP	2026-11-06T07:55:51.7720442Z ^[[1m^[[92m   Compiling^[[0m near-schema-checker-core v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:51.8005848Z ^[[1m^[[92m   Compiling^[[0m near-schema-checker-macro v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:51.8733250Z ^[[1m^[[92m   Compiling^[[0m near-schema-checker-lib v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:55:51.9018485Z ^[[1m^[[92m   Compiling^[[0m derive_more v2.1.1
+judge	UNKNOWN STEP	2026-11-06T07:55:51.9370639Z ^[[1m^[[92m   Compiling^[[0m serde_with_macros v3.24.0
+judge	UNKNOWN STEP	2026-11-06T07:55:52.7963422Z ^[[1m^[[92m   Compiling^[[0m curve25519-dalek v4.1.3
+judge	UNKNOWN STEP	2026-11-06T07:55:52.8871586Z ^[[1m^[[92m   Compiling^[[0m block-buffer v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:55:52.9480427Z ^[[1m^[[92m   Compiling^[[0m crypto-common v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:55:53.6263317Z ^[[1m^[[92m   Compiling^[[0m near-account-id v3.0.0
+judge	UNKNOWN STEP	2026-11-06T07:55:53.7660418Z ^[[1m^[[92m   Compiling^[[0m secp256k1-sys v0.8.2
+judge	UNKNOWN STEP	2026-11-06T07:55:53.8355263Z ^[[1m^[[92m   Compiling^[[0m derive_arbitrary v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:54.1851950Z ^[[1m^[[92m   Compiling^[[0m enum-map-derive v0.17.0
+judge	UNKNOWN STEP	2026-11-06T07:55:54.3475997Z ^[[1m^[[92m   Compiling^[[0m base64 v0.23.1
+judge	UNKNOWN STEP	2026-11-06T07:55:54.5234938Z ^[[1m^[[92m   Compiling^[[0m byteorder v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:55:54.6044331Z ^[[1m^[[92m   Compiling^[[0m anyhow v1.0.104
+judge	UNKNOWN STEP	2026-11-06T07:55:54.7068149Z ^[[1m^[[92m   Compiling^[[0m bs58 v0.5.1
+judge	UNKNOWN STEP	2026-11-06T07:55:54.7969003Z ^[[1m^[[92m   Compiling^[[0m const-oid v0.10.2
+judge	UNKNOWN STEP	2026-11-06T07:55:54.8907806Z ^[[1m^[[92m   Compiling^[[0m fnv v1.0.7
+judge	UNKNOWN STEP	2026-11-06T07:55:54.9148970Z ^[[1m^[[92m   Compiling^[[0m bs58 v0.4.0
+judge	UNKNOWN STEP	2026-11-06T07:55:54.9945428Z ^[[1m^[[92m   Compiling^[[0m static_assertions v1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:55:55.0144067Z ^[[1m^[[92m   Compiling^[[0m darling_core v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:55:56.5269176Z ^[[1m^[[92m   Compiling^[[0m digest v0.11.3
+judge	UNKNOWN STEP	2026-11-06T07:55:56.5945476Z ^[[1m^[[92m   Compiling^[[0m serde_with v3.24.0
+judge	UNKNOWN STEP	2026-11-06T07:55:57.8318340Z ^[[1m^[[92m   Compiling^[[0m enum-map v2.7.3
+judge	UNKNOWN STEP	2026-11-06T07:55:57.8975846Z ^[[1m^[[92m   Compiling^[[0m arbitrary v1.5.0
+judge	UNKNOWN STEP	2026-11-06T07:56:02.9011153Z ^[[1m^[[92m   Compiling^[[0m near-gas v0.3.7
+judge	UNKNOWN STEP	2026-11-06T07:56:03.0204041Z ^[[1m^[[92m   Compiling^[[0m near-token v0.3.6
+judge	UNKNOWN STEP	2026-11-06T07:56:03.1553493Z ^[[1m^[[92m   Compiling^[[0m tracing-core v0.1.36
+judge	UNKNOWN STEP	2026-11-06T07:56:03.5063700Z ^[[1m^[[92m   Compiling^[[0m der v0.7.10
+judge	UNKNOWN STEP	2026-11-06T07:56:04.3699889Z ^[[1m^[[92m   Compiling^[[0m serde_repr v0.1.21
+judge	UNKNOWN STEP	2026-11-06T07:56:04.5412892Z ^[[1m^[[92m   Compiling^[[0m tracing-attributes v0.1.31
+judge	UNKNOWN STEP	2026-11-06T07:56:05.1911484Z ^[[1m^[[92m   Compiling^[[0m curve25519-dalek-derive v0.1.1
+judge	UNKNOWN STEP	2026-11-06T07:56:05.4324120Z ^[[1m^[[92m   Compiling^[[0m heck v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:56:05.5069065Z ^[[1m^[[92m   Compiling^[[0m pin-project-lite v0.2.17
+judge	UNKNOWN STEP	2026-11-06T07:56:05.5328690Z ^[[1m^[[92m   Compiling^[[0m aws-lc-rs v1.19.0
+judge	UNKNOWN STEP	2026-11-06T07:56:05.6242347Z ^[[1m^[[92m   Compiling^[[0m base64 v0.21.7
+judge	UNKNOWN STEP	2026-11-06T07:56:05.7948923Z ^[[1m^[[92m   Compiling^[[0m parking_lot_core v0.9.12
+judge	UNKNOWN STEP	2026-11-06T07:56:05.8675747Z ^[[1m^[[92m   Compiling^[[0m zerocopy v0.8.63
+judge	UNKNOWN STEP	2026-11-06T07:56:06.0302691Z ^[[1m^[[92m   Compiling^[[0m near-primitives-core v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:06.5881055Z ^[[1m^[[92m   Compiling^[[0m tracing v0.1.44
+judge	UNKNOWN STEP	2026-11-06T07:56:06.6969323Z ^[[1m^[[92m   Compiling^[[0m strum_macros v0.24.3
+judge	UNKNOWN STEP	2026-11-06T07:56:08.4663995Z ^[[1m^[[92m   Compiling^[[0m darling_macro v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:56:08.5799433Z ^[[1m^[[92m   Compiling^[[0m uint v0.9.5
+judge	UNKNOWN STEP	2026-11-06T07:56:08.6215328Z ^[[1m^[[92m   Compiling^[[0m fixed-hash v0.7.0
+judge	UNKNOWN STEP	2026-11-06T07:56:08.6430161Z ^[[1m^[[92m   Compiling^[[0m ed25519 v2.2.3
+judge	UNKNOWN STEP	2026-11-06T07:56:08.7074095Z ^[[1m^[[92m   Compiling^[[0m zstd-sys v2.1.2+zstd.1.5.7
+judge	UNKNOWN STEP	2026-11-06T07:56:08.8352830Z ^[[1m^[[92m   Compiling^[[0m ff v0.13.1
+judge	UNKNOWN STEP	2026-11-06T07:56:08.8822501Z ^[[1m^[[92m   Compiling^[[0m keccak v0.1.6
+judge	UNKNOWN STEP	2026-11-06T07:56:08.9970589Z ^[[1m^[[92m   Compiling^[[0m ryu v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:56:09.0765197Z ^[[1m^[[92m   Compiling^[[0m json_comments v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:56:09.1133081Z ^[[1m^[[92m   Compiling^[[0m unsafe-libyaml v0.2.11
+judge	UNKNOWN STEP	2026-11-06T07:56:09.6465278Z ^[[1m^[[92m   Compiling^[[0m base16ct v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:56:09.7180878Z ^[[1m^[[92m   Compiling^[[0m untrusted v0.7.1
+judge	UNKNOWN STEP	2026-11-06T07:56:09.7560279Z ^[[1m^[[92m   Compiling^[[0m scopeguard v1.2.0
+judge	UNKNOWN STEP	2026-11-06T07:56:09.7819775Z ^[[1m^[[92m   Compiling^[[0m smallvec v1.16.4
+judge	UNKNOWN STEP	2026-11-06T07:56:10.0202247Z ^[[1m^[[92m   Compiling^[[0m lock_api v0.4.14
+judge	UNKNOWN STEP	2026-11-06T07:56:10.1371640Z ^[[1m^[[92m   Compiling^[[0m sec1 v0.7.3
+judge	UNKNOWN STEP	2026-11-06T07:56:10.2828300Z ^[[1m^[[92m   Compiling^[[0m serde_yaml v0.9.34+deprecated
+judge	UNKNOWN STEP	2026-11-06T07:56:11.5868110Z ^[[1m^[[92m   Compiling^[[0m near-config-utils v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:11.6810636Z ^[[1m^[[92m   Compiling^[[0m sha3 v0.10.9
+judge	UNKNOWN STEP	2026-11-06T07:56:11.8336398Z ^[[1m^[[92m   Compiling^[[0m group v0.13.0
+judge	UNKNOWN STEP	2026-11-06T07:56:19.0333435Z ^[[1m^[[92m   Compiling^[[0m ed25519-dalek v2.2.0
+judge	UNKNOWN STEP	2026-11-06T07:56:19.1573063Z ^[[1m^[[92m   Compiling^[[0m primitive-types v0.10.1
+judge	UNKNOWN STEP	2026-11-06T07:56:20.1081811Z ^[[1m^[[92m   Compiling^[[0m darling v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:56:20.1319407Z ^[[1m^[[92m   Compiling^[[0m secp256k1 v0.27.0
+judge	UNKNOWN STEP	2026-11-06T07:56:20.1842868Z ^[[1m^[[92m   Compiling^[[0m strum v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:56:20.3504064Z ^[[1m^[[92m   Compiling^[[0m crypto-bigint v0.5.5
+judge	UNKNOWN STEP	2026-11-06T07:56:21.1850611Z ^[[1m^[[92m   Compiling^[[0m blake2 v0.10.6
+judge	UNKNOWN STEP	2026-11-06T07:56:21.4553890Z ^[[1m^[[92m   Compiling^[[0m keccak v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:56:21.5899559Z ^[[1m^[[92m   Compiling^[[0m near-stdx v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:21.6234755Z ^[[1m^[[92m   Compiling^[[0m near-crypto v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:22.3402605Z ^[[1m^[[92m   Compiling^[[0m sha3 v0.11.0
+judge	UNKNOWN STEP	2026-11-06T07:56:22.5765329Z ^[[1m^[[92m   Compiling^[[0m ppv-lite86 v0.2.21
+judge	UNKNOWN STEP	2026-11-06T07:56:22.6299355Z ^[[1m^[[92m   Compiling^[[0m elliptic-curve v0.13.8
+judge	UNKNOWN STEP	2026-11-06T07:56:22.7717781Z ^[[1m^[[92m   Compiling^[[0m near-parameters v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:22.7930888Z ^[[1m^[[92m   Compiling^[[0m hmac v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:56:22.8410720Z ^[[1m^[[92m   Compiling^[[0m ripemd v0.1.3
+judge	UNKNOWN STEP	2026-11-06T07:56:23.3801951Z ^[[1m^[[92m   Compiling^[[0m radium v0.7.0
+judge	UNKNOWN STEP	2026-11-06T07:56:23.4539164Z ^[[1m^[[92m   Compiling^[[0m crossbeam-utils v0.8.23
+judge	UNKNOWN STEP	2026-11-06T07:56:23.5426431Z ^[[1m^[[92m   Compiling^[[0m zstd-safe v7.4.0
+judge	UNKNOWN STEP	2026-11-06T07:56:23.5963458Z ^[[1m^[[92m   Compiling^[[0m rustix v1.1.6
+judge	UNKNOWN STEP	2026-11-06T07:56:23.7171981Z ^[[1m^[[92m   Compiling^[[0m getrandom v0.4.3
+judge	UNKNOWN STEP	2026-11-06T07:56:23.7869085Z ^[[1m^[[92m   Compiling^[[0m cpufeatures v0.3.1
+judge	UNKNOWN STEP	2026-11-06T07:56:23.8065132Z ^[[1m^[[92m   Compiling^[[0m sha2 v0.11.1
+judge	UNKNOWN STEP	2026-11-06T07:56:24.4571623Z ^[[1m^[[92m   Compiling^[[0m rfc6979 v0.4.0
+judge	UNKNOWN STEP	2026-11-06T07:56:24.4958646Z ^[[1m^[[92m   Compiling^[[0m rand_chacha v0.3.1
+judge	UNKNOWN STEP	2026-11-06T07:56:24.8192674Z ^[[1m^[[92m   Compiling^[[0m derive_builder_core v0.20.2
+judge	UNKNOWN STEP	2026-11-06T07:56:25.4000354Z ^[[1m^[[92m   Compiling^[[0m parking_lot v0.12.5
+judge	UNKNOWN STEP	2026-11-06T07:56:25.6265044Z ^[[1m^[[92m   Compiling^[[0m spki v0.7.3
+judge	UNKNOWN STEP	2026-11-06T07:56:25.7059932Z ^[[1m^[[92m   Compiling^[[0m blst v0.3.17
+judge	UNKNOWN STEP	2026-11-06T07:56:25.8165944Z ^[[1m^[[92m   Compiling^[[0m deranged v0.5.9
+judge	UNKNOWN STEP	2026-11-06T07:56:26.1446199Z ^[[1m^[[92m   Compiling^[[0m num_cpus v1.17.0
+judge	UNKNOWN STEP	2026-11-06T07:56:26.3465394Z ^[[1m^[[92m   Compiling^[[0m tap v1.0.1
+judge	UNKNOWN STEP	2026-11-06T07:56:26.3907112Z ^[[1m^[[92m   Compiling^[[0m spin v0.9.9
+judge	UNKNOWN STEP	2026-11-06T07:56:26.4862977Z ^[[1m^[[92m   Compiling^[[0m powerfmt v0.2.1
+judge	UNKNOWN STEP	2026-11-06T07:56:26.5559589Z ^[[1m^[[92m   Compiling^[[0m linux-raw-sys v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:56:26.6607222Z ^[[1m^[[92m   Compiling^[[0m bitflags v2.13.2
+judge	UNKNOWN STEP	2026-11-06T07:56:26.7683853Z ^[[1m^[[92m   Compiling^[[0m time-core v0.1.9
+judge	UNKNOWN STEP	2026-11-06T07:56:26.7719805Z ^[[1m^[[92m   Compiling^[[0m num-conv v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:56:26.8326537Z ^[[1m^[[92m   Compiling^[[0m near-sys v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:56:26.8524662Z ^[[1m^[[92m   Compiling^[[0m near-sdk-env v0.1.9
+judge	UNKNOWN STEP	2026-11-06T07:56:26.8585728Z ^[[1m^[[92m   Compiling^[[0m time v0.3.55
+judge	UNKNOWN STEP	2026-11-06T07:56:28.1155393Z ^[[1m^[[92m   Compiling^[[0m lazy_static v1.5.1
+judge	UNKNOWN STEP	2026-11-06T07:56:28.1355481Z ^[[1m^[[92m   Compiling^[[0m wyz v0.5.1
+judge	UNKNOWN STEP	2026-11-06T07:56:28.2287321Z ^[[1m^[[92m   Compiling^[[0m threadpool v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:56:28.4838750Z ^[[1m^[[92m   Compiling^[[0m ecdsa v0.16.9
+judge	UNKNOWN STEP	2026-11-06T07:56:28.8235052Z ^[[1m^[[92m   Compiling^[[0m derive_builder_macro v0.20.2
+judge	UNKNOWN STEP	2026-11-06T07:56:28.9239178Z ^[[1m^[[92m   Compiling^[[0m rand v0.8.8
+judge	UNKNOWN STEP	2026-11-06T07:56:29.4206593Z ^[[1m^[[92m   Compiling^[[0m primeorder v0.13.6
+judge	UNKNOWN STEP	2026-11-06T07:56:29.5339284Z ^[[1m^[[92m   Compiling^[[0m bytesize v1.3.3
+judge	UNKNOWN STEP	2026-11-06T07:56:29.5533125Z ^[[1m^[[92m   Compiling^[[0m near-sdk-macros v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:56:29.6064701Z ^[[1m^[[92m   Compiling^[[0m rustc-hex v2.1.0
+judge	UNKNOWN STEP	2026-11-06T07:56:29.6261756Z ^[[1m^[[92m   Compiling^[[0m fastrand v2.5.0
+judge	UNKNOWN STEP	2026-11-06T07:56:29.6583843Z ^[[1m^[[92m   Compiling^[[0m iana-time-zone v0.1.65
+judge	UNKNOWN STEP	2026-11-06T07:56:29.7405559Z ^[[1m^[[92m   Compiling^[[0m heck v0.5.0
+judge	UNKNOWN STEP	2026-11-06T07:56:29.7873056Z ^[[1m^[[92m   Compiling^[[0m near-crypto-hash v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:56:29.8088622Z ^[[1m^[[92m   Compiling^[[0m either v1.19.0
+judge	UNKNOWN STEP	2026-11-06T07:56:29.8288426Z ^[[1m^[[92m   Compiling^[[0m hashbrown v0.14.5
+judge	UNKNOWN STEP	2026-11-06T07:56:29.9136939Z ^[[1m^[[92m   Compiling^[[0m base64 v0.22.1
+judge	UNKNOWN STEP	2026-11-06T07:56:30.0867983Z ^[[1m^[[92m   Compiling^[[0m funty v2.0.0
+judge	UNKNOWN STEP	2026-11-06T07:56:30.1972861Z ^[[1m^[[92m   Compiling^[[0m dashmap v6.2.1
+judge	UNKNOWN STEP	2026-11-06T07:56:30.4329761Z ^[[1m^[[92m   Compiling^[[0m bitvec v1.1.1
+judge	UNKNOWN STEP	2026-11-06T07:56:30.5138692Z ^[[1m^[[92m   Compiling^[[0m near-sdk-core v4.4.2
+judge	UNKNOWN STEP	2026-11-06T07:56:30.7594996Z ^[[1m^[[92m   Compiling^[[0m itertools v0.14.0
+judge	UNKNOWN STEP	2026-11-06T07:56:31.6960982Z ^[[1m^[[92m   Compiling^[[0m strum_macros v0.26.4
+judge	UNKNOWN STEP	2026-11-06T07:56:31.7847513Z ^[[1m^[[92m   Compiling^[[0m tempfile v3.27.0
+judge	UNKNOWN STEP	2026-11-06T07:56:32.0335797Z ^[[1m^[[92m   Compiling^[[0m chrono v0.4.45
+judge	UNKNOWN STEP	2026-11-06T07:56:32.6556006Z ^[[1m^[[92m   Compiling^[[0m zeropool-bn v0.5.11
+judge	UNKNOWN STEP	2026-11-06T07:56:33.0807079Z ^[[1m^[[92m   Compiling^[[0m p256 v0.13.2
+judge	UNKNOWN STEP	2026-11-06T07:56:33.2856578Z ^[[1m^[[92m   Compiling^[[0m derive_builder v0.20.2
+judge	UNKNOWN STEP	2026-11-06T07:56:33.3174832Z ^[[1m^[[92m   Compiling^[[0m zstd v0.13.4
+judge	UNKNOWN STEP	2026-11-06T07:56:33.4743953Z ^[[1m^[[92m   Compiling^[[0m near-time v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:33.9290441Z ^[[1m^[[92m   Compiling^[[0m near-digest v0.1.5
+judge	UNKNOWN STEP	2026-11-06T07:56:33.9755445Z ^[[1m^[[92m   Compiling^[[0m near-fmt v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:34.0441168Z ^[[1m^[[92m   Compiling^[[0m digest-io v0.1.0
+judge	UNKNOWN STEP	2026-11-06T07:56:34.0864968Z ^[[1m^[[92m   Compiling^[[0m ordered-float v4.6.0
+judge	UNKNOWN STEP	2026-11-06T07:56:34.1692881Z ^[[1m^[[92m   Compiling^[[0m lru v0.18.5
+judge	UNKNOWN STEP	2026-11-06T07:56:34.2409480Z ^[[1m^[[92m   Compiling^[[0m smart-default v0.7.1
+judge	UNKNOWN STEP	2026-11-06T07:56:34.2798569Z ^[[1m^[[92m   Compiling^[[0m cfg_eval v0.1.2
+judge	UNKNOWN STEP	2026-11-06T07:56:34.3874084Z ^[[1m^[[92m   Compiling^[[0m easy-ext v0.2.9
+judge	UNKNOWN STEP	2026-11-06T07:56:34.4073604Z ^[[1m^[[92m   Compiling^[[0m Inflector v0.11.4
+judge	UNKNOWN STEP	2026-11-06T07:56:34.4997059Z ^[[1m^[[92m   Compiling^[[0m strum v0.26.3
+judge	UNKNOWN STEP	2026-11-06T07:56:34.5250533Z ^[[1m^[[92m   Compiling^[[0m bytes v1.12.1
+judge	UNKNOWN STEP	2026-11-06T07:56:34.9374226Z ^[[1m^[[92m   Compiling^[[0m near-primitives v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:35.5229338Z ^[[1m^[[92m   Compiling^[[0m near-global-contracts v0.3.3
+judge	UNKNOWN STEP	2026-11-06T07:56:35.8847542Z ^[[1m^[[92m   Compiling^[[0m near-vm-runner v0.38.0
+judge	UNKNOWN STEP	2026-11-06T07:56:37.6136830Z ^[[1m^[[92m   Compiling^[[0m hex-literal v1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:56:42.9919562Z ^[[1m^[[92m   Compiling^[[0m near-sdk v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:56:44.3436934Z ^[[1m^[[92m   Compiling^[[0m near-contract-standards v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:56:46.5831794Z ^[[1m^[[92m   Compiling^[[0m untangle-test-token v0.1.0 (/home/runner/work/near/near/contracts/test-token)
+judge	UNKNOWN STEP	2026-11-06T07:56:46.5832961Z ^[[1m^[[92m   Compiling^[[0m untangle v0.1.0 (/home/runner/work/near/near/contracts/untangle)
+judge	UNKNOWN STEP	2026-11-06T07:56:49.2948351Z ^[[1m^[[92m    Finished^[[0m `test` profile [unoptimized + debuginfo] target(s) in 1m 14s
+judge	UNKNOWN STEP	2026-11-06T07:56:49.3599302Z ^[[1m^[[92m     Running^[[0m unittests src/lib.rs (contracts/target/debug/deps/untangle-029a381b6d78094a)
+judge	UNKNOWN STEP	2026-11-06T07:56:49.3632019Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:49.3632503Z running 47 tests
+judge	UNKNOWN STEP	2026-11-06T07:56:49.6132484Z test tests::bps_handles_u128_max ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:49.6722824Z test tests::accept_many_rejects_missing_last_id - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:49.6742179Z test tests::accept_twice - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:49.7017560Z test tests::bad_settlement_returns_all ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:49.9522565Z test tests::cancellation_refunds_fixed_fee ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.0142554Z test tests::callback_restores_failed_withdrawal ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.0152343Z test tests::cancel_accepted - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.0462734Z test tests::cap_cannot_fall_below_payable - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.2632785Z test tests::empty_batch - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.3747773Z test tests::cumulative_overconsumption - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.4432650Z test tests::duplicate_edge - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.5423202Z test tests::figure_eight ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.5732669Z test tests::insufficient_free_storage - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.6862563Z test tests::issue_many_then_accept_many ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.8501492Z test tests::long_memo - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.8732520Z test tests::length_exceeds_config - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.9332587Z test tests::measured_worst_case_storage ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:50.9802545Z test tests::length_one - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.1192657Z test tests::missing_edge - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.1922644Z test tests::missing_cap - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.3742620Z test tests::mixed_token_cycle - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.4102616Z test tests::open_path - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.4312716Z test tests::over_cap - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.6252604Z test tests::over_remaining - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.7562686Z test tests::pair_limit - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.7772363Z test tests::partial_payment_retains_debt ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:51.8070161Z test tests::oversized_batch - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:52.0572757Z test tests::registration_and_pair_limit_storage_are_funded ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:52.1232797Z test tests::reject_accepted - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:52.3652630Z test tests::reject_refunds ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:52.5602570Z test tests::repeated_edges_within_remaining ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:52.7952495Z test tests::reversed_cycle - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:52.8392643Z test tests::self_debt - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:53.1433043Z test tests::settlement_credits_pull_balance_and_refunds_excess ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:53.2523783Z test tests::successful_callback_does_not_restore_credit ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:53.5872680Z test tests::triangle_preserves_net_and_conserves_totals ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:53.6252446Z test tests::two_cycle_and_partial ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:53.8652646Z test tests::unaccepted_edge - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:53.9073246Z test tests::unknown_token - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:54.1492659Z test tests::unregistered_issuer - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:54.1862462Z test tests::untrusted_token - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:54.4272654Z test tests::withdraw_requires_one_yocto - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:54.4632124Z test tests::wrong_acceptor - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:54.7422520Z test tests::zero_issue - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:54.8616886Z test tests::zero_clear - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:55.3577358Z test tests::random_operation_sequence_checks_all_accounting ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5585536Z test tests::randomized_successful_operations_conserve ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5585879Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5586306Z test result: ok. 47 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.20s
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5586762Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5591032Z ^[[1m^[[92m     Running^[[0m unittests src/lib.rs (contracts/target/debug/deps/untangle_test_token-2a765f9d8f7edb01)
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5606186Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5606619Z running 2 tests
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5965209Z test tests::mint_and_metadata ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5978027Z test tests::capped - should panic ... ok
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5978373Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5978970Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5979478Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.5983903Z ^[[1m^[[92m   Doc-tests^[[0m untangle
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7407021Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7407559Z running 0 tests
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7409025Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7409827Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7410243Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7426060Z ^[[1m^[[92m   Doc-tests^[[0m untangle_test_token
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7844878Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7845423Z running 0 tests
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7845627Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7846013Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7846344Z 
+judge	UNKNOWN STEP	2026-11-06T07:56:59.7995709Z [3/6] sandbox integration and model parity
+judge	UNKNOWN STEP	2026-11-06T07:56:59.8339983Z cargo-near-near 0.22.0
+judge	UNKNOWN STEP	2026-11-06T07:56:59.8687744Z Note: `near` CLI configuration is stored in "/home/runner/.config/near-cli/config.toml"
+judge	UNKNOWN STEP	2026-11-06T07:56:59.8839768Z • Collecting cargo project metadata...
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9506443Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9506620Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9506825Z • Checking rustc version...
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9507249Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9507433Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9507747Z • Checking the host environment...
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9508441Z INFO: contract's near-sdk targets protocol version 85; rustc 1.99.1 accepted (bulk-memory opcodes supported by nearcore VM)
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9623678Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9624163Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:00.9624307Z • Building contract
+judge	UNKNOWN STEP	2026-11-06T07:57:01.0859550Z  │    Compiling proc-macro2 v1.0.107
+judge	UNKNOWN STEP	2026-11-06T07:57:01.0860283Z  │    Compiling quote v1.0.47
+judge	UNKNOWN STEP	2026-11-06T07:57:01.1538938Z  │    Compiling unicode-ident v1.0.27
+judge	UNKNOWN STEP	2026-11-06T07:57:01.2020528Z  │    Compiling ident_case v1.0.1
+judge	UNKNOWN STEP	2026-11-06T07:57:01.2293352Z  │    Compiling hashbrown v0.17.1
+judge	UNKNOWN STEP	2026-11-06T07:57:01.5848732Z  │    Compiling equivalent v1.0.3
+judge	UNKNOWN STEP	2026-11-06T07:57:01.6034545Z  │    Compiling winnow v1.0.5
+judge	UNKNOWN STEP	2026-11-06T07:57:01.6803564Z  │    Compiling syn v3.0.9
+judge	UNKNOWN STEP	2026-11-06T07:57:02.3352939Z  │    Compiling syn v2.0.119
+judge	UNKNOWN STEP	2026-11-06T07:57:04.5921653Z  │    Compiling serde_core v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:57:04.6782488Z  │    Compiling zmij v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:57:04.7564886Z  │    Compiling toml_parser v1.1.5+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:57:05.1030475Z  │    Compiling indexmap v2.14.2
+judge	UNKNOWN STEP	2026-11-06T07:57:05.3553671Z  │    Compiling toml_datetime v1.1.2+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:57:05.5225762Z  │    Compiling toml_edit v0.25.18+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:57:06.1334751Z  │    Compiling serde_derive v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:57:06.8611720Z  │    Compiling cfg_aliases v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:57:06.8775050Z  │    Compiling borsh v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:57:06.9397587Z  │    Compiling proc-macro-crate v3.5.0
+judge	UNKNOWN STEP	2026-11-06T07:57:07.1735458Z  │    Compiling serde v1.0.229
+judge	UNKNOWN STEP	2026-11-06T07:57:07.2545985Z  │    Compiling strsim v0.11.1
+judge	UNKNOWN STEP	2026-11-06T07:57:07.3960913Z  │    Compiling once_cell v1.21.4
+judge	UNKNOWN STEP	2026-11-06T07:57:07.4872420Z  │    Compiling borsh-derive v1.8.1
+judge	UNKNOWN STEP	2026-11-06T07:57:07.9107916Z  │    Compiling darling_core v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:57:08.1023654Z  │    Compiling typenum v1.20.1
+judge	UNKNOWN STEP	2026-11-06T07:57:08.6473884Z  │    Compiling hybrid-array v0.4.15
+judge	UNKNOWN STEP	2026-11-06T07:57:09.5875772Z  │    Compiling proc-macro-error-attr3 v3.1.1
+judge	UNKNOWN STEP	2026-11-06T07:57:09.7892341Z  │    Compiling darling_macro v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:57:09.7928676Z  │    Compiling serde_json v1.0.154
+judge	UNKNOWN STEP	2026-11-06T07:57:09.9172696Z  │    Compiling darling v0.24.1
+judge	UNKNOWN STEP	2026-11-06T07:57:09.9474663Z  │    Compiling proc-macro-error3 v3.1.1
+judge	UNKNOWN STEP	2026-11-06T07:57:10.1688127Z  │    Compiling rustversion v1.0.23
+judge	UNKNOWN STEP	2026-11-06T07:57:10.2714131Z  │    Compiling near-sys v0.4.1
+judge	UNKNOWN STEP	2026-11-06T07:57:10.2905988Z  │    Compiling foldhash v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:57:10.3610172Z  │    Compiling itoa v1.0.18
+judge	UNKNOWN STEP	2026-11-06T07:57:10.4580278Z  │    Compiling memchr v2.8.3
+judge	UNKNOWN STEP	2026-11-06T07:57:10.6577685Z  │    Compiling fnv v1.0.7
+judge	UNKNOWN STEP	2026-11-06T07:57:10.6813291Z  │    Compiling darling_core v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:57:12.0316600Z  │    Compiling near-sdk-env v0.1.9
+judge	UNKNOWN STEP	2026-11-06T07:57:12.0677319Z  │    Compiling impl-tools-lib v0.12.0
+judge	UNKNOWN STEP	2026-11-06T07:57:12.8947963Z  │    Compiling serde_with_macros v3.24.0
+judge	UNKNOWN STEP	2026-11-06T07:57:13.3962670Z  │    Compiling crypto-common v0.2.2
+judge	UNKNOWN STEP	2026-11-06T07:57:13.7337510Z  │    Compiling block-buffer v0.12.1
+judge	UNKNOWN STEP	2026-11-06T07:57:13.8048631Z  │    Compiling hex v0.4.3
+judge	UNKNOWN STEP	2026-11-06T07:57:13.9744020Z  │    Compiling bs58 v0.5.1
+judge	UNKNOWN STEP	2026-11-06T07:57:14.0727514Z  │    Compiling base64 v0.23.1
+judge	UNKNOWN STEP	2026-11-06T07:57:14.4099456Z  │    Compiling serde_with v3.24.0
+judge	UNKNOWN STEP	2026-11-06T07:57:14.4321722Z  │    Compiling digest v0.11.3
+judge	UNKNOWN STEP	2026-11-06T07:57:14.6418368Z  │    Compiling impl-tools v0.12.0
+judge	UNKNOWN STEP	2026-11-06T07:57:14.8478336Z  │    Compiling darling_macro v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:57:15.1755082Z  │    Compiling near-token v0.3.6
+judge	UNKNOWN STEP	2026-11-06T07:57:15.3422125Z  │    Compiling near-gas v0.3.7
+judge	UNKNOWN STEP	2026-11-06T07:57:15.4976979Z  │    Compiling near-account-id v3.0.0
+judge	UNKNOWN STEP	2026-11-06T07:57:15.6945425Z  │    Compiling wee_alloc v0.4.5
+judge	UNKNOWN STEP	2026-11-06T07:57:15.7248517Z  │    Compiling near-sdk-macros v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:57:15.7574543Z  │    Compiling heck v0.5.0
+judge	UNKNOWN STEP	2026-11-06T07:57:15.8361718Z  │    Compiling base64 v0.22.1
+judge	UNKNOWN STEP	2026-11-06T07:57:16.0756370Z  │    Compiling near-crypto-hash v0.2.0
+judge	UNKNOWN STEP	2026-11-06T07:57:16.0959108Z  │    Compiling near-sdk-core v4.4.2
+judge	UNKNOWN STEP	2026-11-06T07:57:16.3568465Z  │    Compiling strum_macros v0.26.4
+judge	UNKNOWN STEP	2026-11-06T07:57:16.7576307Z  │    Compiling darling v0.20.11
+judge	UNKNOWN STEP	2026-11-06T07:57:16.7745749Z  │    Compiling near-digest v0.1.5
+judge	UNKNOWN STEP	2026-11-06T07:57:16.8906030Z  │    Compiling cfg_eval v0.1.2
+judge	UNKNOWN STEP	2026-11-06T07:57:16.9923332Z  │    Compiling strum v0.26.3
+judge	UNKNOWN STEP	2026-11-06T07:57:17.0116796Z  │    Compiling memory_units v0.4.0
+judge	UNKNOWN STEP	2026-11-06T07:57:17.0438489Z  │    Compiling cfg-if v0.1.10
+judge	UNKNOWN STEP	2026-11-06T07:57:17.0621421Z  │    Compiling Inflector v0.11.4
+judge	UNKNOWN STEP	2026-11-06T07:57:17.2535548Z  │    Compiling near-global-contracts v0.3.3
+judge	UNKNOWN STEP	2026-11-06T07:57:17.6998116Z  │    Compiling hex-literal v1.1.0
+judge	UNKNOWN STEP	2026-11-06T07:57:17.9479841Z  │    Compiling near-sdk v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:57:18.7109482Z  │    Compiling untangle v0.1.0 (/home/runner/work/near/near/contracts/untangle)
+judge	UNKNOWN STEP	2026-11-06T07:57:21.8275203Z  │     Finished `release` profile [optimized] target(s) in 20.86s
+judge	UNKNOWN STEP	2026-11-06T07:57:21.8458176Z • Running an optimize for size post-step with wasm-opt --enable-nontrapping-float-to-int --enable-bulk-memory...
+judge	UNKNOWN STEP	2026-11-06T07:57:21.8458631Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1441984Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1442411Z     Finished wasm-opt -O in 1s 298ms
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1442714Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1445834Z ✓ Contract successfully built! (in CARGO_NEAR_BUILD_ENVIRONMENT=host)
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1449490Z      -                Binary: /home/runner/work/near/near/contracts/target/near/untangle/untangle.wasm
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1450002Z      -                  Size: 301.9 KB (301917 bytes)
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1450704Z      - SHA-256 checksum hex : 527ef8b36a016f2c32faabf6bbfaff438f2b4af63ca1d1364debb88352a23aa5
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1451469Z      - SHA-256 checksum bs58: 6Z2j5PnQFhTDeegz3aGishifMjZfAkaWAvx7PT9Y5iHr
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1451896Z     Finished cargo near build in 23s
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1469314Z Here is the console command if you ever need to re-run it again:
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1470302Z cargo near build non-reproducible-wasm --locked --no-abi --manifest-path contracts/untangle/Cargo.toml
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1470697Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1471178Z cargo-near has a new update available 0.22.0 → 0.23.0
+judge	UNKNOWN STEP	2026-11-06T07:57:23.1472036Z To update run: /home/runner/work/near/near/.tools/cargo-near-x86_64-unknown-linux-gnu/cargo-near near self-update
+judge	UNKNOWN STEP	2026-11-06T07:57:23.2025550Z • Collecting cargo project metadata...
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3963042Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3963277Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3963712Z • Checking rustc version...
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3974955Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3975117Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3975371Z • Checking the host environment...
+judge	UNKNOWN STEP	2026-11-06T07:57:23.3976292Z INFO: contract's near-sdk targets protocol version 85; rustc 1.99.1 accepted (bulk-memory opcodes supported by nearcore VM)
+judge	UNKNOWN STEP	2026-11-06T07:57:23.4078094Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:23.4078323Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:23.4078528Z • Building contract
+judge	UNKNOWN STEP	2026-11-06T07:57:23.5273685Z  │    Compiling near-sdk v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:57:24.2936941Z  │    Compiling near-contract-standards v5.30.1
+judge	UNKNOWN STEP	2026-11-06T07:57:25.5044654Z  │    Compiling untangle-test-token v0.1.0 (/home/runner/work/near/near/contracts/test-token)
+judge	UNKNOWN STEP	2026-11-06T07:57:26.0813422Z  │     Finished `release` profile [optimized] target(s) in 2.67s
+judge	UNKNOWN STEP	2026-11-06T07:57:26.0999698Z • Running an optimize for size post-step with wasm-opt --enable-nontrapping-float-to-int --enable-bulk-memory...
+judge	UNKNOWN STEP	2026-11-06T07:57:26.1000204Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6883254Z • done
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6883728Z     Finished wasm-opt -O in 588ms
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6884285Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6886431Z ✓ Contract successfully built! (in CARGO_NEAR_BUILD_ENVIRONMENT=host)
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6887996Z      -                Binary: /home/runner/work/near/near/contracts/target/near/untangle_test_token/untangle_test_token.wasm
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6888540Z      -                  Size: 144.5 KB (144480 bytes)
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6889039Z      - SHA-256 checksum hex : 6efa2a426487a450dda094ba98d9acf0d3d55ef24681b53b5a42d2099bb1b54a
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6889596Z      - SHA-256 checksum bs58: 8UD6TGQboCbkw1VGY57URpuHpx4xANhPCX7RU9MLRM3P
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6890156Z     Finished cargo near build in 3s
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6907848Z Here is the console command if you ever need to re-run it again:
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6909076Z cargo near build non-reproducible-wasm --locked --no-abi --manifest-path contracts/test-token/Cargo.toml
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6910021Z 
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6910334Z cargo-near has a new update available 0.22.0 → 0.23.0
+judge	UNKNOWN STEP	2026-11-06T07:57:26.6910970Z To update run: /home/runner/work/near/near/.tools/cargo-near-x86_64-unknown-linux-gnu/cargo-near near self-update
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3840093Z ^[[1m^[[92m   Compiling^[[0m proc-macro2 v1.0.107
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3840966Z ^[[1m^[[92m   Compiling^[[0m unicode-ident v1.0.27
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3841771Z ^[[1m^[[92m   Compiling^[[0m quote v1.0.47
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3842423Z ^[[1m^[[92m   Compiling^[[0m serde_json v1.0.154
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3843084Z ^[[1m^[[92m   Compiling^[[0m syn v3.0.9
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3843934Z ^[[1m^[[92m   Compiling^[[0m syn v2.0.119
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3844556Z ^[[1m^[[92m   Compiling^[[0m serde_derive v1.0.229
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3845124Z ^[[1m^[[92m   Compiling^[[0m hashbrown v0.17.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3845676Z ^[[1m^[[92m   Compiling^[[0m indexmap v2.14.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3846216Z ^[[1m^[[92m   Compiling^[[0m zeroize v1.9.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3846852Z ^[[1m^[[92m   Compiling^[[0m smallvec v1.16.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3847579Z ^[[1m^[[92m   Compiling^[[0m toml_edit v0.25.18+spec-1.1.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3848324Z ^[[1m^[[92m   Compiling^[[0m proc-macro-crate v3.5.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3849403Z ^[[1m^[[92m   Compiling^[[0m serde v1.0.229
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3850081Z ^[[1m^[[92m   Compiling^[[0m borsh-derive v1.8.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3850762Z ^[[1m^[[92m   Compiling^[[0m lock_api v0.4.14
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3851620Z ^[[1m^[[92m   Compiling^[[0m parking_lot_core v0.9.12
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3852351Z ^[[1m^[[92m   Compiling^[[0m synstructure v0.14.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3853024Z ^[[1m^[[92m   Compiling^[[0m generic-array v0.14.9
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3853597Z ^[[1m^[[92m   Compiling^[[0m aws-lc-sys v0.47.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3854156Z ^[[1m^[[92m   Compiling^[[0m parking_lot v0.12.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3854719Z ^[[1m^[[92m   Compiling^[[0m borsh v1.8.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3855228Z ^[[1m^[[92m   Compiling^[[0m ring v0.17.14
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3855739Z ^[[1m^[[92m   Compiling^[[0m errno v0.3.14
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3856266Z ^[[1m^[[92m   Compiling^[[0m log v0.4.35
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3856879Z ^[[1m^[[92m   Compiling^[[0m signal-hook-registry v1.4.8
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3857555Z ^[[1m^[[92m   Compiling^[[0m zerofrom-derive v0.1.8
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3858190Z ^[[1m^[[92m   Compiling^[[0m rustls-pki-types v1.15.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3858766Z ^[[1m^[[92m   Compiling^[[0m mio v1.2.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3859305Z ^[[1m^[[92m   Compiling^[[0m socket2 v0.6.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3859843Z ^[[1m^[[92m   Compiling^[[0m fnv v1.0.7
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3860386Z ^[[1m^[[92m   Compiling^[[0m typenum v1.20.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3861068Z ^[[1m^[[92m   Compiling^[[0m zerofrom v0.1.8
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3861890Z ^[[1m^[[92m   Compiling^[[0m yoke-derive v0.8.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3862633Z ^[[1m^[[92m   Compiling^[[0m serde_derive_internals v0.29.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3863245Z ^[[1m^[[92m   Compiling^[[0m base64 v0.23.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3863804Z ^[[1m^[[92m   Compiling^[[0m semver v1.0.28
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3864380Z ^[[1m^[[92m   Compiling^[[0m stable_deref_trait v1.2.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3864968Z ^[[1m^[[92m   Compiling^[[0m aws-lc-rs v1.19.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3865515Z ^[[1m^[[92m   Compiling^[[0m schemars v0.8.22
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3866084Z ^[[1m^[[92m   Compiling^[[0m yoke v0.8.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3866744Z ^[[1m^[[92m   Compiling^[[0m schemars_derive v0.8.22
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3867439Z ^[[1m^[[92m   Compiling^[[0m thiserror-impl v2.0.21
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3868143Z ^[[1m^[[92m   Compiling^[[0m percent-encoding v2.3.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3868811Z ^[[1m^[[92m   Compiling^[[0m untrusted v0.9.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3869445Z ^[[1m^[[92m   Compiling^[[0m dyn-clone v1.0.20
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3869976Z ^[[1m^[[92m   Compiling^[[0m thiserror v2.0.21
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3870537Z ^[[1m^[[92m   Compiling^[[0m block-buffer v0.10.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3871109Z ^[[1m^[[92m   Compiling^[[0m crypto-common v0.1.6
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3871885Z ^[[1m^[[92m   Compiling^[[0m zerovec-derive v0.11.7
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3872470Z ^[[1m^[[92m   Compiling^[[0m zerovec v0.11.9
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3873383Z ^[[1m^[[92m   Compiling^[[0m digest v0.10.7
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3874072Z ^[[1m^[[92m   Compiling^[[0m tracing-attributes v0.1.31
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3874762Z ^[[1m^[[92m   Compiling^[[0m displaydoc v0.2.7
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3875427Z ^[[1m^[[92m   Compiling^[[0m tokio-macros v2.7.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3876027Z ^[[1m^[[92m   Compiling^[[0m tokio v1.52.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3876552Z ^[[1m^[[92m   Compiling^[[0m tracing v0.1.44
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3877060Z ^[[1m^[[92m   Compiling^[[0m http v1.5.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3877598Z ^[[1m^[[92m   Compiling^[[0m futures-core v0.3.34
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3878129Z ^[[1m^[[92m   Compiling^[[0m syn v1.0.109
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3878645Z ^[[1m^[[92m   Compiling^[[0m darling_core v0.24.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3879364Z ^[[1m^[[92m   Compiling^[[0m unicode-segmentation v1.13.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3880069Z ^[[1m^[[92m   Compiling^[[0m httparse v1.10.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3880717Z ^[[1m^[[92m   Compiling^[[0m convert_case v0.10.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3881527Z ^[[1m^[[92m   Compiling^[[0m darling_macro v0.24.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3882179Z ^[[1m^[[92m   Compiling^[[0m tinystr v0.8.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3882746Z ^[[1m^[[92m   Compiling^[[0m writeable v0.6.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3883246Z ^[[1m^[[92m   Compiling^[[0m utf_types v1.0.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3883750Z ^[[1m^[[92m   Compiling^[[0m vcpkg v0.2.15
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3884386Z ^[[1m^[[92m   Compiling^[[0m litemap v0.8.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3884980Z ^[[1m^[[92m   Compiling^[[0m derive_more-impl v2.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3885666Z ^[[1m^[[92m   Compiling^[[0m icu_locale_core v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3886330Z ^[[1m^[[92m   Compiling^[[0m openssl-sys v0.9.118
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3886971Z ^[[1m^[[92m   Compiling^[[0m utf8_iter v1.1.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3887588Z ^[[1m^[[92m   Compiling^[[0m darling v0.24.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3888186Z ^[[1m^[[92m   Compiling^[[0m sha2 v0.10.9
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3888748Z ^[[1m^[[92m   Compiling^[[0m zerotrie v0.2.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3889309Z ^[[1m^[[92m   Compiling^[[0m potential_utf v0.1.6
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3889861Z ^[[1m^[[92m   Compiling^[[0m rustc_version v0.4.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3890455Z ^[[1m^[[92m   Compiling^[[0m near-account-id v3.0.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3891089Z ^[[1m^[[92m   Compiling^[[0m darling_core v0.20.11
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3891922Z ^[[1m^[[92m   Compiling^[[0m icu_properties_data v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3892524Z ^[[1m^[[92m   Compiling^[[0m crunchy v0.2.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3893107Z ^[[1m^[[92m   Compiling^[[0m icu_normalizer_data v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3893734Z ^[[1m^[[92m   Compiling^[[0m curve25519-dalek v4.1.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3894332Z ^[[1m^[[92m   Compiling^[[0m icu_collections v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3894941Z ^[[1m^[[92m   Compiling^[[0m icu_provider v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3895525Z ^[[1m^[[92m   Compiling^[[0m serde_with_macros v3.24.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3896162Z ^[[1m^[[92m   Compiling^[[0m darling_macro v0.20.11
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3896753Z ^[[1m^[[92m   Compiling^[[0m derive_more v2.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3897315Z ^[[1m^[[92m   Compiling^[[0m http-body v1.1.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3897852Z ^[[1m^[[92m   Compiling^[[0m near-token v0.3.6
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3898441Z ^[[1m^[[92m   Compiling^[[0m enum-map-derive v0.17.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3899041Z ^[[1m^[[92m   Compiling^[[0m derive_arbitrary v1.5.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3899670Z ^[[1m^[[92m   Compiling^[[0m aho-corasick v1.1.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3900319Z ^[[1m^[[92m   Compiling^[[0m futures-task v0.3.34
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3900900Z ^[[1m^[[92m   Compiling^[[0m lazy_static v1.5.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3901589Z ^[[1m^[[92m   Compiling^[[0m regex-syntax v0.8.11
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3902165Z ^[[1m^[[92m   Compiling^[[0m slab v0.4.12
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3902723Z ^[[1m^[[92m   Compiling^[[0m futures-util v0.3.34
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3903319Z ^[[1m^[[92m   Compiling^[[0m regex-automata v0.4.18
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3903905Z ^[[1m^[[92m   Compiling^[[0m arbitrary v1.5.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3904469Z ^[[1m^[[92m   Compiling^[[0m enum-map v2.7.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3905027Z ^[[1m^[[92m   Compiling^[[0m serde_with v3.24.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3905591Z ^[[1m^[[92m   Compiling^[[0m darling v0.20.11
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3906134Z ^[[1m^[[92m   Compiling^[[0m rand_chacha v0.3.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3906857Z ^[[1m^[[92m   Compiling^[[0m num-rational v0.3.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3907417Z ^[[1m^[[92m   Compiling^[[0m near-gas v0.3.7
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3908106Z ^[[1m^[[92m   Compiling^[[0m hex v0.4.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3908821Z ^[[1m^[[92m   Compiling^[[0m curve25519-dalek-derive v0.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3909567Z ^[[1m^[[92m   Compiling^[[0m serde_repr v0.1.21
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3910191Z ^[[1m^[[92m   Compiling^[[0m rustls v0.23.46
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3910717Z ^[[1m^[[92m   Compiling^[[0m tower-service v0.3.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3911639Z ^[[1m^[[92m   Compiling^[[0m signature v2.2.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3912195Z ^[[1m^[[92m   Compiling^[[0m openssl-probe v0.2.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3912726Z ^[[1m^[[92m   Compiling^[[0m byteorder v1.5.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3913335Z ^[[1m^[[92m   Compiling^[[0m try-lock v0.2.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3913932Z ^[[1m^[[92m   Compiling^[[0m want v0.3.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3914496Z ^[[1m^[[92m   Compiling^[[0m uint v0.9.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3915122Z ^[[1m^[[92m   Compiling^[[0m rustls-webpki v0.103.16
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3915797Z ^[[1m^[[92m   Compiling^[[0m strum_macros v0.24.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3916521Z ^[[1m^[[92m   Compiling^[[0m near-primitives-core v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3917098Z ^[[1m^[[92m   Compiling^[[0m ed25519 v2.2.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3917783Z ^[[1m^[[92m   Compiling^[[0m icu_normalizer v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3918347Z ^[[1m^[[92m   Compiling^[[0m icu_properties v2.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3918863Z ^[[1m^[[92m   Compiling^[[0m rand v0.8.8
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3919482Z ^[[1m^[[92m   Compiling^[[0m derive_builder_core v0.20.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3920145Z ^[[1m^[[92m   Compiling^[[0m regex v1.13.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3920764Z ^[[1m^[[92m   Compiling^[[0m getrandom v0.2.17
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3921572Z ^[[1m^[[92m   Compiling^[[0m crc32fast v1.5.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3922243Z ^[[1m^[[92m   Compiling^[[0m foreign-types-shared v0.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3922890Z ^[[1m^[[92m   Compiling^[[0m openssl v0.10.82
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3923445Z ^[[1m^[[92m   Compiling^[[0m atomic-waker v1.1.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3924034Z ^[[1m^[[92m   Compiling^[[0m sha3 v0.10.9
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3924583Z ^[[1m^[[92m   Compiling^[[0m near-config-utils v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3925118Z ^[[1m^[[92m   Compiling^[[0m hyper v1.12.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3925690Z ^[[1m^[[92m   Compiling^[[0m serde_yaml v0.9.34+deprecated
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3926311Z ^[[1m^[[92m   Compiling^[[0m foreign-types v0.3.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3927033Z ^[[1m^[[92m   Compiling^[[0m derive_builder_macro v0.20.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3927896Z ^[[1m^[[92m   Compiling^[[0m primitive-types v0.10.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3928776Z ^[[1m^[[92m   Compiling^[[0m secp256k1 v0.27.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3929605Z ^[[1m^[[92m   Compiling^[[0m Inflector v0.11.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3930473Z ^[[1m^[[92m   Compiling^[[0m idna_adapter v1.2.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3931518Z ^[[1m^[[92m   Compiling^[[0m ed25519-dalek v2.2.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3932089Z ^[[1m^[[92m   Compiling^[[0m strum v0.24.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3932698Z ^[[1m^[[92m   Compiling^[[0m uriparse v0.6.4
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3933369Z ^[[1m^[[92m   Compiling^[[0m futures-channel v0.3.34
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3933987Z ^[[1m^[[92m   Compiling^[[0m blake2 v0.10.6
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3934639Z ^[[1m^[[92m   Compiling^[[0m form_urlencoded v1.2.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3935304Z ^[[1m^[[92m   Compiling^[[0m webpki-roots v1.0.11
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3935990Z ^[[1m^[[92m   Compiling^[[0m near_schemafy_core v0.7.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3936718Z ^[[1m^[[92m   Compiling^[[0m openssl-macros v0.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3937327Z ^[[1m^[[92m   Compiling^[[0m getrandom v0.4.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3937862Z ^[[1m^[[92m   Compiling^[[0m simd-adler32 v0.3.10
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3938388Z ^[[1m^[[92m   Compiling^[[0m rand_core v0.10.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3938898Z ^[[1m^[[92m   Compiling^[[0m utf8-zero v0.8.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3939422Z ^[[1m^[[92m   Compiling^[[0m native-tls v0.2.18
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3939938Z ^[[1m^[[92m   Compiling^[[0m adler2 v2.0.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3940533Z ^[[1m^[[92m   Compiling^[[0m ipnet v2.12.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3941121Z ^[[1m^[[92m   Compiling^[[0m hyper-util v0.1.21
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3948444Z ^[[1m^[[92m   Compiling^[[0m near-crypto v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3949330Z ^[[1m^[[92m   Compiling^[[0m miniz_oxide v0.9.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3949916Z ^[[1m^[[92m   Compiling^[[0m chrono v0.4.45
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3950553Z ^[[1m^[[92m   Compiling^[[0m near-parameters v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3951130Z ^[[1m^[[92m   Compiling^[[0m idna v1.1.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3951875Z ^[[1m^[[92m   Compiling^[[0m derive_builder v0.20.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3952503Z ^[[1m^[[92m   Compiling^[[0m near-time v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3953109Z ^[[1m^[[92m   Compiling^[[0m near-fmt v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3953710Z ^[[1m^[[92m   Compiling^[[0m sync_wrapper v1.0.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3954335Z ^[[1m^[[92m   Compiling^[[0m ordered-float v4.6.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3954859Z ^[[1m^[[92m   Compiling^[[0m jsonptr v0.7.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3955347Z ^[[1m^[[92m   Compiling^[[0m bytesize v1.3.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3955872Z ^[[1m^[[92m   Compiling^[[0m smart-default v0.7.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3956389Z ^[[1m^[[92m   Compiling^[[0m filetime v0.2.29
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3956906Z ^[[1m^[[92m   Compiling^[[0m near-sandbox v0.4.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3957431Z ^[[1m^[[92m   Compiling^[[0m subtle v2.6.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3957962Z ^[[1m^[[92m   Compiling^[[0m tower-layer v0.3.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3958570Z ^[[1m^[[92m   Compiling^[[0m ureq-proto v0.7.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3959124Z ^[[1m^[[92m   Compiling^[[0m tower v0.5.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3959873Z ^[[1m^[[92m   Compiling^[[0m near-primitives v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3960455Z ^[[1m^[[92m   Compiling^[[0m tar v0.4.46
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3961023Z ^[[1m^[[92m   Compiling^[[0m json-patch v4.2.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3961708Z ^[[1m^[[92m   Compiling^[[0m flate2 v1.1.10
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3962237Z ^[[1m^[[92m   Compiling^[[0m url v2.5.8
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3962765Z ^[[1m^[[92m   Compiling^[[0m fs4 v0.13.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3963348Z ^[[1m^[[92m   Compiling^[[0m http-body-util v0.1.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3963968Z ^[[1m^[[92m   Compiling^[[0m tempfile v3.27.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3964518Z ^[[1m^[[92m   Compiling^[[0m near-abi v0.4.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3965091Z ^[[1m^[[92m   Compiling^[[0m tokio-native-tls v0.3.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3965683Z ^[[1m^[[92m   Compiling^[[0m tower-http v0.6.11
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3966209Z ^[[1m^[[92m   Compiling^[[0m ureq v3.5.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3966773Z ^[[1m^[[92m   Compiling^[[0m near_schemafy_lib v0.7.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3967367Z ^[[1m^[[92m   Compiling^[[0m prettyplease v0.1.25
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3967929Z ^[[1m^[[92m   Compiling^[[0m thiserror v1.0.69
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3968465Z ^[[1m^[[92m   Compiling^[[0m chacha20 v0.10.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3969085Z ^[[1m^[[92m   Compiling^[[0m near-abi-client-impl v0.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3969661Z ^[[1m^[[92m   Compiling^[[0m hyper-tls v0.6.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3970247Z ^[[1m^[[92m   Compiling^[[0m near-chain-configs v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3970932Z ^[[1m^[[92m   Compiling^[[0m near-indexer-primitives v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3971692Z ^[[1m^[[92m   Compiling^[[0m tokio-rustls v0.26.6
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3972295Z ^[[1m^[[92m   Compiling^[[0m serde_urlencoded v0.7.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3972923Z ^[[1m^[[92m   Compiling^[[0m rustls-native-certs v0.8.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3973545Z ^[[1m^[[92m   Compiling^[[0m thiserror-impl v1.0.69
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3974204Z ^[[1m^[[92m   Compiling^[[0m reqwest v0.12.28
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3974894Z ^[[1m^[[92m   Compiling^[[0m rustls-platform-verifier v0.7.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3975558Z ^[[1m^[[92m   Compiling^[[0m hyper-rustls v0.27.10
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3976278Z ^[[1m^[[92m   Compiling^[[0m near-jsonrpc-primitives v0.38.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3976970Z ^[[1m^[[92m   Compiling^[[0m near-workspaces v0.24.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3977681Z ^[[1m^[[92m   Compiling^[[0m near-abi-client-macros v0.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3978267Z ^[[1m^[[92m   Compiling^[[0m rand v0.10.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3978765Z ^[[1m^[[92m   Compiling^[[0m jsonptr v0.4.7
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3979283Z ^[[1m^[[92m   Compiling^[[0m convert_case v0.5.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3979832Z ^[[1m^[[92m   Compiling^[[0m near-abi-client v0.1.1
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3980420Z ^[[1m^[[92m   Compiling^[[0m near-jsonrpc-client v0.23.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3980985Z ^[[1m^[[92m   Compiling^[[0m json-patch v2.0.0
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3982116Z ^[[1m^[[92m   Compiling^[[0m tokio-retry v0.3.2
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3982916Z ^[[1m^[[92m   Compiling^[[0m reqwest v0.13.5
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3983569Z ^[[1m^[[92m   Compiling^[[0m async-trait v0.1.92
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3984179Z ^[[1m^[[92m   Compiling^[[0m fs2 v0.4.3
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3985313Z ^[[1m^[[92m   Compiling^[[0m untangle-integration-tests v0.1.0 (/home/runner/work/near/near/contracts/integration-tests)
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3986436Z ^[[1m^[[92m    Finished^[[0m `test` profile [unoptimized + debuginfo] target(s) in 1m 30s
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3987448Z ^[[1m^[[92m     Running^[[0m tests/flows.rs (contracts/target/debug/deps/flows-66de0ad24bdd5c96)
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3987919Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3988058Z running 1 test
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3989107Z sandbox: full flow, rollback, partial/excess/exact payments, withdrawal failure restoration, scoped keys, custody verified
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3990241Z test sandbox_clearing_settlement_rollback_and_keys ... ok
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3990633Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3991335Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 36.68s
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3991879Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3992515Z ^[[1m^[[92m     Running^[[0m tests/parity.rs (contracts/target/debug/deps/parity-52af3840b2a2f575)
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3992968Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3993240Z running 1 test
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3993632Z parity sequence 1/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3994111Z parity sequence 2/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3994726Z test model_contract_parity_25_by_40 has been running for over 60 seconds
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3995407Z parity sequence 3/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3995980Z parity sequence 4/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3996562Z parity sequence 5/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3997138Z parity sequence 6/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3997719Z parity sequence 7/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3998301Z parity sequence 8/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3998852Z parity sequence 9/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3999327Z parity sequence 10/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.3999803Z parity sequence 11/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4000284Z parity sequence 12/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4000760Z parity sequence 13/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4001343Z parity sequence 14/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4001863Z parity sequence 15/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4002434Z parity sequence 16/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4003013Z parity sequence 17/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4003604Z parity sequence 18/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4004192Z parity sequence 19/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4004774Z parity sequence 20/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4005308Z parity sequence 21/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4005821Z parity sequence 22/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4006321Z parity sequence 23/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4006823Z parity sequence 24/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4007320Z parity sequence 25/25: 40 operations matched
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4007824Z test model_contract_parity_25_by_40 ... ok
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4008106Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4008618Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 508.71s
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4009130Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4009396Z [4/6] TypeScript tests and typecheck
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4083012Z Scope: 5 of 6 workspace projects
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4146521Z packages/sim test$ vitest run src
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4154956Z packages/shared test$ vitest run src
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4167171Z packages/solver test$ vitest run src
+judge	UNKNOWN STEP	2026-11-06T08:08:02.4169291Z packages/client test$ vitest run src
+judge	UNKNOWN STEP	2026-11-06T08:08:02.8717152Z packages/client test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.8718387Z packages/client test:  RUN  v5.1.0 /home/runner/work/near/near/packages/client
+judge	UNKNOWN STEP	2026-11-06T08:08:02.8751064Z packages/client test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.8782182Z packages/solver test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.8783343Z packages/solver test:  RUN  v5.1.0 /home/runner/work/near/near/packages/solver
+judge	UNKNOWN STEP	2026-11-06T08:08:02.8822432Z packages/solver test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.9132377Z packages/sim test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.9167075Z packages/sim test:  RUN  v5.1.0 /home/runner/work/near/near/packages/sim
+judge	UNKNOWN STEP	2026-11-06T08:08:02.9194413Z packages/sim test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.9532834Z packages/shared test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:02.9554413Z packages/shared test:  RUN  v5.1.0 /home/runner/work/near/near/packages/shared
+judge	UNKNOWN STEP	2026-11-06T08:08:02.9572148Z packages/shared test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3004472Z packages/shared test:  ✓ src/model.test.ts (4 tests) 14ms
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3074861Z packages/shared test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3142647Z packages/shared test:  Test Files  1 passed (1)
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3162746Z packages/shared test:       Tests  4 passed (4)
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3163702Z packages/shared test:    Start at  08:08:02
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3164900Z packages/shared test:    Duration  341ms (transform 63%, import 21%, tests 11%, worker 5%)
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3165872Z packages/shared test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3438230Z packages/shared test: Done
+judge	UNKNOWN STEP	2026-11-06T08:08:03.3493471Z packages/web test$ tsc --noEmit -p ../../tsconfig.json
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9242833Z packages/client test:  ✓ src/journal.test.ts (1 test) 524ms
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9302976Z packages/client test:    ✓ recovers a lost response by hash and never signs a replacement transaction 522ms
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9432574Z packages/client test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9482176Z packages/client test:  Test Files  1 passed (1)
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9532356Z packages/client test:       Tests  1 passed (1)
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9557096Z packages/client test:    Start at  08:08:02
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9582544Z packages/client test:    Duration  1.06s (tests 61%, transform 20%, import 17%, worker 2%)
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9602759Z packages/client test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9752578Z packages/client test: Done
+judge	UNKNOWN STEP	2026-11-06T08:08:03.9993643Z packages/web test: Done
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3922977Z packages/sim test:  ✓ src/local.test.ts (1 test) 904ms
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3934695Z packages/sim test:    ✓ seeded scenarios are reproducible, conserve amounts and finish locally under five seconds 901ms
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3974293Z packages/sim test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3977372Z packages/sim test:  Test Files  1 passed (1)
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3978627Z packages/sim test:       Tests  1 passed (1)
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3979571Z packages/sim test:    Start at  08:08:02
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3985216Z packages/sim test:    Duration  1.46s (tests 74%, transform 14%, import 12%, worker 1%)
+judge	UNKNOWN STEP	2026-11-06T08:08:04.3998884Z packages/sim test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:04.4153980Z packages/sim test: Done
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8409330Z packages/solver test: stdout | src/solver.test.ts > 50 nodes / 500 edges plans in under two seconds
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8410243Z packages/solver test: solver_50_nodes_500_edges_ms=210.856
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8410948Z packages/solver test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8463047Z packages/solver test:  ✓ src/solver.test.ts (4 tests) 1648ms
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8463855Z packages/solver test:    ✓ random graphs preserve nets and leave no supported cycle 706ms
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8464655Z packages/solver test:    ✓ 50 nodes / 500 edges plans in under two seconds 824ms
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8497032Z packages/solver test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8497865Z packages/solver test:  Test Files  1 passed (1)
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8499712Z packages/solver test:       Tests  4 passed (4)
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8500322Z packages/solver test:    Start at  08:08:02
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8504263Z packages/solver test:    Duration  1.98s (tests 93%, transform 4%, import 3%)
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8514598Z packages/solver test: 
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8690873Z packages/solver test: Done
+judge	UNKNOWN STEP	2026-11-06T08:08:04.8907443Z $ tsc --noEmit
+judge	UNKNOWN STEP	2026-11-06T08:08:05.1666891Z [5/6] seeded local simulations compared with committed fixtures
+judge	UNKNOWN STEP	2026-11-06T08:08:06.3134240Z 12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3199199Z [6/6] live testnet stats: accepted=735000502, cleared=295000402, outstanding=385000000 (base units; lifetime includes benchmarks)
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3368349Z ##[group]Run pnpm check
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3368613Z ^[[36;1mpnpm check^[[0m
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3397390Z shell: /usr/bin/bash -e {0}
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3397650Z env:
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3397852Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3398108Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3398325Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3398592Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3398877Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T08:08:07.3623105Z $ biome check .
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4307311Z Checked 33 files in 22ms. No fixes applied.
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4381626Z ##[group]Run pnpm run build:web
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4381927Z ^[[36;1mpnpm run build:web^[[0m
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4410682Z shell: /usr/bin/bash -e {0}
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4410956Z env:
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4411154Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4411652Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4411953Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4412235Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4412527Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T08:08:07.4635059Z $ tsx scripts/export-evidence.ts && vite build packages/web
+judge	UNKNOWN STEP	2026-11-06T08:08:07.7344551Z Exported 4 recorded scenarios from validated evidence.
+judge	UNKNOWN STEP	2026-11-06T08:08:07.9173836Z ^[[36mvite v8.3.6 ^[[32mbuilding client environment for production...^[[36m^[[39m
+judge	UNKNOWN STEP	2026-11-06T08:08:07.9431934Z transforming...
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0427214Z ✓ 136 modules transformed.
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0623514Z rendering chunks...
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0840851Z computing gzip size...
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0865146Z packages/web/dist/index.html                   0.52 kB │ gzip:  0.35 kB
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0865820Z packages/web/dist/assets/index-CQBddBv3.css    4.67 kB │ gzip:  1.71 kB
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0866421Z packages/web/dist/assets/index-BmixjLsm.js   125.22 kB │ gzip: 39.10 kB
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0866689Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:08.0873295Z ^[[32m✓ built in 169ms^[[39m
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1045168Z ##[group]Run gitleaks/gitleaks-action@v3.0.0
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1045459Z env:
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1045663Z   CARGO_HOME: /home/runner/.cargo
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1045905Z   CARGO_INCREMENTAL: 0
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1046124Z   CARGO_TERM_COLOR: always
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1046390Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1049063Z   GITHUB_TOKEN: ***
+judge	UNKNOWN STEP	2026-11-06T08:08:08.1049261Z ##[endgroup]
+judge	UNKNOWN STEP	2026-11-06T08:08:08.2747419Z (node:150911) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+judge	UNKNOWN STEP	2026-11-06T08:08:08.2865081Z (Use `node --trace-deprecation ...` to show where the warning was created)
+judge	UNKNOWN STEP	2026-11-06T08:08:08.2866232Z (node:150911) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+judge	UNKNOWN STEP	2026-11-06T08:08:08.6331914Z [willy264] is an individual user. No license key is required.
+judge	UNKNOWN STEP	2026-11-06T08:08:08.6333031Z gitleaks version: 8.24.3
+judge	UNKNOWN STEP	2026-11-06T08:08:08.6334285Z Version to install: 8.24.3 (target directory: /tmp/gitleaks-8.24.3)
+judge	UNKNOWN STEP	2026-11-06T08:08:08.8289392Z Downloading gitleaks from https://github.com/zricethezav/gitleaks/releases/download/v8.24.3/gitleaks_8.24.3_linux_x64.tar.gz
+judge	UNKNOWN STEP	2026-11-06T08:08:09.3626337Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /tmp/gitleaks-8.24.3 -f /tmp/gitleaks.tmp
+judge	UNKNOWN STEP	2026-11-06T08:08:09.4419815Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/near/near --files-from manifest.txt --use-compress-program zstdmt
+judge	UNKNOWN STEP	2026-11-06T08:08:10.5109822Z Sent 5717454 of 5717454 (100.0%), 7.3 MBs/sec
+judge	UNKNOWN STEP	2026-11-06T08:08:10.7702590Z event type: push
+judge	UNKNOWN STEP	2026-11-06T08:08:10.7704721Z gitleaks cmd: gitleaks detect --redact -v --exit-code=2 --report-format=sarif --report-path=results.sarif --log-level=debug --log-opts=--no-merges --first-parent fb829d16110e5e72027ca65d558d6c60dcad30f5^..811d7d58560a137bdede355d79240d190b0d83a6
+judge	UNKNOWN STEP	2026-11-06T08:08:10.7723620Z [command]/tmp/gitleaks-8.24.3/gitleaks detect --redact -v --exit-code=2 --report-format=sarif --report-path=results.sarif --log-level=debug --log-opts=--no-merges --first-parent fb829d16110e5e72027ca65d558d6c60dcad30f5^..811d7d58560a137bdede355d79240d190b0d83a6
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0615035Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0615740Z     ○
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0616050Z     │╲
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0616275Z     │ ○
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0616471Z     ○ ░
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0616818Z     ░    gitleaks
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0617040Z 
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0621389Z ^[[90m8:08AM^[[0m DBG using github.com/wasilibs/go-re2 regex engine
+judge	UNKNOWN STEP	2026-11-06T08:08:11.0622763Z ^[[90m8:08AM^[[0m DBG using existing gitleaks config .gitleaks.toml from `(--source)/.gitleaks.toml`
+judge	UNKNOWN STEP	2026-11-06T08:08:11.1979736Z ^[[90m8:08AM^[[0m DBG extending config with default config
+judge	UNKNOWN STEP	2026-11-06T08:08:11.1990249Z ^[[90m8:08AM^[[0m DBG executing: /usr/bin/git -C . log -p -U0 --no-merges --first-parent fb829d16110e5e72027ca65d558d6c60dcad30f5^..811d7d58560a137bdede355d79240d190b0d83a6
+judge	UNKNOWN STEP	2026-11-06T08:08:11.2031886Z ^[[90m8:08AM^[[0m DBG SCM platform parsed from host ^[[36mhost=^[[0mgithub.com ^[[36mplatform=^[[0mgithub
+judge	UNKNOWN STEP	2026-11-06T08:08:11.4221048Z ^[[90m8:08AM^[[0m ^[[32mINF^[[0m ^[[1m2 commits scanned.^[[0m
+judge	UNKNOWN STEP	2026-11-06T08:08:11.4222459Z ^[[90m8:08AM^[[0m DBG Note: this number might be smaller than expected due to commits with no additions
+judge	UNKNOWN STEP	2026-11-06T08:08:11.4223671Z ^[[90m8:08AM^[[0m ^[[32mINF^[[0m ^[[1mscanned ~3621152 bytes (3.62 MB) in 361ms^[[0m
+judge	UNKNOWN STEP	2026-11-06T08:08:11.4224545Z ^[[90m8:08AM^[[0m ^[[32mINF^[[0m ^[[1mno leaks found^[[0m
+judge	UNKNOWN STEP	2026-11-06T08:08:11.4302962Z Artifact name is valid!
+judge	UNKNOWN STEP	2026-11-06T08:08:11.4303645Z Root directory input is valid!
+judge	UNKNOWN STEP	2026-11-06T08:08:11.7510041Z Beginning upload of artifact content to blob storage
+judge	UNKNOWN STEP	2026-11-06T08:08:11.9750168Z Uploaded bytes 6748
+judge	UNKNOWN STEP	2026-11-06T08:08:12.0329894Z Finished uploading artifact content to blob storage!
+judge	UNKNOWN STEP	2026-11-06T08:08:12.0332548Z SHA256 digest of uploaded artifact zip is cd729ca1598a43c59b7ed522b04469080b00f1ee3c708cc3306b74bcb20f3e47
+judge	UNKNOWN STEP	2026-11-06T08:08:12.0333986Z Finalizing artifact upload
+judge	UNKNOWN STEP	2026-11-06T08:08:12.6162580Z Artifact gitleaks-results.sarif.zip successfully finalized. Artifact ID 13487725737
+judge	UNKNOWN STEP	2026-11-06T08:08:12.6179932Z ✅ No leaks detected
+judge	UNKNOWN STEP	2026-11-06T08:08:12.6363346Z Post job cleanup.
+judge	UNKNOWN STEP	2026-11-06T08:08:12.7831130Z Pruning is unnecessary.
+judge	UNKNOWN STEP	2026-11-06T08:08:12.7934476Z Post job cleanup.
+judge	UNKNOWN STEP	2026-11-06T08:08:12.9254983Z Post job cleanup.
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0185098Z [command]/usr/bin/git version
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0236754Z git version 2.56.0
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0281385Z Temporarily overriding HOME='/home/runner/work/_temp/f48507b6-ddda-4c8f-94c5-c1c5a7323d7a' before making global git config changes
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0282614Z Adding repository directory to the temporary git global config as a safe directory
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0287786Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/near/near
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0324509Z Removing SSH command configuration
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0332448Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0382867Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0622177Z Removing HTTP extra header
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0628886Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0664574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0902029Z Removing includeIf entries pointing to credentials config files
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0913550Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0941890Z includeif.gitdir:/home/runner/work/near/near/.git.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0942429Z includeif.gitdir:/home/runner/work/near/near/.git/worktrees/*.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0942865Z includeif.gitdir:/github/workspace/.git.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0943288Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0952071Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/near/near/.git.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.0991585Z /home/runner/work/_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1012105Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/near/near/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-34d8f9e0\-6ff1\-4e52\-b5de\-2dae14dd11b7\.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1050448Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/near/near/.git/worktrees/*.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1067592Z /home/runner/work/_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1077663Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/near/near/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-34d8f9e0\-6ff1\-4e52\-b5de\-2dae14dd11b7\.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1112074Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1130997Z /github/runner_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1137662Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-34d8f9e0\-6ff1\-4e52\-b5de\-2dae14dd11b7\.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1168168Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1187338Z /github/runner_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1193784Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-34d8f9e0\-6ff1\-4e52\-b5de\-2dae14dd11b7\.config
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1223450Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1433784Z Removing credentials config '/home/runner/work/_temp/git-credentials-34d8f9e0-6ff1-4e52-b5de-2dae14dd11b7.config'
+judge	UNKNOWN STEP	2026-11-06T08:08:13.1579613Z Cleaning up orphan processes

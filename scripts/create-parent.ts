@@ -1,6 +1,6 @@
 import { randomBytes } from "node:crypto";
 import { existsSync, mkdirSync, writeFileSync, readFileSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import { spawnSync } from "node:child_process";
 import {
   keys,
   verifyNetwork,
@@ -30,8 +30,10 @@ const key = keys(parent);
 if (!(await exists(parent))) {
   const cli =
     process.env.NEAR_CLI ??
-    ".tools/near-cli-rs-x86_64-pc-windows-msvc/near.exe";
-  const out = execFileSync(
+    (process.platform === "win32"
+      ? ".tools/near-cli-rs-x86_64-pc-windows-msvc/near.exe"
+      : "near");
+  const result = spawnSync(
     cli,
     [
       "account",
@@ -47,7 +49,11 @@ if (!(await exists(parent))) {
     { encoding: "utf8", timeout: 120000 },
   );
   mkdirSync("docs/evidence", { recursive: true });
+  const out = (result.stdout ?? "") + (result.stderr ?? "");
   writeFileSync("docs/evidence/account-creation.txt", out);
   console.log(out);
+  if (result.error) throw result.error;
+  if (result.status !== 0)
+    throw Error(`Account creation failed: exit ${result.status}`);
 }
 console.log(JSON.stringify({ parent, created: await exists(parent) }));

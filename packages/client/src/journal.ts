@@ -173,6 +173,7 @@ export class Journal {
         method: e.method,
         signer: e.signer,
         keyRole: e.keyRole,
+        publicKey: e.result?.transaction?.public_key,
         gas: this.gas(e.result!),
       }));
   }

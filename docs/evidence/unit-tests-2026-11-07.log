@@ -1,0 +1,76 @@
+   Compiling untangle v0.1.0 (C:\Users\HP\Documents\people\hackathons\near\contracts\untangle)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 44.98s
+     Running unittests src\lib.rs (contracts\target\debug\deps\untangle-24750f0e1e8b9329.exe)
+
+running 48 tests
+test tests::cancellation_refunds_fixed_fee ... ok
+test tests::accept_twice - should panic ... ok
+test tests::bps_handles_u128_max ... ok
+test tests::bad_settlement_returns_all ... ok
+test tests::cancel_accepted - should panic ... ok
+test tests::accept_many_rejects_missing_last_id - should panic ... ok
+test tests::cap_cannot_fall_below_payable - should panic ... ok
+test tests::callback_restores_failed_withdrawal ... ok
+test tests::empty_batch - should panic ... ok
+test tests::issue_many_then_accept_many ... ok
+test tests::duplicate_edge - should panic ... ok
+test tests::insufficient_free_storage - should panic ... ok
+test tests::maximum_issue_batch_fits_runtime_log_limit ... ok
+test tests::length_exceeds_config - should panic ... ok
+test tests::cumulative_overconsumption - should panic ... ok
+test tests::measured_worst_case_storage ... ok
+test tests::long_memo - should panic ... ok
+test tests::figure_eight ... ok
+test tests::length_one - should panic ... ok
+test tests::mixed_token_cycle - should panic ... ok
+test tests::open_path - should panic ... ok
+test tests::missing_edge - should panic ... ok
+test tests::missing_cap - should panic ... ok
+test tests::oversized_batch - should panic ... ok
+test tests::over_cap - should panic ... ok
+test tests::pair_limit - should panic ... ok
+test tests::registration_and_pair_limit_storage_are_funded ... ok
+test tests::over_remaining - should panic ... ok
+test tests::repeated_edges_within_remaining ... ok
+test tests::partial_payment_retains_debt ... ok
+test tests::reject_accepted - should panic ... ok
+test tests::reject_refunds ... ok
+test tests::reversed_cycle - should panic ... ok
+test tests::self_debt - should panic ... ok
+test tests::successful_callback_does_not_restore_credit ... ok
+test tests::settlement_credits_pull_balance_and_refunds_excess ... ok
+test tests::triangle_preserves_net_and_conserves_totals ... ok
+test tests::unknown_token - should panic ... ok
+test tests::unaccepted_edge - should panic ... ok
+test tests::unregistered_issuer - should panic ... ok
+test tests::two_cycle_and_partial ... ok
+test tests::wrong_acceptor - should panic ... ok
+test tests::untrusted_token - should panic ... ok
+test tests::zero_clear - should panic ... ok
+test tests::withdraw_requires_one_yocto - should panic ... ok
+test tests::zero_issue - should panic ... ok
+test tests::random_operation_sequence_checks_all_accounting ... ok
+test tests::randomized_successful_operations_conserve ... ok
+
+test result: ok. 48 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 52.69s
+
+     Running unittests src\lib.rs (contracts\target\debug\deps\untangle_test_token-bd8274f0676f3c42.exe)
+
+running 2 tests
+test tests::mint_and_metadata ... ok
+test tests::capped - should panic ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+   Doc-tests untangle
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests untangle_test_token
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

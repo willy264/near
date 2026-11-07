@@ -1,4 +1,4 @@
-﻿# Untangle
+# Untangle
 
 Untangle records two-sided obligations and cancels verified debt cycles on NEAR testnet. Debtors pay the remaining obligations in tUSD, a simulated test token with no value, and creditors withdraw their credited balances.
 
@@ -27,22 +27,22 @@ Pay:    debtor --tUSD--> contract credit --withdraw--> creditor
 
 ## For AI judges: run it
 
-Prerequisites: Rust 1.99.1 with `wasm32-unknown-unknown`, Node 26.13.0 LTS, pnpm 12.16.1, cargo-near 0.22.0, and Linux/macOS for near-sandbox. On Windows, use WSL. Native builds need a C compiler, NASM, pkg-config and OpenSSL development headers. The initial dependency build and sandbox parity test take longer than three minutes; no three-minute first-run claim is made.
+Quick prerequisites: Node >=22.22.2 and pnpm 12.16.1. No Rust is needed for `--quick`; its target is under two minutes, dependent on install/network speed. The full check additionally needs Rust stable >=1.95 with `wasm32-unknown-unknown`, cargo-near 0.22.0, and Linux/macOS for near-sandbox (WSL on Windows). Native builds need a C compiler, NASM, pkg-config and OpenSSL development headers. First compilation and sandbox parity take longer than three minutes.
 
 1. `git clone https://github.com/willy264/near.git && cd near` -> get the source and committed fixtures.
-2. If cargo-near is absent, run `bash scripts/install-cargo-near.sh` -> install the checksum-verified pinned binary under `.tools/`.
-3. `bash scripts/judge.sh` -> see `[1/6] toolchain check`, `[2/6] contract unit tests`, `[3/6] sandbox integration and model parity`, `[4/6] TypeScript tests and typecheck`, `[5/6] seeded local simulations compared with committed fixtures`, and `[6/6] live testnet stats`.
+2. `bash scripts/judge.sh --quick` -> install dependencies, run TypeScript tests/typecheck, match 12 fixtures, and simulate agents with seed 42; checkpoints `[1/5]` through `[5/5]`.
+3. For the full check, install cargo-near with `bash scripts/install-cargo-near.sh` if absent, then run `bash scripts/judge.sh` -> see `[1/6] toolchain check`, `[2/6] contract unit tests`, `[3/6] sandbox integration and model parity`, `[4/6] TypeScript tests and typecheck`, `[5/6] seeded local simulations compared with committed fixtures`, and `[6/6] live testnet stats`.
 4. `pnpm sim run --scenario agents --seed 42 --mode local` -> see a clearly labeled simulated clearing result and an evidence-file path. Compare it with the generated evidence table below.
 5. `pnpm solver plan --token tusd.local --network local --fixture fixtures/agents-42-before.json` -> see dry-run batches and their projected reduction; no transaction is sent.
 
-These commands need no `.env`, keys or funds. Initial dependency installation requires network access. Only a sandbox binary download failure may be reported as `skipped (no sandbox)`; test failures remain failures. The optional live query reports a clearly labeled skip when RPC is unavailable. The fresh-clone rehearsal and CI results are still pending; the individual unit, sandbox, parity and local-run evidence is available below.
+These commands need no `.env`, keys or funds. Initial dependency installation requires network access. Only a sandbox binary download failure may be reported as `skipped (no sandbox)`; test failures remain failures. The optional live query prints one skip line when RPC is unavailable. [CI passed at 811d7d5](https://github.com/willy264/near/actions/runs/42184009772); the [clean Linux full rehearsal](docs/evidence/fresh-clone-2026-11-06.log) completed. The independent Claude review reported 47 ledger + 2 token tests on its reviewed snapshot; a subsequent local regression test has a separate [48 + 2 run log](docs/evidence/unit-tests-2026-11-07.log). Counts describe their specific runs, not a retroactive change to earlier evidence. A fresh rehearsal of the portability fixes is pending.
 
 ## Live demo
 
 The hosted viewer is not published yet. To view the local build: `pnpm install --frozen-lockfile`, `pnpm run build:web`, then `pnpm exec vite preview packages/web` -> open the URL printed by Vite.
 
-- Ledger: [`ledger.untangle-261106-e1386a.testnet`](https://explorer.testnet.near.org/accounts/ledger.untangle-261106-e1386a.testnet)
-- Test token: [`tusd.untangle-261106-e1386a.testnet`](https://explorer.testnet.near.org/accounts/tusd.untangle-261106-e1386a.testnet)
+- Ledger: [`ledger.untangle-261106-e1386a.testnet`](https://testnet.nearblocks.io/address/ledger.untangle-261106-e1386a.testnet)
+- Test token: [`tusd.untangle-261106-e1386a.testnet`](https://testnet.nearblocks.io/address/tusd.untangle-261106-e1386a.testnet)
 
 [Deployment manifest](deployments/testnet.json) records code hashes, deployment transactions and measured configuration. Builds are explicitly non-reproducible cargo-near builds. Live statistics include test benchmarks; recorded scenario figures describe their own runs.
 
@@ -51,15 +51,25 @@ The hosted viewer is not published yet. To view the local build: `pnpm install -
 <!-- evidence:start -->
 | Scenario | Mode | Seed | Accepted test tUSD | Cleared | Payments / obligations | Withdrawals | Evidence |
 |---|---|---:|---:|---:|---:|---:|---|
-| agents | local | 42 | 735 | 40.13% | 81 / 113 | 11 | [saved run](docs/evidence/run-agents-42-local-2026-11-06T07-29-24-789Z.md) |
+| agents | local | 1234 | 757 | 62.08% | 67 / 111 | 9 | [saved run](docs/evidence/run-agents-1234-local-2026-11-06T07-29-25-704Z.md) |
+| agents | testnet | 42 | 735 | 40.13% | 81 / 113 | 11 | [saved run](docs/evidence/run-agents-42-testnet-2026-11-07T14-03-12-249Z.md) |
+| agents | local | 7 | 768 | 67.31% | 55 / 113 | 9 | [saved run](docs/evidence/run-agents-7-local-2026-11-06T07-29-25-273Z.md) |
+| firms | local | 1234 | 643 | 49.76% | 60 / 82 | 6 | [saved run](docs/evidence/run-firms-1234-local-2026-11-06T07-29-28-987Z.md) |
 | firms | local | 42 | 653 | 40.58% | 52 / 79 | 6 | [saved run](docs/evidence/run-firms-42-local-2026-11-06T07-29-28-658Z.md) |
+| firms | local | 7 | 720 | 39.58% | 65 / 85 | 6 | [saved run](docs/evidence/run-firms-7-local-2026-11-06T07-29-28-801Z.md) |
+| random | local | 1234 | 818 | 68.33% | 53 / 117 | 11 | [saved run](docs/evidence/run-random-1234-local-2026-11-06T07-29-27-282Z.md) |
 | random | local | 42 | 798 | 62.03% | 65 / 114 | 11 | [saved run](docs/evidence/run-random-42-local-2026-11-06T07-29-26-082Z.md) |
+| random | local | 7 | 862 | 62.06% | 67 / 126 | 10 | [saved run](docs/evidence/run-random-7-local-2026-11-06T07-29-26-815Z.md) |
+| supply-chain | local | 1234 | 818 | 0% | 117 / 117 | 11 | [saved run](docs/evidence/run-supply-chain-1234-local-2026-11-06T07-29-28-477Z.md) |
 | supply-chain | local | 42 | 798 | 0% | 114 / 114 | 11 | [saved run](docs/evidence/run-supply-chain-42-local-2026-11-06T07-29-27-765Z.md) |
+| supply-chain | local | 7 | 862 | 0% | 126 / 126 | 10 | [saved run](docs/evidence/run-supply-chain-7-local-2026-11-06T07-29-28-169Z.md) |
 <!-- evidence:end -->
 
 [All kill-test seeds and controls](docs/evidence/kill-test.md) · [Rust unit tests](docs/evidence/tests-2026-11-06.md) · [Sandbox flow](docs/evidence/sandbox-2026-11-06.md) · [Model parity](docs/evidence/parity.md) · [TypeScript tests](docs/evidence/typescript-tests.log) · [Scoped keys](docs/evidence/keys.md) · [Gas](docs/evidence/gas.md) · [Storage](docs/evidence/storage.md).
 
-Payment counts exclude separate creditor withdrawals. Clearing itself transfers no tokens, but fewer debtor payments do not necessarily mean fewer total transfers once withdrawals are counted. Local results are simulations, not on-chain evidence. The full agent testnet run is currently in progress.
+Netting helps when value flows both ways; the one-way supply chain clears 0% for all three recorded seeds.
+
+Payment counts exclude separate creditor withdrawals. Clearing itself transfers no tokens, but fewer debtor payments do not necessarily mean fewer total transfers once withdrawals are counted. Local results are simulations, not on-chain evidence. The full agent testnet run is complete: [results and complete transaction table](docs/evidence/run-agents-42-testnet-2026-11-07T14-03-12-249Z.md).
 
 ## How it works
 
@@ -75,15 +85,15 @@ The creditor calls `issue` or `issue_many`; the debtor calls `accept`, `accept_m
 
 ## NEAR features used
 
-NEAR subaccounts identify scripted agents. Function-call access keys limit their transaction authority. tUSD implements NEP-141 and NEP-145; the ledger uses prepaid storage with a NEP-145-style balance interface. NEP-297 events record obligation transitions. Built contracts expose NEP-330 source metadata. NEAR Intents is not implemented in this build.
+NEAR subaccounts identify scripted agents. Function-call access keys limit their transaction authority. tUSD implements NEP-141 and NEP-145; the ledger uses prepaid storage with a NEP-145-style balance interface. NEP-297 events record obligation transitions. Built contracts expose the NEP-330 metadata method; the deployed non-reproducible build currently returns null source-link and build-info fields, so source verification is not claimed. NEAR Intents is not implemented in this build.
 
 ## Run on testnet yourself
 
 Keep operator and agent keys in ignored `.keys/` files. `.env.example` documents the testnet-only configuration; scripts persist the actual generated parent/account names in `.keys/project.json`.
 
-1. `bash scripts/create-accounts.sh` -> create a testnet parent through the faucet and retain its key locally. This script currently expects near-cli-rs 0.31.0 via `NEAR_CLI` or the local Windows tool path; cross-platform setup is being finished.
+1. `bash scripts/create-accounts.sh` -> create a testnet parent through the faucet and retain its key locally. This script expects near-cli-rs 0.31.0 via `NEAR_CLI`, `near` on Linux/macOS, or the local Windows tool path.
 2. `bash scripts/deploy-testnet.sh` -> build, deploy and initialize ledger/tUSD, then save `deployments/testnet.json`. Incompatible state requires a new account or a migration, not blind reinitialization.
-3. `pnpm sim run --scenario agents --seed 42 --mode testnet` -> set up subaccounts, use scoped keys for trading, clear cycles, pay residue and withdraw. The first complete run is still being verified.
+3. `pnpm sim run --scenario agents --seed 42 --mode testnet` -> set up subaccounts, use scoped keys for trading, clear cycles, pay residue and withdraw. The recorded seed-42 run completed with accounting and custody checks.
 
 The simulator stores signed transaction identities and outcomes under ignored `.sim-state/`. Retrying the same run resumes its journal rather than generating replacement transactions for completed operations. Testnet faucet funds and tUSD have no real monetary value.
 
@@ -99,7 +109,9 @@ Debts and events are public. Debtor acceptance creates credit exposure; a cap li
 
 The operator retains upgrade keys. The contract accepts explicitly approved tokens; unsolicited direct token donations can make custody exceed tracked withdrawal credit. Strict custody equality is tested for the supported transfer-call/withdraw flow without donations. There is no privacy, interest, due date, credit scoring or mainnet support. The ledger's storage interface does not implement unregister.
 
-Viewer hosting, the fresh-clone rehearsal and the complete testnet scenario remain unfinished. No stretch feature is claimed.
+Viewer hosting and a fresh review of the portability fixes remain unfinished. No stretch feature is claimed.
+
+`cargo audit` reports RUSTSEC-2026-0387 in crypto-bigint through the native unit-test VM. It is absent from both production WASM dependency trees. The patched major version cannot satisfy current upstream constraints; the finding remains open. [Audit and dependency evidence](docs/evidence/security-audit-2026-11-07.md).
 
 ## Built with
 

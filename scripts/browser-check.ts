@@ -7,13 +7,14 @@ try {
     const page = await browser.newPage({
       viewport: { width, height: 900 },
       reducedMotion: "reduce",
+      colorScheme: width===360?'light':'dark',
     });
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto("http://127.0.0.1:4173/", { waitUntil: "networkidle" });
+    await page.goto(process.env.VIEWER_URL??"http://127.0.0.1:4173/", { waitUntil: "networkidle" });
     await page
       .locator("#source")
-      .filter({ hasText: "Recorded local simulation" })
+      .filter({ hasText: "Recorded" })
       .waitFor();
     if ((await page.locator("#graph .edges path").count()) === 0)
       throw Error("Trading graph is empty");
@@ -62,7 +63,7 @@ try {
   }
   writeFileSync(
     "docs/evidence/browser.md",
-    `# Browser checks\n\nCommand: pnpm exec tsx scripts/browser-check.ts\n\n${checks.join("\n\n")}\n\nScreenshots show recorded simulated local data. RPC was intentionally blocked for fallback tests; these checks do not prove a live RPC response.\n`,
+    `# Browser checks\n\nCommand: pnpm exec tsx scripts/browser-check.ts\n\n${checks.join("\n\n")}\n\nScreenshots show recorded simulated data, with local/testnet mode labeled in the UI. The 360px check uses light mode; 1280px uses dark mode. Both respect reduced motion. RPC was intentionally blocked for fallback tests; these checks do not prove a live RPC response.\n`,
   );
   console.log(checks.join("\n"));
 } finally {

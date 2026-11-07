@@ -107,7 +107,7 @@ for (const command of ["plan", "submit"])
             "solver",
           );
           console.log(
-            `Testnet clearing: https://explorer.testnet.near.org/transactions/${result.hash}`,
+            `Testnet clearing: https://testnet.nearblocks.io/txns/${result.hash}`,
           );
         }
       }

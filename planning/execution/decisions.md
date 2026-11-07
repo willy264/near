@@ -1,4 +1,4 @@
-# Decisions — 2026-11-06
+# Decisions â€” 2026-11-06
 
 Approved corrections:
 1. demoUrl is the public X demo post URL.
@@ -26,3 +26,7 @@ User explicitly authorized adding origin https://github.com/willy264/near.git an
 2026-11-06: Repository pushed with explicit user authorization. Origin/main verified at 6880c92. Full-history gitleaks scan found no leaks after exact-value exceptions for documentation placeholders/public values. Testnet faucet top-up follows the official near/docs snippets/faucet.jsx flow (5 test NEAR); temporary account retained. Storage measurement now flushes every collection before the baseline: 2459 bytes, fee covers 4000 bytes.
 
 2026-11-06 gas freeze: testnet configuration is max cycle 12, max cycles/batch 5, issue batch 20, memo 128 bytes. Combined 5 x length 12 used 112.436179311279 Tgas. 20 x length 4 used 150.217059342196 Tgas; 40 x length 4 exhausted 300 Tgas. Issue_many(40) hit log output limits. Measurements use two accounts with distinct edges, not a distinct-account worst case. Failed benchmark obligations were cleared using smaller valid batches; no debt was discarded.
+
+2026-11-06: Queried deployed contract_source_metadata: version 0.1.0, NEP-330 version 1.3.0, link=null and build_info=null. README now explicitly avoids source-verification claims. Docker CLI is installed but its daemon is unavailable; existing deployments remain noted non-reproducible builds. CI actions were resolved from official release APIs (checkout7.0.1, setup-node7.1.0, pnpm/action-setup6.1.1, gitleaks-action3.0.0).
+
+2026-11-07: Human approved Vercel/Cloudflare publication and all current pushes. Testnet evidence pushed first as dad33ad. Rust channel changed to stable, package minimum 1.95; Node engine >=22.22.2 per independent clean Linux review. Preserve each run's actual test count (reviewed 47+2, later regression run 48+2). Explorer links use verified NearBlocks /txns/ and /address/ formats. Native test-only crypto-bigint advisory remains documented; incompatible patched major cannot replace transitive 0.5 requirement.

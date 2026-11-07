@@ -6,7 +6,13 @@ const provider = new FailoverRpcProvider(
     (url) => new JsonRpcProvider({ url }),
   ),
 );
+const originalWarn = console.warn;
+const originalError = console.error;
 try {
+  // The SDK logs failed provider attempts before throwing; keep this optional
+  // probe quiet and report the single final skip below.
+  console.warn = () => {};
+  console.error = () => {};
   const stats = await provider.callFunction<Record<string, string>>({
     contractId: deployment.ledger,
     method: "stats",
@@ -16,8 +22,9 @@ try {
   console.log(
     `[6/6] live testnet stats: accepted=${stats.accepted_total}, cleared=${stats.cleared_total}, outstanding=${stats.outstanding_total} (base units; lifetime includes benchmarks)`,
   );
-} catch (e) {
-  console.log(
-    `[6/6] live testnet stats: skipped (RPC unavailable/offline): ${(e as Error).message}`,
-  );
+} catch {
+  console.log("[6/6] live testnet stats: skipped (RPC unavailable/offline)");
+} finally {
+  console.warn = originalWarn;
+  console.error = originalError;
 }

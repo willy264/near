@@ -542,6 +542,23 @@ fn measured_worst_case_storage() {
 }
 
 #[test]
+fn maximum_issue_batch_fits_runtime_log_limit() {
+    context("owner.testnet", 0);
+    let token = id(&"t".repeat(64));
+    let creditor = "c".repeat(64);
+    let debtor = id(&"d".repeat(64));
+    let mut c = Contract::new(id("owner.testnet"), vec![token.clone()], Config::default());
+    context(&creditor, 10u128.pow(25));
+    c.storage_deposit(None);
+    context(&creditor, 0);
+    let ids = c.issue_many((0..c.config.max_batch_issue).map(|_| IssueArgs {
+        debtor: debtor.clone(), token: token.clone(), amount: U128(u128::MAX),
+        memo: Some("m".repeat(128)),
+    }).collect());
+    assert_eq!(ids.len(), c.config.max_batch_issue as usize);
+}
+
+#[test]
 #[should_panic(expected = "ERR_NOT_FOUND")]
 fn accept_many_rejects_missing_last_id() {
     let mut c = setup();

@@ -1,11 +1,12 @@
 {
   "url": "https://untangle-dusky-three.vercel.app",
-  "timestamp": "2026-11-07T15:20:15.526Z",
+  "timestamp": "2026-11-07T15:31:22.594Z",
   "checks": [
     {
       "width": 360,
       "status": 200,
       "headline": "Recorded testnet result · seed 42: 40.13% cleared · 81 payments / 113 obligations · 11 creditor withdrawals. Simulated tUSD, no value.",
+      "quote": "Cross-chain preview · quote only, not executedRecorded 2026-11-07T15:28:11.607Z: an illustrative 97 USDC on Base → 96.681376 USDC on Ethereum quote from NEAR Intents 1Click. The input matches the numerical size of one creditor's simulated residue. tUSD has no value and cannot be swapped. Documentation example addresses only. No funds, wallet, signature or transaction. This historical quote is not a current price.Read the saved dry-quote evidence →",
       "uniqueLabels": [
         "agent-01 · data-feed",
         "agent-02 · data-feed",
@@ -29,6 +30,7 @@
       "width": 1280,
       "status": 200,
       "headline": "Recorded testnet result · seed 42: 40.13% cleared · 81 payments / 113 obligations · 11 creditor withdrawals. Simulated tUSD, no value.",
+      "quote": "Cross-chain preview · quote only, not executedRecorded 2026-11-07T15:28:11.607Z: an illustrative 97 USDC on Base → 96.681376 USDC on Ethereum quote from NEAR Intents 1Click. The input matches the numerical size of one creditor's simulated residue. tUSD has no value and cannot be swapped. Documentation example addresses only. No funds, wallet, signature or transaction. This historical quote is not a current price.Read the saved dry-quote evidence →",
       "uniqueLabels": [
         "agent-01 · data-feed",
         "agent-02 · data-feed",

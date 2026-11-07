@@ -11,3 +11,5 @@
 The full JSON audit is rust-audit.json. This assessment does not claim that every transitive dependency is vulnerability-free.
 
 Registry follow-up on 2026-11-07: crates.io reports latest stable near-sdk 5.30.1 and near-vm-runner 0.38.0, both already pinned/in use. Latest stable crypto-bigint is 0.7.10 (patched series), but elliptic-curve 0.13.8 requires crypto-bigint ^0.5. There is no newer stable SDK/VM pair available from this registry check to carry the incompatible crypto dependency upgrade. Sources: crates.io API `/api/v1/crates/{crate}` and `/api/v1/crates/elliptic-curve/0.13.8/dependencies`.
+
+Additional dependency check after stretch: pnpm audit --json exited0 with zero vulnerabilities (npm-audit-2026-11-07.json). GitHub push advertised one critical Dependabot alert; gh API read returned403 with current token, so its identity has not been verified and is not assumed to match the Rust advisory. No authentication scopes were changed. Existing native-only cargo advisory remains documented.

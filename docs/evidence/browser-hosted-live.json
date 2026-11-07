@@ -1,0 +1,15 @@
+{
+  "url": "https://untangle-dusky-three.vercel.app/",
+  "timestamp": "2026-11-07T15:04:18.557Z",
+  "source": "LIVE testnet · finalized block AbYPpzFC6fXbY699sdtzJN3TJ7Lf3x8g7AWUutHGehF3",
+  "numbers": "Accepted767.000502Cleared without transfers295.00040238.46% of acceptedSettled by payment440.0001Outstanding32",
+  "dry": "DRY-RUN ONLY: 0 tUSD could clear in 0 cycles. No transaction sent.",
+  "methods": [
+    "query",
+    "query",
+    "query",
+    "query",
+    "query",
+    "query"
+  ]
+}

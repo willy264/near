@@ -197,6 +197,9 @@ importers:
       fast-check:
         specifier: 4.10.2
         version: 4.10.2
+      highs:
+        specifier: 1.15.4
+        version: 1.15.4
       tsx:
         specifier: 4.23.15
         version: 4.23.15
@@ -209,6 +212,16 @@ importers:
       vitest:
         specifier: 5.1.0
         version: 5.1.0(@types/node@26.6.6)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(tsx@4.23.15))
+
+  packages/client: {}
+
+  packages/shared: {}
+
+  packages/sim: {}
+
+  packages/solver: {}
+
+  packages/web: {}
 
 packages:
 
@@ -1115,6 +1128,10 @@ packages:
   hasown@2.0.4:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
+
+  highs@1.15.4:
+    resolution: {integrity: sha512-vsC03XHDqWAVrEFUt22h8e4CDDMb+LAFa0bycjPUq2kadRigK5pNLVIlwspKvMxxVtrr4NAucZHP/CAgigxiDQ==}
+    engines: {node: '>=18'}
 
   iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
@@ -2285,6 +2302,8 @@ snapshots:
   hasown@2.0.4:
     dependencies:
       function-bind: 1.1.2
+
+  highs@1.15.4: {}
 
   iconv-lite@0.6.3:
     dependencies:

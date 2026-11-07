@@ -37,7 +37,7 @@ for (const scenario of ["agents", "random", "supply-chain", "firms"] as const)
       rounds: 10,
       mode: "local",
     });
-    const path = saveRun(run),
+    const path = saveRun(run, true),
       s = run.stages.at(-1)!.fixture.stats;
     const row = {
       scenario,

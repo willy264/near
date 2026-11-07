@@ -2,6 +2,12 @@ import { it, expect, vi } from "vitest";
 import { rmSync } from "node:fs";
 import { randomUUID } from "node:crypto";
 const mocks = vi.hoisted(() => ({ send: vi.fn(), status: vi.fn() }));
+const fileMocks = vi.hoisted(() => ({ rename: vi.fn() }));
+vi.mock("node:fs", async (original) => {
+  const fs = await original<typeof import("node:fs")>();
+  fileMocks.rename.mockImplementation(fs.renameSync);
+  return { ...fs, renameSync: fileMocks.rename };
+});
 vi.mock("./index.ts", () => ({
   provider: {
     sendTransactionUntil: mocks.send,
@@ -16,6 +22,28 @@ vi.mock("near-api-js", async (original) => ({
   SignedTransaction: { decode: (bytes: Uint8Array) => bytes },
 }));
 import { Journal } from "./journal.ts";
+it("recovers a transient rename denial without losing durable state", () => {
+  const id = `test-${randomUUID()}`;
+  const journal = new Journal(id);
+  try {
+    journal.data.stage = "before";
+    journal.save();
+    const calls = fileMocks.rename.mock.calls.length;
+    fileMocks.rename.mockImplementationOnce(() => {
+      expect(new Journal(id).data.stage).toBe("before");
+      throw Object.assign(Error("reader holds destination"), {
+        code: "EACCES",
+      });
+    });
+    journal.data.stage = "after";
+    journal.save();
+    expect(fileMocks.rename.mock.calls.length - calls).toBe(2);
+    expect(new Journal(id).data.stage).toBe("after");
+  } finally {
+    rmSync(`.sim-state/${id}.json`, { force: true });
+    rmSync(`.sim-state/${id}.json.${process.pid}.tmp`, { force: true });
+  }
+});
 it("recovers a lost response by hash and never signs a replacement transaction", async () => {
   const id = `test-${randomUUID()}`,
     journal = new Journal(id);

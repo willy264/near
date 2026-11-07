@@ -43,7 +43,24 @@ export class Journal {
       temporary,
       stringify({ records: this.records, data: this.data }),
     );
-    renameSync(temporary, this.path);
+    // Windows readers/antivirus can briefly deny atomic replacement on a WSL
+    // mount. Retry the same file; never truncate the durable journal in place.
+    for (let attempt = 0; ; attempt++) {
+      try {
+        renameSync(temporary, this.path);
+        break;
+      } catch (error) {
+        const code = (error as NodeJS.ErrnoException).code;
+        if (attempt === 7 || !["EACCES", "EPERM", "EBUSY"].includes(code ?? ""))
+          throw error;
+        Atomics.wait(
+          new Int32Array(new SharedArrayBuffer(4)),
+          0,
+          0,
+          25 * (attempt + 1),
+        );
+      }
+    }
   }
   async send(
     id: string,

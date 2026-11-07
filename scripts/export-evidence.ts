@@ -45,11 +45,19 @@ console.log(
 const table = [
   "| Scenario | Mode | Seed | Accepted test tUSD | Cleared | Payments / obligations | Withdrawals | Evidence |",
   "|---|---|---:|---:|---:|---:|---:|---|",
-  ...Object.values(allRuns).map(({ file, run }) => {
-    const scenario = run.parameters.scenario;
-    const s = run.stages.at(-1)!.fixture.stats;
-    return `| ${scenario} | ${run.parameters.mode} | ${run.parameters.seed} | ${displayAmount(s.accepted_total)} | ${Number(s.cleared_ratio_bps) / 100}% | ${run.payments} / ${run.acceptedCount} | ${run.withdrawals} | [saved run](docs/evidence/${file.replace(/\.json$/, ".md")}) |`;
-  }),
+  ...Object.values(allRuns)
+    .sort(
+      (a, b) =>
+        Number(b.run.parameters.mode === "testnet") -
+          Number(a.run.parameters.mode === "testnet") ||
+        a.run.parameters.scenario.localeCompare(b.run.parameters.scenario) ||
+        a.run.parameters.seed - b.run.parameters.seed,
+    )
+    .map(({ file, run }) => {
+      const scenario = run.parameters.scenario;
+      const s = run.stages.at(-1)!.fixture.stats;
+      return `| ${scenario} | ${run.parameters.mode} | ${run.parameters.seed} | ${displayAmount(s.accepted_total)} | ${Number(s.cleared_ratio_bps) / 100}% | ${run.payments} / ${run.acceptedCount} | ${run.withdrawals} | [saved run](docs/evidence/${file.replace(/\.json$/, ".md")}) |`;
+    }),
 ].join("\n");
 const readme = readFileSync("README.md", "utf8").replace(
   /<!-- evidence:start -->[\s\S]*?<!-- evidence:end -->/,

@@ -29,7 +29,8 @@ cli
       mkdirSync(".sim-state", { recursive: true });
       try {
         lockFd = openSync(lock, "wx", 0o600);
-      } catch {
+      } catch (error) {
+        if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
         throw Error(
           `Run already locked: ${lock}. Stop any existing runner before removing a stale lock.`,
         );
@@ -45,7 +46,9 @@ cli
       console.log(
         `SIMULATED: cleared ${displayAmount(s.cleared_total)} of ${displayAmount(s.accepted_total)} tUSD (test token) (${Number(s.cleared_ratio_bps) / 100}%) with 0 transfers; ${run.payments} payments settled the rest; ${run.withdrawals} creditor withdrawals.`,
       );
-      console.log(`Evidence: docs/evidence/${path}.md`);
+      console.log(
+        `Evidence: ${p.mode === "local" ? ".runs/evidence" : "docs/evidence"}/${path}.md`,
+      );
     } finally {
       if (lockFd !== undefined) {
         closeSync(lockFd);

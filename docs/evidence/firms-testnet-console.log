@@ -1,0 +1,13 @@
+$ tsx packages/sim/src/cli.ts run --scenario firms --seed 42 --mode testnet
+Trading round 1/10: 6 accepted; 0 rejected
+Trading round 2/10: 13 accepted; 0 rejected
+Trading round 3/10: 22 accepted; 0 rejected
+Trading round 4/10: 32 accepted; 0 rejected
+Trading round 5/10: 39 accepted; 0 rejected
+Trading round 6/10: 44 accepted; 0 rejected
+Trading round 7/10: 51 accepted; 0 rejected
+Trading round 8/10: 59 accepted; 0 rejected
+Trading round 9/10: 69 accepted; 0 rejected
+Trading round 10/10: 79 accepted; 0 rejected
+SIMULATED: cleared 265 of 653 tUSD (test token) (40.58%) with 0 transfers; 52 payments settled the rest; 6 creditor withdrawals.
+Evidence: docs/evidence/run-firms-42-testnet-2026-11-07T15-20-17-919Z.md

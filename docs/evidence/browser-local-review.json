@@ -1,0 +1,52 @@
+{
+  "url": "http://127.0.0.1:4173/",
+  "timestamp": "2026-11-07T15:17:58.549Z",
+  "checks": [
+    {
+      "width": 360,
+      "status": 200,
+      "headline": "Recorded testnet result · seed 42: 40.13% cleared · 81 payments / 113 obligations · 11 creditor withdrawals. Simulated tUSD, no value.",
+      "uniqueLabels": [
+        "agent-01 · data-feed",
+        "agent-02 · data-feed",
+        "agent-03 · scraper",
+        "agent-04 · scraper",
+        "agent-05 · summarizer",
+        "agent-06 · summarizer",
+        "agent-07 · translator",
+        "agent-08 · translator",
+        "agent-09 · inference-reseller",
+        "agent-10 · inference-reseller",
+        "agent-11 · auditor",
+        "agent-12 · auditor"
+      ],
+      "graph": true,
+      "scenarioSwitch": true,
+      "noPageErrors": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "status": 200,
+      "headline": "Recorded testnet result · seed 42: 40.13% cleared · 81 payments / 113 obligations · 11 creditor withdrawals. Simulated tUSD, no value.",
+      "uniqueLabels": [
+        "agent-01 · data-feed",
+        "agent-02 · data-feed",
+        "agent-03 · scraper",
+        "agent-04 · scraper",
+        "agent-05 · summarizer",
+        "agent-06 · summarizer",
+        "agent-07 · translator",
+        "agent-08 · translator",
+        "agent-09 · inference-reseller",
+        "agent-10 · inference-reseller",
+        "agent-11 · auditor",
+        "agent-12 · auditor"
+      ],
+      "graph": true,
+      "scenarioSwitch": true,
+      "noPageErrors": true,
+      "noOverflow": true
+    }
+  ]
+}

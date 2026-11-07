@@ -8,6 +8,7 @@ target/
 node_modules/
 dist/
 .sim-state/
+.runs/
 *.log
 !docs/evidence/**/*.log
 untangle-planning.zip

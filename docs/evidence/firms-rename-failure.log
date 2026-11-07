@@ -1,0 +1,39 @@
+$ tsx packages/sim/src/cli.ts run --scenario firms --seed 42 --mode testnet
+Setup 1/8: firm-01.untangle-261106-e1386a.testnet
+Setup 2/8: firm-02.untangle-261106-e1386a.testnet
+Setup 3/8: firm-03.untangle-261106-e1386a.testnet
+Setup 4/8: firm-04.untangle-261106-e1386a.testnet
+Setup 5/8: firm-05.untangle-261106-e1386a.testnet
+Setup 6/8: firm-06.untangle-261106-e1386a.testnet
+Setup 7/8: firm-07.untangle-261106-e1386a.testnet
+Setup 8/8: firm-08.untangle-261106-e1386a.testnet
+Trading round 1/10: 6 accepted; 0 rejected
+Trading round 2/10: 13 accepted; 0 rejected
+Trading round 3/10: 22 accepted; 0 rejected
+Trading round 4/10: 32 accepted; 0 rejected
+Trading round 5/10: 39 accepted; 0 rejected
+Trading round 6/10: 44 accepted; 0 rejected
+Trading round 7/10: 51 accepted; 0 rejected
+Trading round 8/10: 59 accepted; 0 rejected
+node:fs:1357
+  binding.rename(
+          ^
+
+Error: EACCES: permission denied, rename '/mnt/c/Users/HP/Documents/people/hackathons/near/.sim-state/firms-42-10-testnet.json.335755.tmp' -> '/mnt/c/Users/HP/Documents/people/hackathons/near/.sim-state/firms-42-10-testnet.json'
+    at renameSync (node:fs:1357:11)
+    at Journal.save (/mnt/c/Users/HP/Documents/people/hackathons/near/packages/client/src/journal.ts:46:5)
+    at Journal.send (/mnt/c/Users/HP/Documents/people/hackathons/near/packages/client/src/journal.ts:84:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Module.runTestnet (/mnt/c/Users/HP/Documents/people/hackathons/near/packages/sim/src/testnet.ts:192:26)
+    at async Command.<anonymous> (/mnt/c/Users/HP/Documents/people/hackathons/near/packages/sim/src/cli.ts:36:13)
+    at async Command.parseAsync (file:///mnt/c/Users/HP/Documents/people/hackathons/near/node_modules/.pnpm/commander@15.0.0/node_modules/commander/lib/command.js:1113:5)
+    at async <anonymous> (/mnt/c/Users/HP/Documents/people/hackathons/near/packages/sim/src/cli.ts:47:1) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'rename',
+  path: '/mnt/c/Users/HP/Documents/people/hackathons/near/.sim-state/firms-42-10-testnet.json.335755.tmp',
+  dest: '/mnt/c/Users/HP/Documents/people/hackathons/near/.sim-state/firms-42-10-testnet.json'
+}
+
+Node.js v26.13.0
+[ELIFECYCLE] Command failed with exit code 1.

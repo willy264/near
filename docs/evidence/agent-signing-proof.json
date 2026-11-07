@@ -1,0 +1,198 @@
+{
+  "transactionsChecked": 169,
+  "signersChecked": 12,
+  "permissions": [
+    {
+      "account": "agent-01.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:q4cq3jNpx5rqqsUFhfqXSqixTmmqVVseMSY4DbUd6js",
+      "permission": {
+        "allowance": "244030111109862700000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-02.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:AgtVYzCzju2EF1EHk5jqqKeJ6A6tpYCsMGzeFsp7kd1T",
+      "permission": {
+        "allowance": "242318390786874800000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-03.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:Gpdkjvz4rBsDgpmrWi2R4MS8fuQ4tgDseUL3XMQgm6uC",
+      "permission": {
+        "allowance": "243936125938606700000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-06.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:DCW4SAy7kY5uAeq1oYHFGZ3MitXsxpqqMbRjJPvc1ZXZ",
+      "permission": {
+        "allowance": "244641270263316200000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-10.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:S3h7f9QA9aGAUPRerncqGYyoMZsNhn5xs3GCAPejb4H",
+      "permission": {
+        "allowance": "241857695637917700000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-11.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:633pTg584UzNaDQZ5cWeTT78En6a7fuYcThjoBZ4fnoK",
+      "permission": {
+        "allowance": "242523256921171100000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-04.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:AMGPHnQHUvyUVeiGLtUcdpRQVCYAhjobeVoHAcWGVmei",
+      "permission": {
+        "allowance": "244249389332409800000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-05.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:EWNDF5TgM2CsJ63CMueKNzZQ1CsNR5aNwtDPVyVjKw7i",
+      "permission": {
+        "allowance": "242011027552725100000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-08.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:5KgHM5k6YYXWnWxgfRWnqsczxfqe1mVeQUzFe2aQpAwG",
+      "permission": {
+        "allowance": "246410595898182600000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-09.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:Hu21Nya135mjjnysFdLxemhnf9vis7WdsRPK4cHefMSi",
+      "permission": {
+        "allowance": "242110227627626700000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-07.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:AbjsTqCNpWSqEmXRxsmxvgwwDdf5jKPVk3u7YFA1qpw",
+      "permission": {
+        "allowance": "244826387628045600000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    },
+    {
+      "account": "agent-12.untangle-261106-e1386a.testnet",
+      "publicKey": "ed25519:9cor7YczuEjGtx16J1AChP2ee83ZWVT1VFjxXEydzFkh",
+      "permission": {
+        "allowance": "243974855474231400000000",
+        "method_names": [
+          "issue",
+          "issue_many",
+          "accept",
+          "accept_many",
+          "reject",
+          "cancel"
+        ],
+        "receiver_id": "ledger.untangle-261106-e1386a.testnet"
+      }
+    }
+  ]
+}

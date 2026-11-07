@@ -1,0 +1,22 @@
+{
+  "url": "https://untangle-dusky-three.vercel.app",
+  "timestamp": "2026-11-07T14:56:46.965Z",
+  "checks": [
+    {
+      "width": 360,
+      "status": 200,
+      "graph": true,
+      "scenarioSwitch": true,
+      "noPageErrors": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "status": 200,
+      "graph": true,
+      "scenarioSwitch": true,
+      "noPageErrors": true,
+      "noOverflow": true
+    }
+  ]
+}

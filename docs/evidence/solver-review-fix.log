@@ -1,0 +1,18 @@
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-codex-review-d1bed5e/packages/solver[39m
+
+[90mstdout[2m | src/solver.test.ts[2m > [22m[2m50 nodes / 500 edges plans in under two seconds
+[22m[39msolver_50_nodes_500_edges_ms=710.866
+
+ [32m✓[39m src/solver.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 6968[2mms[22m[39m
+   [33m[2m✓[22m[39m triangle, chain, figure-eight, parallel edges and overlapping cycles[33m 343[2mms[22m[39m
+   [33m[2m✓[22m[39m random graphs preserve nets and leave no supported cycle[33m 2322[2mms[22m[39m
+   [33m[2m✓[22m[39m 50 nodes / 500 edges plans in under two seconds[33m 4233[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:53:52
+[2m   Duration [22m 8.48s[2m (tests 94%, transform 3%, import 2%, worker 1%)[22m
+
+12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.

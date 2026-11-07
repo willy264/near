@@ -19,7 +19,30 @@ export function shortestCycle(
     outgoing.set(e.debtor, row);
   }
   let best: Cycle | null = null;
-  for (const start of [...outgoing.keys()].sort()) {
+  const starts = [...outgoing.keys()].sort();
+  // Two-edge cycles are globally shortest. Preserve BFS's widest first edge
+  // and insertion-order tie breaking without allocating its next layers.
+  if (maxLength >= 2) {
+    for (const start of starts) {
+      const first = new Map<string, Obligation>();
+      for (const edge of outgoing.get(start)!) {
+        const old = first.get(edge.creditor);
+        if (!old || edge.remaining > old.remaining)
+          first.set(edge.creditor, edge);
+      }
+      for (const [middle, a] of first) {
+        if (middle === start) continue;
+        for (const b of outgoing.get(middle) ?? []) {
+          if (b.creditor !== start) continue;
+          const amount = a.remaining < b.remaining ? a.remaining : b.remaining;
+          if (!best || amount > best.amount)
+            best = { ids: [a.id, b.id], amount };
+        }
+      }
+    }
+    if (best) return best;
+  }
+  for (const start of starts) {
     const distance = new Map<string, number>([[start, 0]]);
     let layer = new Map<string, { amount: bigint; ids: string[] }>([
       [start, { amount: (1n << 128n) - 1n, ids: [] }],
@@ -43,6 +66,9 @@ export function shortestCycle(
               best = { ids: [...path.ids, e.id], amount };
             continue;
           }
+          // At the last allowed depth only a closing edge can contribute.
+          if (depth >= Math.min(maxLength, best?.ids.length ?? maxLength))
+            continue;
           const oldDistance = distance.get(e.creditor);
           if (oldDistance !== undefined && oldDistance < depth) continue;
           distance.set(e.creditor, depth);

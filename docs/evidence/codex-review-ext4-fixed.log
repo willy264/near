@@ -1,0 +1,70 @@
+[1/5] quick: install dependencies (no Rust required)
+v26.13.0
+12.16.1
+Scope: all 6 workspace projects
+✓ Lockfile passes supply-chain policies (verified 1d ago)
+Lockfile is up to date, resolution step is skipped
+Done in 734ms using pnpm v12.16.1
+[2/5] quick: TypeScript tests
+Scope: 5 of 6 workspace projects
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-codex-review-d1bed5e/packages/client[39m
+
+ [32m✓[39m src/journal.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 561[2mms[22m[39m
+   [33m[2m✓[22m[39m recovers a lost response by hash and never signs a replacement transaction[33m 556[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 15:55:29
+[2m   Duration [22m 2.63s[2m (import 59%, tests 35%, transform 4%, worker 2%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-codex-review-d1bed5e/packages/shared[39m
+
+ [32m✓[39m src/model.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 190[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:55:35
+[2m   Duration [22m 2.63s[2m (tests 44%, transform 27%, import 23%, worker 6%, environment 1%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-codex-review-d1bed5e/packages/sim[39m
+
+ [32m✓[39m src/local.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 6498[2mms[22m[39m
+   [33m[2m✓[22m[39m seeded scenarios are reproducible, conserve amounts and finish locally under five seconds[33m 6482[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 15:55:41
+[2m   Duration [22m 8.29s[2m (tests 86%, import 9%, transform 4%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/tmp/untangle-codex-review-d1bed5e/packages/solver[39m
+
+[90mstdout[2m | src/solver.test.ts[2m > [22m[2m50 nodes / 500 edges plans in under two seconds
+[22m[39msolver_50_nodes_500_edges_ms=1860.530
+
+ [32m✓[39m src/solver.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 9226[2mms[22m[39m
+   [33m[2m✓[22m[39m random graphs preserve nets and leave no supported cycle[33m 2412[2mms[22m[39m
+   [33m[2m✓[22m[39m 50 nodes / 500 edges plans in under two seconds[33m 6470[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:55:51
+[2m   Duration [22m 10.66s[2m (tests 97%, import 2%, transform 1%)[22m
+
+$ tsc --noEmit -p ../../tsconfig.json
+[3/5] quick: typecheck
+$ tsc --noEmit
+[4/5] quick: verify 12 seeded fixtures
+12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.
+[5/5] quick: simulated agents, seed 42
+$ tsx packages/sim/src/cli.ts run --scenario agents --seed 42 --mode local
+SIMULATED: cleared 295 of 735 tUSD (test token) (40.13%) with 0 transfers; 81 payments settled the rest; 11 creditor withdrawals.
+Evidence: docs/evidence/run-agents-42-local-2026-11-07T14-56-22-862Z.md
+Elapsed: 60 seconds

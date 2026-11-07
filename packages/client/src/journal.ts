@@ -1,5 +1,6 @@
 import { Account, SignedTransaction, baseEncode, actions } from "near-api-js";
 import { createHash } from "node:crypto";
+import { resolve, dirname } from "node:path";
 import {
   mkdirSync,
   readFileSync,
@@ -28,7 +29,7 @@ export class Journal {
   constructor(readonly runId: string) {
     if (!/^[a-z0-9-]+$/.test(runId)) throw Error("Invalid run id");
     mkdirSync(".sim-state", { recursive: true });
-    this.path = `.sim-state/${runId}.json`;
+    this.path = resolve(`.sim-state/${runId}.json`);
     const saved = existsSync(this.path)
       ? JSON.parse(readFileSync(this.path, "utf8"))
       : { records: {}, data: {} };
@@ -36,11 +37,13 @@ export class Journal {
     this.data = saved.data;
   }
   save() {
+    mkdirSync(dirname(this.path), { recursive: true });
+    const temporary = `${this.path}.${process.pid}.tmp`;
     writeFileSync(
-      this.path + ".tmp",
+      temporary,
       stringify({ records: this.records, data: this.data }),
     );
-    renameSync(this.path + ".tmp", this.path);
+    renameSync(temporary, this.path);
   }
   async send(
     id: string,

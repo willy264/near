@@ -1,0 +1,209 @@
+[1/5] quick: install dependencies (no Rust required)
+v26.13.0
+12.16.1
+Scope: all 6 workspace projects
+[WARN] The store at /home/uiriamuzu/.local/share/pnpm/store/v11 is not used because packages cannot be hard linked from it into this project. Using the store at /mnt/c/.pnpm-store/v11 instead. Set storeDir to choose the store.
+Update available! 12.16.1 → 12.18.0.
+Changelog: https://pnpm.io/v/12.18.0
+To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+✓ Lockfile passes supply-chain policies (verified 1d ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 0.00 B/34.14 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 0.00 B/8.82 MB
+Downloading @typescript/typescript-linux-x64@7.0.2: 712.67 kB/9.66 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 1.62 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 2.57 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 32, added 0
+Progress: resolved 201, reused 0, downloaded 38, added 1
+Progress: resolved 201, reused 0, downloaded 41, added 1
+Downloading @biomejs/cli-linux-x64@2.6.5: 5.07 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 5.55 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 6.38 MB/34.14 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 7.17 MB/8.82 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 7.91 MB/8.82 MB
+Progress: resolved 201, reused 0, downloaded 77, added 9
+Progress: resolved 201, reused 0, downloaded 81, added 11
+Downloading @biomejs/cli-linux-x64@2.6.5: 7.78 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 91, added 13
+Progress: resolved 201, reused 0, downloaded 95, added 16
+Progress: resolved 201, reused 0, downloaded 99, added 17
+Progress: resolved 201, reused 0, downloaded 107, added 21
+Downloading @biomejs/cli-linux-x64@2.6.5: 9.51 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 9.74 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 10.28 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 123, added 25
+Progress: resolved 201, reused 0, downloaded 129, added 28
+Downloading @biomejs/cli-linux-x64@2.6.5: 11.89 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 142, added 32
+Downloading @biomejs/cli-linux-x64@2.6.5: 14.20 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 151, added 32
+Downloading @biomejs/cli-linux-x64@2.6.5: 17.03 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 18.13 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 19.08 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 19.87 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 20.70 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 21.65 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 22.46 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 164, added 42
+Downloading @biomejs/cli-linux-x64@2.6.5: 24.28 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 25.49 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 26.22 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 26.85 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 27.31 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 28.06 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 28.65 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 177, added 66
+Downloading @biomejs/cli-linux-x64@2.6.5: 29.98 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 30.48 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 31.17 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 31.98 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 33.06 MB/34.14 MB
+Downloading @biomejs/cli-linux-x64@2.6.5: 33.93 MB/34.14 MB
+Progress: resolved 201, reused 0, downloaded 184, added 81
+Downloading @biomejs/cli-linux-x64@2.6.5: 34.14 MB/34.14 MB, done
+Progress: resolved 201, reused 0, downloaded 186, added 89
+Progress: resolved 201, reused 0, downloaded 186, added 93
+Progress: resolved 201, reused 0, downloaded 186, added 95
+Progress: resolved 201, reused 0, downloaded 186, added 96
+Progress: resolved 201, reused 0, downloaded 186, added 99
+Progress: resolved 201, reused 0, downloaded 186, added 105
+Progress: resolved 201, reused 0, downloaded 186, added 106
+Progress: resolved 201, reused 0, downloaded 186, added 108
+Progress: resolved 201, reused 0, downloaded 186, added 110
+Progress: resolved 201, reused 0, downloaded 186, added 112
+Progress: resolved 201, reused 0, downloaded 186, added 114
+Progress: resolved 201, reused 0, downloaded 186, added 115
+Progress: resolved 201, reused 0, downloaded 186, added 119
+Progress: resolved 201, reused 0, downloaded 186, added 121
+Progress: resolved 201, reused 0, downloaded 186, added 123
+Progress: resolved 201, reused 0, downloaded 186, added 125
+Progress: resolved 201, reused 0, downloaded 186, added 127
+Progress: resolved 201, reused 0, downloaded 186, added 129
+Progress: resolved 201, reused 0, downloaded 186, added 130
+Progress: resolved 201, reused 0, downloaded 186, added 133
+Progress: resolved 201, reused 0, downloaded 186, added 135
+Progress: resolved 201, reused 0, downloaded 186, added 139
+Progress: resolved 201, reused 0, downloaded 186, added 143
+Progress: resolved 201, reused 0, downloaded 186, added 146
+Progress: resolved 201, reused 0, downloaded 186, added 151
+Progress: resolved 201, reused 0, downloaded 186, added 152
+Progress: resolved 201, reused 0, downloaded 186, added 155
+Progress: resolved 201, reused 0, downloaded 186, added 157
+Progress: resolved 201, reused 0, downloaded 186, added 158
+Progress: resolved 201, reused 0, downloaded 186, added 161
+Progress: resolved 201, reused 0, downloaded 186, added 162
+Progress: resolved 201, reused 0, downloaded 186, added 164
+Progress: resolved 201, reused 0, downloaded 186, added 166
+Progress: resolved 201, reused 0, downloaded 187, added 166
+Progress: resolved 201, reused 0, downloaded 201, added 167
+Progress: resolved 201, reused 0, downloaded 201, added 168
+Progress: resolved 201, reused 0, downloaded 201, added 170
+Progress: resolved 201, reused 0, downloaded 201, added 171
+Progress: resolved 201, reused 0, downloaded 201, added 172
+Progress: resolved 201, reused 0, downloaded 201, added 173
+Progress: resolved 201, reused 0, downloaded 201, added 174
+Progress: resolved 201, reused 0, downloaded 201, added 177
+Progress: resolved 201, reused 0, downloaded 201, added 180
+Progress: resolved 201, reused 0, downloaded 201, added 183
+Progress: resolved 201, reused 0, downloaded 201, added 185
+Progress: resolved 201, reused 0, downloaded 201, added 187
+Progress: resolved 201, reused 0, downloaded 201, added 188
+Progress: resolved 201, reused 0, downloaded 201, added 190
+Progress: resolved 201, reused 0, downloaded 201, added 191
+Progress: resolved 201, reused 0, downloaded 201, added 192
+Progress: resolved 201, reused 0, downloaded 201, added 193
+Progress: resolved 201, reused 0, downloaded 201, added 194
+Progress: resolved 201, reused 0, downloaded 201, added 196
+Progress: resolved 201, reused 0, downloaded 201, added 199
+Progress: resolved 201, reused 0, downloaded 201, added 200
+Progress: resolved 201, reused 0, downloaded 201, added 201
+Packages: +201
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 201, reused 0, downloaded 201, added 201, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+dependencies:
++ commander 15.0.0
++ d3 7.9.2
++ near-api-js 7.4.0
++ pino 10.4.0
++ zod 4.6.7
+
+devDependencies:
++ @biomejs/biome 2.6.5
++ @playwright/test 1.65.0
++ @types/d3 7.4.3
++ @types/node 26.6.6
++ fast-check 4.10.2
++ tsx 4.23.15
++ typescript 7.0.2
++ vite 8.3.6
++ vitest 5.1.0
+
+Done in 7m 19.3s using pnpm v12.16.1
+[2/5] quick: TypeScript tests
+Scope: 5 of 6 workspace projects
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/packages/client[39m
+
+ [32m✓[39m src/journal.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 859[2mms[22m[39m
+   [33m[2m✓[22m[39m recovers a lost response by hash and never signs a replacement transaction[33m 851[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 15:50:54
+[2m   Duration [22m 36.84s[2m (import 86%, transform 9%, tests 4%, worker 2%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/packages/shared[39m
+
+ [32m✓[39m src/model.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 69[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:51:57
+[2m   Duration [22m 13.16s[2m (transform 46%, import 39%, worker 13%, tests 2%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/packages/sim[39m
+
+ [32m✓[39m src/local.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 5485[2mms[22m[39m
+   [33m[2m✓[22m[39m seeded scenarios are reproducible, conserve amounts and finish locally under five seconds[33m 5480[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 15:52:56
+[2m   Duration [22m 46.83s[2m (import 65%, tests 17%, transform 15%, worker 2%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/packages/solver[39m
+
+[90mstdout[2m | src/solver.test.ts[2m > [22m[2m50 nodes / 500 edges plans in under two seconds
+[22m[39msolver_50_nodes_500_edges_ms=1614.512
+
+ [32m✓[39m src/solver.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 7529[2mms[22m[39m
+   [33m[2m✓[22m[39m random graphs preserve nets and leave no supported cycle[33m 1755[2mms[22m[39m
+   [33m[2m✓[22m[39m 50 nodes / 500 edges plans in under two seconds[33m 5529[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:53:56
+[2m   Duration [22m 19.19s[2m (tests 63%, import 26%, transform 8%, worker 3%)[22m
+
+$ tsc --noEmit -p ../../tsconfig.json
+[3/5] quick: typecheck
+$ tsc --noEmit
+[4/5] quick: verify 12 seeded fixtures
+12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.
+[5/5] quick: simulated agents, seed 42
+$ tsx packages/sim/src/cli.ts run --scenario agents --seed 42 --mode local
+SIMULATED: cleared 295 of 735 tUSD (test token) (40.13%) with 0 transfers; 81 payments settled the rest; 11 creditor withdrawals.
+Evidence: docs/evidence/run-agents-42-local-2026-11-07T14-57-00-085Z.md
+Quick elapsed: 861 seconds

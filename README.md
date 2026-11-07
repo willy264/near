@@ -39,7 +39,7 @@ These commands need no `.env`, keys or funds. Initial dependency installation re
 
 ## Live demo
 
-The hosted viewer is not published yet. To view the local build: `pnpm install --frozen-lockfile`, `pnpm run build:web`, then `pnpm exec vite preview packages/web` -> open the URL printed by Vite.
+[Open the public viewer](https://untangle-dusky-three.vercel.app) — no wallet or login required. Hosted on Vercel's Hobby tier. To view the local build: `pnpm install --frozen-lockfile`, `pnpm run build:web`, then `pnpm exec vite preview packages/web` -> open the URL printed by Vite.
 
 - Ledger: [`ledger.untangle-261106-e1386a.testnet`](https://testnet.nearblocks.io/address/ledger.untangle-261106-e1386a.testnet)
 - Test token: [`tusd.untangle-261106-e1386a.testnet`](https://testnet.nearblocks.io/address/tusd.untangle-261106-e1386a.testnet)
@@ -109,7 +109,7 @@ Debts and events are public. Debtor acceptance creates credit exposure; a cap li
 
 The operator retains upgrade keys. The contract accepts explicitly approved tokens; unsolicited direct token donations can make custody exceed tracked withdrawal credit. Strict custody equality is tested for the supported transfer-call/withdraw flow without donations. There is no privacy, interest, due date, credit scoring or mainnet support. The ledger's storage interface does not implement unregister.
 
-Viewer hosting and a fresh review of the portability fixes remain unfinished. No stretch feature is claimed.
+The [Codex fresh-clone review](docs/evidence/codex-review-2026-11-07.md) found a solver timing failure, which was fixed without changing the threshold or fixture results. The corrected quick command took 60 seconds with cached dependencies on Linux Ext4; a cold install on the Windows-mounted filesystem took much longer. The follow-up Claude CLI review is blocked by local authentication; the human-supplied independent Claude findings are recorded and addressed. No stretch feature is claimed.
 
 `cargo audit` reports RUSTSEC-2026-0387 in crypto-bigint through the native unit-test VM. It is absent from both production WASM dependency trees. The patched major version cannot satisfy current upstream constraints; the finding remains open. [Audit and dependency evidence](docs/evidence/security-audit-2026-11-07.md).
 

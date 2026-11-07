@@ -7,15 +7,14 @@ try {
     const page = await browser.newPage({
       viewport: { width, height: 900 },
       reducedMotion: "reduce",
-      colorScheme: width===360?'light':'dark',
+      colorScheme: width === 360 ? "light" : "dark",
     });
     const errors: string[] = [];
     page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto(process.env.VIEWER_URL??"http://127.0.0.1:4173/", { waitUntil: "networkidle" });
-    await page
-      .locator("#source")
-      .filter({ hasText: "Recorded" })
-      .waitFor();
+    await page.goto(process.env.VIEWER_URL ?? "http://127.0.0.1:4173/", {
+      waitUntil: "networkidle",
+    });
+    await page.locator("#source").filter({ hasText: "Recorded" }).waitFor();
     if ((await page.locator("#graph .edges path").count()) === 0)
       throw Error("Trading graph is empty");
     const overflow = await page.evaluate(

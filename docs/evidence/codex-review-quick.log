@@ -1,0 +1,174 @@
+[1/5] quick: install dependencies (no Rust required)
+v26.13.0
+12.16.1
+Scope: all 6 workspace projects
+[WARN] The store at /home/uiriamuzu/.local/share/pnpm/store/v11 is not used because packages cannot be hard linked from it into this project. Using the store at /mnt/c/.pnpm-store/v11 instead. Set storeDir to choose the store.
+✓ Lockfile passes supply-chain policies (verified 1d ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages are copied from the content-addressable store to the virtual store.
+  Content-addressable store is at: /mnt/c/.pnpm-store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 16, reused 16, downloaded 0, added 1
+Progress: resolved 23, reused 23, downloaded 0, added 8
+Progress: resolved 28, reused 28, downloaded 0, added 13
+Progress: resolved 32, reused 32, downloaded 0, added 17
+Progress: resolved 38, reused 38, downloaded 0, added 23
+Progress: resolved 42, reused 42, downloaded 0, added 27
+Progress: resolved 46, reused 46, downloaded 0, added 31
+Progress: resolved 48, reused 48, downloaded 0, added 33
+Progress: resolved 53, reused 53, downloaded 0, added 38
+Progress: resolved 57, reused 57, downloaded 0, added 42
+Progress: resolved 62, reused 62, downloaded 0, added 47
+Progress: resolved 65, reused 65, downloaded 0, added 50
+Progress: resolved 66, reused 66, downloaded 0, added 51
+Progress: resolved 72, reused 72, downloaded 0, added 57
+Progress: resolved 75, reused 75, downloaded 0, added 60
+Progress: resolved 78, reused 78, downloaded 0, added 63
+Progress: resolved 82, reused 82, downloaded 0, added 67
+Progress: resolved 86, reused 86, downloaded 0, added 71
+Progress: resolved 91, reused 91, downloaded 0, added 76
+Progress: resolved 95, reused 95, downloaded 0, added 80
+Progress: resolved 96, reused 96, downloaded 0, added 81
+Progress: resolved 99, reused 99, downloaded 0, added 84
+Progress: resolved 102, reused 102, downloaded 0, added 87
+Progress: resolved 103, reused 103, downloaded 0, added 88
+Progress: resolved 107, reused 107, downloaded 0, added 92
+Progress: resolved 109, reused 109, downloaded 0, added 94
+Progress: resolved 111, reused 111, downloaded 0, added 96
+Progress: resolved 113, reused 113, downloaded 0, added 98
+Progress: resolved 118, reused 118, downloaded 0, added 103
+Progress: resolved 122, reused 122, downloaded 0, added 107
+Progress: resolved 125, reused 125, downloaded 0, added 110
+Progress: resolved 127, reused 127, downloaded 0, added 112
+Progress: resolved 131, reused 131, downloaded 0, added 116
+Progress: resolved 134, reused 134, downloaded 0, added 119
+Progress: resolved 135, reused 135, downloaded 0, added 120
+Progress: resolved 137, reused 137, downloaded 0, added 122
+Progress: resolved 138, reused 137, downloaded 0, added 122
+Progress: resolved 139, reused 139, downloaded 0, added 123
+Progress: resolved 142, reused 142, downloaded 0, added 127
+Progress: resolved 143, reused 143, downloaded 0, added 128
+Progress: resolved 145, reused 145, downloaded 0, added 130
+Progress: resolved 149, reused 149, downloaded 0, added 134
+Progress: resolved 150, reused 150, downloaded 0, added 135
+Progress: resolved 151, reused 151, downloaded 0, added 136
+Progress: resolved 154, reused 154, downloaded 0, added 141
+Progress: resolved 157, reused 156, downloaded 0, added 143
+Progress: resolved 158, reused 158, downloaded 0, added 144
+Progress: resolved 161, reused 161, downloaded 0, added 147
+Progress: resolved 163, reused 163, downloaded 0, added 149
+Progress: resolved 164, reused 164, downloaded 0, added 150
+Progress: resolved 166, reused 166, downloaded 0, added 152
+Progress: resolved 168, reused 168, downloaded 0, added 154
+Progress: resolved 171, reused 171, downloaded 0, added 156
+Progress: resolved 173, reused 173, downloaded 0, added 158
+Progress: resolved 174, reused 174, downloaded 0, added 159
+Progress: resolved 177, reused 177, downloaded 0, added 162
+Progress: resolved 180, reused 180, downloaded 0, added 164
+Progress: resolved 181, reused 180, downloaded 0, added 165
+Progress: resolved 181, reused 181, downloaded 0, added 166
+Progress: resolved 181, reused 181, downloaded 0, added 167
+Progress: resolved 182, reused 182, downloaded 0, added 169
+Progress: resolved 185, reused 185, downloaded 0, added 172
+Progress: resolved 189, reused 188, downloaded 0, added 173
+Progress: resolved 189, reused 189, downloaded 0, added 176
+Progress: resolved 192, reused 192, downloaded 0, added 180
+Progress: resolved 193, reused 193, downloaded 0, added 181
+Progress: resolved 195, reused 194, downloaded 0, added 183
+Progress: resolved 198, reused 198, downloaded 0, added 185
+Progress: resolved 199, reused 199, downloaded 0, added 188
+Progress: resolved 200, reused 199, downloaded 0, added 189
+Progress: resolved 200, reused 200, downloaded 0, added 191
+Progress: resolved 201, reused 201, downloaded 0, added 192
+Progress: resolved 201, reused 201, downloaded 0, added 193
+Progress: resolved 201, reused 201, downloaded 0, added 195
+Progress: resolved 201, reused 201, downloaded 0, added 197
+Packages: +201
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 201, reused 201, downloaded 0, added 201, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+dependencies:
++ commander 15.0.0
++ d3 7.9.2
++ near-api-js 7.4.0
++ pino 10.4.0
++ zod 4.6.7
+
+devDependencies:
++ @biomejs/biome 2.6.5
++ @playwright/test 1.65.0
++ @types/d3 7.4.3
++ @types/node 26.6.6
++ fast-check 4.10.2
++ tsx 4.23.15
++ typescript 7.0.2
++ vite 8.3.6
++ vitest 5.1.0
+
+Done in 3m 9.4s using pnpm v12.16.1
+[2/5] quick: TypeScript tests
+Scope: 5 of 6 workspace projects
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/.tools/review-codex/packages/client[39m
+
+ [32m✓[39m src/journal.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 668[2mms[22m[39m
+   [33m[2m✓[22m[39m recovers a lost response by hash and never signs a replacement transaction[33m 663[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 15:51:07
+[2m   Duration [22m 32.65s[2m (import 79%, transform 15%, tests 4%, worker 2%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/.tools/review-codex/packages/shared[39m
+
+ [32m✓[39m src/model.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 100[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:52:10
+[2m   Duration [22m 28.75s[2m (transform 49%, import 45%, worker 4%, tests 2%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/.tools/review-codex/packages/sim[39m
+
+ [32m✓[39m src/local.test.ts [2m([22m[2m1 test[22m[2m)[22m[33m 4356[2mms[22m[39m
+   [33m[2m✓[22m[39m seeded scenarios are reproducible, conserve amounts and finish locally under five seconds[33m 4351[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m   Start at [22m 15:53:36
+[2m   Duration [22m 18.30s[2m (import 54%, tests 35%, transform 10%, worker 1%)[22m
+
+$ vitest run src
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/mnt/c/Users/HP/Documents/people/hackathons/near/.tools/review-codex/packages/solver[39m
+
+[90mstdout[2m | src/solver.test.ts[2m > [22m[2m50 nodes / 500 edges plans in under two seconds
+[22m[39msolver_50_nodes_500_edges_ms=1632.338
+
+ [32m✓[39m src/solver.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 11176[2mms[22m[39m
+   [33m[2m✓[22m[39m random graphs preserve nets and leave no supported cycle[33m 2649[2mms[22m[39m
+   [33m[2m✓[22m[39m 50 nodes / 500 edges plans in under two seconds[33m 8198[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m4 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 15:54:12
+[2m   Duration [22m 58.51s[2m (tests 44%, import 37%, transform 14%, worker 4%)[22m
+
+$ tsc --noEmit -p ../../tsconfig.json
+[3/5] quick: typecheck
+$ tsc --noEmit
+[4/5] quick: verify 12 seeded fixtures
+12 deterministic local scenario/seed fixtures matched; no network, .env, keys or funds.
+[5/5] quick: simulated agents, seed 42
+$ tsx packages/sim/src/cli.ts run --scenario agents --seed 42 --mode local
+SIMULATED: cleared 295 of 735 tUSD (test token) (40.13%) with 0 transfers; 81 payments settled the rest; 11 creditor withdrawals.
+Evidence: docs/evidence/run-agents-42-local-2026-11-07T14-58-56-446Z.md
+Elapsed: 709 seconds

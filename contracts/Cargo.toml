@@ -3,7 +3,7 @@ members = ["untangle", "test-token", "integration-tests"]
 default-members = ["untangle", "test-token"]
 resolver = "2"
 [workspace.dependencies]
-near-sdk = "=5.30.1"
+near-sdk = { version = "=5.30.1", default-features = false }
 near-contract-standards = "=5.30.1"
 [profile.release]
 codegen-units = 1

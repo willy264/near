@@ -1,7 +1,12 @@
 # X demo post — unsent draft
 
-Built at NEAR HACKATHON: Untangle lets scripted agents clear debt cycles on NEAR testnet. 12 agents: 40.13% cleared; 81 payments for 113 obligations. tUSD is a test token.
+AI agents that pay each other per call end up owing each other in circles.
+
+Untangle (built at NEAR HACKATHON): a NEAR contract verifies and cancels those circles. Testnet run: 12 agents, 40% of debt cleared, zero transfers.
+
 https://untangle-dusky-three.vercel.app
 @NEARProtocol #NEARHackathon
+
+Reply-post draft: "Open source, one command reproduces it: https://github.com/willy264/near"
 
 Attach the human-recorded demo video before posting. The public post URL becomes the submission's demoUrl; the viewer URL is not a substitute. This file is a draft, not a published post.

@@ -40,3 +40,42 @@
 {"method":"issue_many","size":"20","tgas":31.232307735993,"hash":"82duDLLDZJT8ZsHzG6zdqVvV3Wi5kQMjfXYZum3fvB3J"}
 {"method":"issue_many","size":"10","tgas":17.079965042997,"hash":"Gqb8Kon7KaSxoXTizCQw8zHj3Z6PpWgorxxT3igFoPX2"}
 {"method":"submit_clearing","size":"5 x length 12","tgas":112.436179311279,"hash":"F6CHEXvE5XGUXeTfNrTi53ZxVWuJWay5Q59CKTT7LQ6e"}
+{"method":"issue_many","size":"1","tgas":4.008604721555,"hash":"DSU2dDrajGxNfNd17BiHJB7kwbwcXorF6Jwmgi4FKAtN"}
+{"method":"issue_many","size":"1","tgas":4.194255929517,"hash":"DkpY8aNeZUKadYk3T6TbJNp6nJsYJGcv58V15dSGMR9j"}
+{"method":"submit_clearing","size":"1 x length 2","tgas":8.261862530818,"hash":"3shAJZ7yZvG5B4b9ujxqAEtgCKy1kopkF1gkSh7XFgjG"}
+{"method":"issue_many","size":"2","tgas":5.389365506843,"hash":"3T75p4vUfAimNVB8NuhxmeEokavkcNh2BKmN5pMQnVFE"}
+{"method":"issue_many","size":"2","tgas":5.613838421505,"hash":"5RBAmp96Vg67jUG6pwhDjyHg2wmEnXPcA6gTZJQYRwGU"}
+{"method":"submit_clearing","size":"1 x length 4","tgas":11.733076595495,"hash":"J4y7yiHADaE1ern9JGh7N9ifruASf1RcJvhdX2Dk6CVC"}
+{"method":"issue_many","size":"4","tgas":8.164573516343,"hash":"7MmcANg6igTSHsymG5d9Bch785wJpk4DGYYHg7bwWNHa"}
+{"method":"issue_many","size":"4","tgas":8.439725590041,"hash":"66niiRrVzdr1TRk4BjrWG9L8UFtvXRJiEXJwzgfLJNFM"}
+{"method":"submit_clearing","size":"1 x length 8","tgas":18.747284963893,"hash":"3F8FBgZkFEZZ3s42zPDFKbY9S5y9MC9dj8X9N8oY1LAM"}
+{"method":"issue_many","size":"6","tgas":10.938588243395,"hash":"AK4uGt3b3j4eosmvFXw5yKYTrPKHtCg58UsRLfYWoKn3"}
+{"method":"issue_many","size":"6","tgas":11.284447468041,"hash":"5s85Cyfp4moW1xpFp2rF9K8igrb57XHPw32tk3wv3mnD"}
+{"method":"submit_clearing","size":"1 x length 12","tgas":25.713152215623,"hash":"AaakakwY4RRnRCKXhAQNNXSmo7eJZ3L33zwDy6zid724"}
+{"method":"issue_many","size":"8","tgas":13.716942471839,"hash":"AQq5MUzMAzk8VYXXSwt9kmj158SKNnii26y5qxyE445Z"}
+{"method":"issue_many","size":"8","tgas":14.118054019617,"hash":"AL8Z7wQZxSSDnn8UiqnkcDeBL2KNw3xK6gd7QSDnvaXe"}
+{"method":"submit_clearing","size":"1 x length 16","tgas":32.764176160505,"hash":"AmPQbjBgij9h8kQWNnYQxsees5QHTL2QzmM95b39tT1d"}
+{"method":"issue_many","size":"10","tgas":16.496715131627,"hash":"Addg2XbS45n7NwBoTKG1PpRUzkF522y6KRFp5Vzu44Ec"}
+{"method":"issue_many","size":"10","tgas":16.934045042997,"hash":"7LT38yAXvNFdfNroGRa629nVkRtzHHUpQFc59ux6kFe6"}
+{"method":"submit_clearing","size":"5 x length 4","tgas":40.111516728667,"hash":"DYqeHZ7kPcNM1FB5oFa9Xd6Rsew8VrBCyXbNwj8cp3k8"}
+{"method":"issue_many","size":"20","tgas":30.400405360907,"hash":"3YTfLYT75t9TbVP4LqdbBPwfY6AKsQva4ZVigpK2fmqF"}
+{"method":"issue_many","size":"20","tgas":31.348587735993,"hash":"AhKrWr2THHiqUCEfzDPHKQnicvPkSrots66MezwZJfTd"}
+{"method":"submit_clearing","size":"10 x length 4","tgas":76.31105302592,"hash":"56mQU8HGQik7rhJ8MKr99rYLdRXrKYgF6922pj3k5KgM"}
+{"method":"issue_many","size":"20","tgas":30.389005360907,"hash":"AZmxzGfqDB6AfoJ6BWRFcaDSqjrtNfqyJqVU6ApEfeFJ"}
+{"method":"issue_many","size":"20","tgas":31.247108472789,"hash":"CVNW7wcoBERT9YWPkz9kgrRJgXdeWrAhJ3fzNLAgz25V"}
+{"method":"issue_many","size":"20","tgas":31.252827735993,"hash":"Eyr9XBh8JKmhmSvNu91Df83VCCdmQAYtzyiGcW8brctv"}
+{"method":"issue_many","size":"20","tgas":31.273347735993,"hash":"E7vfkoKpTzEhYSNXyeh4UwHyQJEApvT5oYvTgq9VpTHC"}
+{"method":"submit_clearing","size":"20 x length 4","tgas":149.870499342196,"hash":"2iFL2Md1WX7ktRQbCBneC68pxt1AdWLUfKMkbx1vMTeo"}
+{"method":"issue_many","size":"20","tgas":30.393565360907,"hash":"CusK6f7Fvz2AuPwFWMb3RDyXfgmupV5A97CKuQfvqqjp"}
+{"method":"issue_many","size":"20","tgas":31.237988472789,"hash":"HXfQhPu3dUXUMygaj6uUKJoKGKZ4nrJt4BjEgjquPbjZ"}
+{"method":"issue_many","size":"20","tgas":31.242548472789,"hash":"4J4kMwoJcDCbVLFJ5gYVxqV57eNzEJYR73UwjKkTyLWE"}
+{"method":"issue_many","size":"20","tgas":31.265348472789,"hash":"FQVVTp8Kbxwi8VNHiLhfDZCP383KXbLaoSHmmG55ERSL"}
+{"method":"issue_many","size":"20","tgas":31.250547735993,"hash":"DHFjyardasofd5eeD56ri4WBxKCV6bPvhZTKz3gwqCmz"}
+{"method":"issue_many","size":"20","tgas":31.430667735993,"hash":"GUEmQdLXSHf4BjvM5GSvcp1BL9RPkb1Krk2Z6fqvqqYg"}
+{"method":"issue_many","size":"20","tgas":31.442067735993,"hash":"GnCc3xmpf2gWM7LMYGEX4PDMznTwQyXsN287Jqva8P3P"}
+{"method":"issue_many","size":"20","tgas":31.430667735993,"hash":"4gUxipJ9sb6YJTkYTA1rfc6j48EzQFKciQpGwwPwgNtA"}
+{"method":"issue_many","size":"20","tgas":31.420388472789,"hash":"2w9Ef48w6rf2ESuP4Lpo6t4JsEyNkVpYHp973HvFEerS"}
+{"method":"issue_many","size":"10","tgas":17.161195958805,"hash":"FMFcKKoqxnxJUa7q4H8C34f9DNeQ4DNb7f9F3msKRzpv"}
+{"method":"issue_many","size":"20","tgas":31.435227735993,"hash":"3wNoipaJEU7Wh8ikinrV6v5nGL3bNREZA11gBNZmUYKw"}
+{"method":"issue_many","size":"10","tgas":17.173445042997,"hash":"7pFMf5UsdX1e3ufdoVctf5t6KtA6fVgRDzCca5GFMkxz"}
+{"method":"submit_clearing","size":"5 x length 12","tgas":113.208037525413,"hash":"521ftyAAFq76iXYvg7hKdRVermDUbSpdBp9F8CeceBAd"}

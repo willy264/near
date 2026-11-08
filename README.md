@@ -109,6 +109,8 @@ Debts and events are public. Debtor acceptance creates credit exposure; a cap li
 
 The operator retains upgrade keys. The contract accepts explicitly approved tokens; unsolicited direct token donations can make custody exceed tracked withdrawal credit. Strict custody equality is tested for the supported transfer-call/withdraw flow without donations. There is no privacy, interest, due date, credit scoring or mainnet support. The ledger's storage interface does not implement unregister.
 
+Security: on November 8, 2026 the contracts switched from the unmaintained `wee_alloc` allocator to Rust's standard allocator; the recorded seed-42 agent and fictional-firm runs predate this allocator-only redeploy and use the same contract logic. [Redeploy evidence](docs/evidence/redeploy-std-alloc-2026-11-08.md).
+
 The quick check measured 60 seconds with cached dependencies on Linux Ext4; cold installs and Windows-mounted filesystems can take substantially longer. Testnet run elapsed times measure wall-clock time including setup, pauses and resumes; they are not throughput measurements.
 
 `cargo audit` reports RUSTSEC-2026-0387 in crypto-bigint through the native unit-test VM. It is absent from both production WASM dependency trees. The patched major version cannot satisfy current upstream constraints; the finding remains open. [Audit and dependency evidence](docs/evidence/security-audit-2026-11-07.md).

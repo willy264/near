@@ -6,15 +6,25 @@
   "token": "tusd.untangle-261106-e1386a.testnet",
   "solver": "solver.untangle-261106-e1386a.testnet",
   "reproducible": false,
+  "allocator": "Rust standard allocator (near-sdk default features disabled), redeployed 2026-11-08; prior seed-42 runs used wee_alloc with the same contract logic",
+  "previousBuild": {
+    "allocator": "wee_alloc via near-sdk default features",
+    "tusdCodeHash": "7XPcytMK8XuVf1DBfSHNH2ivZ1qgi5kTPX6ENXFdbxVR",
+    "ledgerCodeHash": "EMgiKCAYXZf7ZuLX3Drb3biYzYMHXN9Z3zdjcvmYR2Jt"
+  },
   "tusd.untangle-261106-e1386a.testnet": {
-    "codeHash": "7XPcytMK8XuVf1DBfSHNH2ivZ1qgi5kTPX6ENXFdbxVR",
-    "deployTx": "FWBdeSANreKh5K8hexMMKPjsXuBHkPnhz1FGfhenr49F",
-    "timestamp": "2026-11-06T06:57:25.446Z"
+    "codeHash": "YHv3VtximTuKEL9p84nupQgE8nKDpf9yZH3XfGEnnv3",
+    "deployTx": "2gahFxSRYajWRhafmqLGLiPEPpESFvU5B4ebXFd4Qgxj",
+    "timestamp": "2026-11-08T13:05:09.029Z",
+    "previousCodeHash": "7XPcytMK8XuVf1DBfSHNH2ivZ1qgi5kTPX6ENXFdbxVR",
+    "allocator": "Rust standard allocator"
   },
   "ledger.untangle-261106-e1386a.testnet": {
-    "codeHash": "EMgiKCAYXZf7ZuLX3Drb3biYzYMHXN9Z3zdjcvmYR2Jt",
-    "deployTx": "7Jtg44zNPq4o1ytd92EfCV2Wb2ma1ZcmCHbDT3YRpQxA",
-    "timestamp": "2026-11-06T06:57:30.093Z"
+    "codeHash": "3CxCowQ7QfAztqQsK2MopHjSphjtNv3HgGLyEkNe1S3U",
+    "deployTx": "ouhCvVkZncvXQKgCZJwtFis8e965EcgLvLwzMxsZzjg",
+    "timestamp": "2026-11-08T13:05:15.138Z",
+    "previousCodeHash": "EMgiKCAYXZf7ZuLX3Drb3biYzYMHXN9Z3zdjcvmYR2Jt",
+    "allocator": "Rust standard allocator"
   },
   "config": {
     "max_cycle_len": 12,
@@ -22,5 +32,5 @@
     "max_memo_bytes": 128,
     "max_batch_issue": 20
   },
-  "configTx": "6UBwifh4f2NPWvEuFjbrkHAJQh3rwe9ntxVauW8eMFyQ"
+  "configTx": "AYteBLekr1kMfiSMiufexgvChZ49XS6SPEskSoJ4xCFU"
 }

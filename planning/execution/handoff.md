@@ -1,4 +1,10 @@
-# Handoff — 2026-11-07
+# Handoff — 2026-11-08
+
+Security remediation complete: both production contracts now use `near-sdk = 5.30.1` with default features disabled, removing `wee_alloc` from the all-target dependency tree and WASM builds. Local full judge passed (48 ledger + 2 token tests, sandbox integration, 25x40 parity, TypeScript tests/typecheck, 12 fixtures, live stats); evidence is `docs/evidence/judge-std-alloc-2026-11-08.md`. Code-only redeploy to the same testnet accounts completed with hashes and transactions in `deployments/testnet.json`; the 3-cycle smoke flow passed and is recorded in `docs/evidence/redeploy-std-alloc-2026-11-08.md`. Gas rerun remains below the 180 Tgas frozen threshold (`gas.md`).
+
+Last pushed commit: `6b1e535` (`style(scripts): format allocator maintenance commands`). Replacement CI run `42485370211` is in progress after the prior `af4581e` run failed only on Biome formatting; do not call CI green until the replacement completes. Full-history gitleaks is clean (19 commits). GitHub still advertises one critical Dependabot alert; the current token cannot read the private alert endpoint (403), so closure is not asserted. The lockfile/tree evidence proves `wee_alloc` is absent.
+
+Exact unsent X copy is in `submission/x-post-draft.md`; intended tracks are `swarms`, `agents`, `realworld`, `open`. No X post, form submission, mainnet action, or public-repo change beyond the already authorized push was performed. Next external inputs are the alert name, public X URL, video URL, and personal submission details.
 
 Current state: core build, agent and firms testnet runs, independent reviews, all six Claude fixes, optimal comparison, and recorded Intents dry quote completed. Public viewer: https://untangle-dusky-three.vercel.app . Latest deployed bundle passed browser checks at 360/1280, including headline, unique identities, quote, no overflow/errors. No X post or form submission sent.
 
